@@ -2,8 +2,8 @@
 layout: post
 Title: Sunnudagur
 Date: 2023-25-03 12:37:00 +0000
-Category: Azure, Cloud, DevOps, Microsoft, PowerShell, Security, Windows
-Tags: [Azure, Cloud, DevOps, Microsoft, PowerShell, Security, Windows]
+Category: [Azure,PowerShell]
+Tags: [azure,powerShell]
 ---
 
 # Sunnudagur
