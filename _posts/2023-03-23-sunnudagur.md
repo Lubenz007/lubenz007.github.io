@@ -1,7 +1,7 @@
 ---
 title: Sunnudagur
 date: 2023-03-25 13:49:00 -0000
-categories: [Azure, Powershell]
+categories: [Azure,Powershell]
 tags: [azure,powershell]     # TAG names should always be lowercase
 ---
 
