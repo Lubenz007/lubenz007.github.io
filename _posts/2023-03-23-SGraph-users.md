@@ -4,7 +4,9 @@ date: 2023-03-25 13:49:00 -0000
 categories: [Azure,MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
-
+---
+img_path: /assets/img/image/blog/
+---
 ## Microsoft Graph API can be used to get the last logon time of a user. To do this, you will need to make a GET request to the /users/{id}/lastLogonTimeStamp endpoint. This endpoint will return the last logon time of the user in the form of a timestamp. You can then use this timestamp to determine the exact date and time of the user's last logon.
 
 This query get's.
@@ -97,3 +99,5 @@ $headers = @{
 #Upload the file to the container.
 Invoke-RestMethod -Uri $uri -Method Put -Headers $headers -InFile $Logfile
 ```
+
+![Desktop View](/assets/img/blog/userinfo.png){: .normal-image}
