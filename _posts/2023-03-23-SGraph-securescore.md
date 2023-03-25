@@ -101,4 +101,3 @@ $Response | Select-Object -ExpandProperty controlScores -First 1 | Select-Object
 #list many csv in path to one variable
 $files = Get-ChildItem -Path C:\temp\ -Filter *.csv -Recurse | Select-Object -ExpandProperty FullName
 ```
-
