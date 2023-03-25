@@ -11,7 +11,7 @@ You only need to call the following endpoint: https://graph.microsoft.com/beta/s
 and divide  the result by 100 to get the percentage.
 
 ```powershell
-# needs permission SecurityEvents.Read.All
+# Needs permission SecurityEvents.Read.All
 
 $ClientID = ''
 $ClientSecret = ''
