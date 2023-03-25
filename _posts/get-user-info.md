@@ -1,7 +1,6 @@
 ---
-layout: post
 title: MS Graph API - Get User info.
-date: 2023-03-23 22:41 +0000
+date: 2023-03-25 11:00 +0000
 categories: [azure,arc]
 tags: [azure,arc]
 ---
