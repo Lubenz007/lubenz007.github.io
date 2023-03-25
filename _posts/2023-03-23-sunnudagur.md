@@ -1,9 +1,8 @@
 ---
-layout: post
-Title: Sunnudagur
-Date: 2023-25-03 12:37:00 +0000
-Category: Azure,PowerShell
-Tags: [azure,powerShell]
+title: Sunnudagur
+date: 2023-03-25 13:49:00 -0000
+categories: [Azure, Powershell]
+tags: [azure,powershell]     # TAG names should always be lowercase
 ---
 
 # Sunnudagur
