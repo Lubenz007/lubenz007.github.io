@@ -28,26 +28,45 @@ $Permissions.appRoles | Select-Object -Property value,allowedMemberTypes,id,desc
 
 # Create service principal
 az ad app create --display-name "Alit-GraphAPI"
-# Graph API App ID: from output
+# Graph API App ID: from output "appId": "d52bda31-bd71-4a17-b563-7921a17d79e7"
 
 # Reset app secret to get new secret
-az ad app credential reset --id 13d15b6f-94ad-4df4-a88d-72f355e5f92d
+az ad app credential reset --id "d52bda31-bd71-4a17-b563-7921a17d79e7"
 # Graph API App Secret: from output
+#{
+# "appId": "d52bda31-bd71-4a17-b563-7921a17d79e7",
+#  "password": "3b3b3b3b-3b3b-3b3b-3b3b-3b3b3b3b3b3b",
+#  "tenant": "5eeb8561-5493-4b39-906f-038356850aaa"
+#}
 
 # set secret to 3 years
 #az ad app credential reset --id 13d15b6f-94ad-4df4-a88d-72f355e5f92d --years 3
 
 # Add Microsoft Graph application permission user.read.all # Guide https://learn.microsoft.com/en-us/cli/azure/ad/app/permission?view=azure-cli-latest
-az ad app permission add --id 13d15b6f-94ad-4df4-a88d-72f355e5f92d --api 00000003-0000-0000-c000-000000000000 --api-permissions df021288-bdef-4463-88db-98f22de89214=Role
+az ad app permission add --id d52bda31-bd71-4a17-b563-7921a17d79e7 --api 00000003-0000-0000-c000-000000000000 --api-permissions df021288-bdef-4463-88db-98f22de89214=Role
 
 # Grant admin consent #this needs to be done by a Cloud Application Administrator
-az ad app permission admin-consent --id 13d15b6f-94ad-4df4-a88d-72f355e5f92d
+az ad app permission admin-consent --id d52bda31-bd71-4a17-b563-7921a17d79e7
 
-# Get app id and secret if we forgot
+# Get app id 
 az ad app list --query "[?displayName=='Alit-GraphAPI'].{id:appId,secret:passwordCredentials[0].value}"
+#{
+#    "id": "d52bda31-bd71-4a17-b563-7921a17d79e7",
+#    "secret": null
+#  }
 
 #get app api permissions
-az ad app permission list --id 13d15b6f-94ad-4df4-a88d-72f355e5f92d --output json
+az ad app permission list --id d52bda31-bd71-4a17-b563-7921a17d79e7 --output json
+#{
+ #   "resourceAccess": [
+ #     {
+ #       "id": "df021288-bdef-4463-88db-98f22de89214",
+ #       "type": "Role"
+ #     }
+ #   ],
+ #   "resourceAppId": "00000003-0000-0000-c000-000000000000"
+ # }
+
 ```
 Reference: 
 * [nielskok.tech](https://www.nielskok.tech/azure-ad/view-all-api-permissions-microsoft-graph/)
