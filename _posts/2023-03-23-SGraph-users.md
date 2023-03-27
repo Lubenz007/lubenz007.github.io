@@ -9,6 +9,7 @@ tags: [azure,msgraph]     # TAG names should always be lowercase
 
 This query get's.
 DisplayName,UserPrincipalName,UsageLocation,Contry,LastSignInDateTime,IsLicensed,IsGuestUser
+{: .prompt-info }
 
 ```powershell
 #client_id and client_secret are generated in Azure AD
