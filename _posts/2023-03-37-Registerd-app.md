@@ -5,7 +5,7 @@ categories: [Azure,MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
 
-# Check Registered Apps in Azure AD
+
 This script will check all registered apps in Azure AD and will return the following information:
 > CredentialType, DisplayName,AppId,ExpiryDate,StartDate,Type,Usage,Owners,Expired
 {: .prompt-info }
