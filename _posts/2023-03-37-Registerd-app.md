@@ -1,21 +1,14 @@
 ---
 title: Check Registered Apps in Azure AD
-date: 2023-03-25 13:49:00 -0000
+date: 2023-03-27 22:15:00 -0000
 categories: [Azure,MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
 
 # Check Registered Apps in Azure AD
 This script will check all registered apps in Azure AD and will return the following information:
-- CredentialType :
-- DisplayName    :
-- AppId          :
-- ExpiryDate     :
-- StartDate      :
-- Type           :
-- Usage          : 
-- Owners         : 
-- Expired        : 
+> CredentialType, DisplayName,AppId,ExpiryDate,StartDate,Type,Usage,Owners,Expired
+{: .prompt-info }
 
 ```powershell
 # needs permission Application.Read.All,Directory.Read.All
