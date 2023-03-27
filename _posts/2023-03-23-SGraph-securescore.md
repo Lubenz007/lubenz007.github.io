@@ -5,7 +5,7 @@ categories: [Azure,MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
 
-# Get the Secure Score for O365 Tenant 
+# Secure Score for O365 Tenant 
 Getting the secure score for a tenant is a simple task.
 You only need to call the following endpoint: https://graph.microsoft.com/beta/security/secureScores
 and divide  the result by 100 to get the percentage.
