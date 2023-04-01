@@ -10,5 +10,4 @@ My background is in virtualization and IT administration, with a strong focus on
 
 This blog is where I store my knowledge to look back on and share with others. You dont get to be 50 without learning a thing or two.
 
-My certifications.
-* https://www.credly.com/users/benedikt-gabriel-egilsson/badges
+* My certifications credly link [here](https://www.credly.com/users/benedikt-gabriel-egilsson/badges)
