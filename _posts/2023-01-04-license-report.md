@@ -7,7 +7,7 @@ tags: [azure,msgraph]     # TAG names should always be lowercase
 
 # Create a report of licenses assigned to Azure AD user accounts using the Microsoft Graph API
 This is a rewrite from [here](https://practical365.com/create-licensing-report-microsoft365-tenant/) practical365.com
-> My misson was to rewrite the script to use the Microsoft Graph API instead of the Azure AD PowerShell module.
+> My misson was to rewrite the script to use the Microsoft Graph API instead of the MgGraph PowerShell module.
 {: .prompt-info }
 
 ```powershell
