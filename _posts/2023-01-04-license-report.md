@@ -1,6 +1,6 @@
 ---
 title: Getting licenses assigned to user accounts
-date: 2023-03-25 13:49:00 -0000
+date: 2023-04-01 00:27:00 -0000
 categories: [Azure,MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
