@@ -1,5 +1,5 @@
 ---
-title: Upgrade Hyper-V Hosts with Azure Arc and Automation Accounts
+title: Upgrade Hyper-V Hosts with Azure Arc
 date: 2023-04-04 22:15:00 -0000
 categories: [HyperV,Automation]
 tags: [hyperv,automation]     # TAG names should always be lowercase
@@ -9,21 +9,20 @@ Azure Arc is a powerful tool for managing and updating hybrid infrastructure, in
 
 Before we begin, it's worth noting that Hyper-V host updates can be complex and require careful planning to avoid disruption to your environment. Always make sure you have a comprehensive backup plan in place, and test your update procedures thoroughly in a non-production environment before applying them to your production systems.
 
-With that said, let's get started!
 
-Step 1: Set up Azure Arc
+* Set up Azure Arc
 
 The first step is to set up Azure Arc for your standalone Hyper-V host. This involves deploying the Azure Arc agent to the host and registering it with your Azure subscription. You can find detailed instructions for this process in the Azure documentation.
 
-Step 2: Create an Automation Account
+* Create an Automation Account
 
 Next, you'll need to create an Automation Account in your Azure subscription. This account will be used to manage the update process for your Hyper-V host. You can create an Automation Account from the Azure portal by navigating to the Automation Accounts blade and clicking Add.
 
-Step 3: Create a Scheduled Update Task
+* Create a Scheduled Update Task
 
 Once you have an Automation Account set up, you can create a Scheduled Update Task to automate the update process for your Hyper-V host. To do this, navigate to the Update Management blade in your Automation Account, and click Schedule Update Deployment. From here, you can select the target Hyper-V host, set a schedule for the update task, and configure any additional options you need.
 
-Step 4: Create Pre and Post Scripts
+* Create Pre and Post Scripts
 
 To ensure a smooth update process for your Hyper-V host, you'll need to create pre and post scripts that shut down and start up VMs before and after the update. These scripts will be run automatically as part of the update task, and can be customized to suit your specific needs.
 
@@ -70,7 +69,7 @@ sleep -seconds 60
 
 This script will find all VMs that were shut down during the update process and start them up again.
 
-Step 5: Run the Update Task
+* Run the Update Task
 
 With your Automation Account, Scheduled Update Task, and pre and post scripts in place, you're ready to run the update task. Simply navigate to the Update Management blade in your Automation Account, select the target Hyper-V host, and click Schedule Update Deployment.
 
@@ -81,6 +80,9 @@ Conclusion
 Updating a standalone Hyper-V host can be a complex and time-consuming process, but with Azure Arc and Automation Accounts, you can automate much of the work and ensure a smooth, reliable update process. By following the steps outlined in this blog post, you can easily set up a Scheduled Update Task with pre and post scripts to manage your Hyper-V host updates with ease.
 
 ![Desktop View](/assets/img/blog/before.png){: .normal-image}
+
 ![Desktop View](/assets/img/blog/runbook.png){: .normal-image}
+
 ![Desktop View](/assets/img/blog/scheduletask.png){: .normal-image}
+
 ![Desktop View](/assets/img/blog/prepost.png){: .normal-image}
