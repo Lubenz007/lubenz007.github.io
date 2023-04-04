@@ -9,7 +9,6 @@ Azure Arc is a powerful tool for managing and updating hybrid infrastructure, in
 
 Before we begin, it's worth noting that Hyper-V host updates can be complex and require careful planning to avoid disruption to your environment. Always make sure you have a comprehensive backup plan in place, and test your update procedures thoroughly in a non-production environment before applying them to your production systems.
 
-
 * Set up Azure Arc
 
 The first step is to set up Azure Arc for your standalone Hyper-V host. This involves deploying the Azure Arc agent to the host and registering it with your Azure subscription. You can find detailed instructions for this process in the Azure documentation.
@@ -80,9 +79,3 @@ Conclusion
 Updating a standalone Hyper-V host can be a complex and time-consuming process, but with Azure Arc and Automation Accounts, you can automate much of the work and ensure a smooth, reliable update process. By following the steps outlined in this blog post, you can easily set up a Scheduled Update Task with pre and post scripts to manage your Hyper-V host updates with ease.
 
 ![Desktop View](/assets/img/blog/before.png){: .normal-image}
-
-![Desktop View](/assets/img/blog/runbook.png){: .normal-image}
-
-![Desktop View](/assets/img/blog/scheduletask.png){: .normal-image}
-
-![Desktop View](/assets/img/blog/prepost.png){: .normal-image}
