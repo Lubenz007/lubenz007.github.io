@@ -26,6 +26,16 @@ foreach ($Name in $runningvm) {
     } until ($Null -eq $VM1.Heartbeat)
 
 }
+# send a webhook to Teams to notify that the VMs have been shut down
+$webhookUri = ""
+$body = @{
+"@context" = "http://schema.org/extensions"
+"@type" = "MessageCard"
+"themeColor" = "d70000"
+"title" = "Send Webhook to Teams"
+"text" = "This is a message sent from Powershell"
+}
+Invoke-RestMethod -Uri $webhookUri -Method Post -Body (ConvertTo-Json -InputObject $body) 
 ```
 
 Post-requisites
@@ -44,8 +54,19 @@ foreach ($Name in $runningvm) {
 # Wait for the VM and sleep for 60 seconds for next vm to start ( boot storm if all VMs are started at once)
 sleep -seconds 60
 }
+# send a webhook to Teams to notify that the VMs have been started
+$webhookUri = ""
+$body = @{
+"@context" = "http://schema.org/extensions"
+"@type" = "MessageCard"
+"themeColor" = "d70000"
+"title" = "Send Webhook to Teams"
+"text" = "This is a message sent from Powershell"
+}
+Invoke-RestMethod -Uri $webhookUri -Method Post -Body (ConvertTo-Json -InputObject $body) 
+
 ```
 
-Updating a standalone Hyper-V host can be a complex and time-consuming process, but with Azure Arc and Automation Accounts, you can automate much of the work and ensure a smooth, reliable update process.
+> Updating a standalone Hyper-V host can be a complex and time-consuming process, but with Azure Arc and Automation Accounts, you can automate much of the work and ensure a smooth, reliable update process. Hyper-v cluster or HCI is a different story. {: .prompt-info }
 
 ![Desktop View](/assets/img/blog/before.png){: .normal-image}
