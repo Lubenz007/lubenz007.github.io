@@ -47,6 +47,7 @@ foreach ($Name in $runningvm) {
 
 }
 ```
+
 This script will find all running VMs on the Hyper-V host and shut them down before the update is applied. Save the names of the running VMs to a file so that they can be started up again after the update is complete.
 
 Your post-script might look like this:
