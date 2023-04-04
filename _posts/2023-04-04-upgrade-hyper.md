@@ -67,6 +67,7 @@ Invoke-RestMethod -Uri $webhookUri -Method Post -Body (ConvertTo-Json -InputObje
 
 ```
 
-> Updating a standalone Hyper-V host can be a complex and time-consuming process, but with Azure Arc and Automation Accounts, you can automate much of the work and ensure a smooth, reliable update process. Hyper-v cluster or HCI is a different story. {: .prompt-info }
+> Updating a standalone Hyper-V host can be a complex and time-consuming process, but with Azure Arc and Automation Accounts, you can automate much of the work and ensure a smooth, reliable update process. Hyper-v cluster or HCI is a different story. 
+{: .prompt-info }
 
 ![Desktop View](/assets/img/blog/before.png){: .normal-image}
