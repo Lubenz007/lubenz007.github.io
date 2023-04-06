@@ -148,26 +148,20 @@ ForEach ($User in $users) {
 
 ```
 
-![Desktop View](/assets/img/blog/license.png){: .normal-image}
+![Desktop View](/assets/img/blog/license.png){: .normal}
 
----
-title: Mailbox
----
+{% raw %}
+```liquid
 <table>
-  <thead>
+  {% for row in site.data.mailbox %}
+    {% if forloop.first %}
     <tr>
-    {% for header in site.csv.mailbox.keys %}
-      <td>{{header}}</td>
-    {% endfor %}
+      {% for pair in row %}
+        <th>{{ pair[0] }}</th>
+      {% endfor %}
     </tr>
-  </thead>
-  <tbody>
-    {% for row in site.csv.mailbox.content %}
-    <tr>
-    {% for column in row %}
-      <td>{{column}}</td>
-    {% endfor %}
-    </tr>
-    {% endfor %}
-  </tbody>
+    {% endif %}
+  {% endfor %}
 </table>
+```
+{% endraw %}
