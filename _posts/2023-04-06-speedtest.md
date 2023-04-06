@@ -6,7 +6,8 @@ tags: [powershell,automation]     # TAG names should always be lowercase
 ---
 ## Was having problems with my internet connection and wanted to monitor it. So I rewrote this script to use powershell and store the results in a table storage.
 
-### The script is using the speedtest cli from https://www.speedtest.net/apps/cli
+> The script is using the speedtest cli from https://www.speedtest.net/apps/cli
+{: .prompt-info }
 
 ```powershell
 $StorageAccountName = "StorageAcount"
