@@ -80,7 +80,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://pbs.twimg.com/profile_images/1639018365531422725/0POoTi00_400x400.jpg
+avatar: https://bensiegils.com/assets/img/logo/BensiLogo.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
