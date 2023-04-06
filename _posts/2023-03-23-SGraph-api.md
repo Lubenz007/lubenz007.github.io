@@ -4,11 +4,9 @@ date: 2023-03-25 13:49:00 -0000
 categories: [Azure,MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
-
 # Authentication and Authorization
 
 ### MSGraph API is a powerful tool for authentication and authorization that allows developers to access Microsoft services and data. It provides a secure way to authenticate users, authorize applications, and manage user data. With MSGraph API, developers can easily integrate their applications with Microsoft services like Outlook, OneDrive, Office 365, Azure Active Directory, and more. In this article, we'll explore how to get started with MSGraph API concepts and use cases of the API.
-
 ## Authentication
 We will use the Azure CLI to create a service principal and get the app id and secret. We will also use the Azure CLI to view all the API permissions available in Microsoft Graph.
 
