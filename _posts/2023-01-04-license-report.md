@@ -149,3 +149,22 @@ ForEach ($User in $users) {
 ```
 
 ![Desktop View](/assets/img/blog/license.png){: .normal-image}
+
+<table>
+  <thead>
+    <tr>
+    {% for header in site.csv.mlsreport %}
+      <td>{{header}}</td>
+    {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in site.csv.mlsreport %}
+    <tr>
+    {% for column in row %}
+      <td>{{column}}</td>
+    {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
