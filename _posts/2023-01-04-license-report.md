@@ -149,19 +149,3 @@ ForEach ($User in $users) {
 ```
 
 ![Desktop View](/assets/img/blog/license.png){: .normal}
-
-{% raw %}
-```liquid
-<table>
-  {% for row in site.data.mailbox %}
-    {% if forloop.first %}
-    <tr>
-      {% for pair in row %}
-        <th>{{ pair[0] }}</th>
-      {% endfor %}
-    </tr>
-    {% endif %}
-  {% endfor %}
-</table>
-```
-{% endraw %}
