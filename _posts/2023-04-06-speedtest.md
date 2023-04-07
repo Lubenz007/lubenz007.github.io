@@ -10,22 +10,19 @@ tags: [powershell,automation]     # TAG names should always be lowercase
 {: .prompt-info }
 
 ```powershell
-$StorageAccountName = "StorageAcount"
-$Key = "Storagekey"
-$StorageContext = New-AzStorageContext -StorageAccountName $StorageAccountName -StorageAccountKey $Key
-$Table = (Get-AzStorageTable -Context $StorageContext | Where-Object {$_.name -eq "Speedtest"}).CloudTable
 $applocation = "C:\apps\speedtest"
-$SpeedTestTxt = "c:\temp\speedtext.txt"
- 
+$path = "C:\temp\"
+
+$SpeedTestResults=@()
+$SpeedtestObj=@()
+
 $i = 0
 while ($i -eq 0)
 {
     $PartitionKey = "1"
-    $SpeedTestResults=@()
-    $SpeedtestObj=@()
     $SpeedTestResults = & "$($applocation)\speedtest.exe" --progress=no --format=json
     $SpeedtestResults = $SpeedTestResults | ConvertFrom-Json
-    [PSCustomObject]$SpeedtestObj = @{
+    $SpeedtestObj += [PSCustomObject] @{
         Time = Get-Date -Format "dd/MM/yyyy HH:mm K"
         downloadspeed = [math]::Round($SpeedtestResults.download.bandwidth / 1000000 * 8, 2)
         uploadspeed   = [math]::Round($SpeedtestResults.upload.bandwidth / 1000000 * 8, 2)
@@ -41,7 +38,23 @@ while ($i -eq 0)
     # ---- Move to table storage ----
     # Add-AzTableRow -table $Table -PartitionKey $PartitionKey -RowKey (Get-Date).Ticks -property $SpeedtestObj
     # Move to file 
-    "$($SpeedtestObj.time)`t   DL: $($SpeedtestObj.downloadspeed)` Mbps   UL: $($SpeedtestObj.uploadspeed)` Mbps   PING: $($SpeedtestObj.Latency)`ms   LOSS: $($SpeedtestObj.packetloss)   ISP: $($SpeedtestObj.isp) ($($SpeedtestObj.ExternalIP))   SERVER: $($SpeedtestObj.location) $($SpeedtestObj.UsedServer)" | Out-File -Append -FilePath $SpeedTestTxt
-    Start-Sleep -Seconds 300
+    #"$($SpeedtestObj.time)`t   DL: $($SpeedtestObj.downloadspeed)` Mbps   UL: $($SpeedtestObj.uploadspeed)` Mbps   PING: $($SpeedtestObj.Latency)`ms   LOSS: $($SpeedtestObj.packetloss)   ISP: $($SpeedtestObj.isp) ($($SpeedtestObj.ExternalIP))   SERVER: $($SpeedtestObj.location) $($SpeedtestObj.UsedServer)" | Out-File -Append -FilePath $SpeedTestTxt
+    Start-Sleep -Seconds 15
 }
+#$SpeedtestObj | Format-Table | Out-String|ForEach-Object {Write-Host $_}
+$SpeedtestObj | Export-Csv -Path $path\speedtest.csv -NoTypeInformation
 ```
+<table>
+  {% for row in site.data.speedtest %}
+    {% if forloop.first %}
+    <tr>
+      {% for pair in row %}
+        <th>{{ pair[0] }}</th>
+      {% endfor %}
+    </tr>
+    {% endif %}
+    {% tablerow pair in row %}
+      {{ pair[1] }}
+    {% endtablerow %}
+  {% endfor %}
+</table>

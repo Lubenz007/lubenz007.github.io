@@ -5,7 +5,7 @@ categories: [Azure,MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
 ## Secure Score for O365 Tenant 
-### Getting the secure score for a tenant is a simple task.
+### Getting the secure score for a tenant is a bit more complicated than getting the last logon time of a user.
 You only need to call the following endpoint: https://graph.microsoft.com/beta/security/secureScores
 and divide  the result by 100 to get the percentage.
 
@@ -91,12 +91,21 @@ else {
 }
 
 # export to csv
-$Result | export-csv -path "$path\SecureScore_over_time.csv" -NoTypeInformation
-$Response | Select-Object -ExpandProperty averageComparativeScores -First 1 | export-csv "$path\averageComparativeScores.csv" -NoTypeInformation
-$Response | Select-Object -ExpandProperty enabledServices -First 1 | Out-File $path\enabledServices.csv
-$Response | Select-Object -ExpandProperty controlScores -First 1 | Select-Object controlName, IsApplicable, scoreInPercentage, implementationStatus | Out-File $path\controlScores.csv
-$Response | Select-Object -ExpandProperty controlScores -First 1 | Select-Object controlName, description | Out-File $path\controlScores_info.csv
+$Result | export-csv -path "$path\SecureScore.csv" -NoTypeInformation
 
-#list many csv in path to one variable
-$files = Get-ChildItem -Path C:\temp\ -Filter *.csv -Recurse | Select-Object -ExpandProperty FullName
 ```
+
+<table>
+  {% for row in site.data.securescore %}
+    {% if forloop.first %}
+    <tr>
+      {% for pair in row %}
+        <th>{{ pair[0] }}</th>
+      {% endfor %}
+    </tr>
+    {% endif %}
+    {% tablerow pair in row %}
+      {{ pair[1] }}
+    {% endtablerow %}
+  {% endfor %}
+</table>
