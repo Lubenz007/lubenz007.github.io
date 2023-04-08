@@ -12,4 +12,33 @@ This blog is where I store my knowledge to look back on and share with others. Y
 
 * My certifications credly link [here](https://www.credly.com/users/benedikt-gabriel-egilsson/badges)
 
-![Desktop View](/assets/img/logo/me.png){: .normal-image}
+## 1997-2002 MCSE
+
+* Microsoft solutions
+* Citrix Terminal Server
+* Lotus Notes Domino
+
+## 2003-2010 VSP
+
+* Datacenter
+* Microsoft solutions
+* Vmware
+
+## 2011-2016 VSP
+
+* Datacenter
+* Hyper-V
+* Microsoft solutions
+* Vmware
+* Xen
+
+## 2017-2023 Azure
+
+* Azure
+* Azure Stack HCI
+* Azure Virtual Desktop
+* Azure GDAP
+* Azure Lighthouse
+* O365 Lighthouse
+* Hyper-V
+* PowerApps
