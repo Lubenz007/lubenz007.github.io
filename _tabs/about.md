@@ -12,4 +12,4 @@ This blog is where I store my knowledge to look back on and share with others. Y
 
 * My certifications credly link [here](https://www.credly.com/users/benedikt-gabriel-egilsson/badges)
 
-{% include me.html %}
+![Desktop View](/assets/img/logo/me.png){: .normal-image}
