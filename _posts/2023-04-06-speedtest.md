@@ -10,6 +10,10 @@ tags: [powershell,automation]     # TAG names should always be lowercase
 {: .prompt-info }
 
 ```powershell
+#$StorageAccountName = "StorageAcount"
+#$Key = "Storagekey"
+#$StorageContext = New-AzStorageContext -StorageAccountName $StorageAccountName -StorageAccountKey $Key
+#$Table = (Get-AzStorageTable -Context $StorageContext | Where-Object {$_.name -eq "Speedtest"}).CloudTable
 $applocation = "C:\apps\speedtest"
 $path = "C:\temp\"
 
@@ -37,13 +41,13 @@ while ($i -eq 0)
     }
     # ---- Move to table storage ----
     # Add-AzTableRow -table $Table -PartitionKey $PartitionKey -RowKey (Get-Date).Ticks -property $SpeedtestObj
-    # Move to file 
-    #"$($SpeedtestObj.time)`t   DL: $($SpeedtestObj.downloadspeed)` Mbps   UL: $($SpeedtestObj.uploadspeed)` Mbps   PING: $($SpeedtestObj.Latency)`ms   LOSS: $($SpeedtestObj.packetloss)   ISP: $($SpeedtestObj.isp) ($($SpeedtestObj.ExternalIP))   SERVER: $($SpeedtestObj.location) $($SpeedtestObj.UsedServer)" | Out-File -Append -FilePath $SpeedTestTxt
+   
     Start-Sleep -Seconds 15
 }
 #$SpeedtestObj | Format-Table | Out-String|ForEach-Object {Write-Host $_}
 $SpeedtestObj | Export-Csv -Path $path\speedtest.csv -NoTypeInformation
 ```
+
 <table>
   {% for row in site.data.speedtest %}
     {% if forloop.first %}
