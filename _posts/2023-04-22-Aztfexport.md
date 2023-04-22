@@ -4,7 +4,7 @@ date: 2023-04-22 18:46:49:00 -0000
 categories: [Azure,Terraform]
 tags: [azure,terraform]     # TAG names should always be lowercase
 ---
-# Getting started with Terraform and Azure
+
 I like to watch videos on how to do things, but i don't like to start from scratch. I like to have a template from which i can start and test things out. So start to look out for exporting Azure config to templates. Terraformer is a tool that can export existing cloud infrastructure to Terraform code. But I like aztfexport better because it is more Azure-specific.
 
 ## Install aztfexport is easy from package manager
