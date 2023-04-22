@@ -5,8 +5,7 @@ categories: [Azure,Terraform]
 tags: [azure,terraform]     # TAG names should always be lowercase
 ---
 # Getting started with Terraform and Azure
-I like to watch videos on how to, but i dont like to start from scratch. I like to have template from which i cant start from and test things out. So start to look out for export Azure config to template.
-Terraformer is a tool that can export existing cloud infrastructure to terraform code. But I like aztfexport better because it is more Azure specific.
+I like to watch videos on how to do things, but i don't like to start from scratch. I like to have a template from which i can start and test things out. So start to look out for exporting Azure config to templates. Terraformer is a tool that can export existing cloud infrastructure to Terraform code. But I like aztfexport better because it is more Azure-specific.
 
 ## Install aztfexport is easy from package manager
 ```powershell
@@ -17,8 +16,8 @@ c:\winget install aztfexport
 c:\winget install azure-cli
 ```
 ## Login to Azure
-This was the part i struggled with, where is the config file. It was to simple, login to Azure with Azure Cli and then select the subscription i wanted to export from. Terraform,Terraformer and aztfexport will use the same subscription as Azure Cli.
-> So if you try to export and failed to run, you need to login to Azure Cli
+This was the part I struggled with: where is the config file? It was too simple: login to Azure with Azure Cli and then select the subscription I wanted to export from. Terraform, Terraformer, and aztfexport will use the same subscription as Azure Cli.
+> So if you try to export and it fails to run, you need to login to Azure Cli.
 {: .prompt-tip }
 
 ```powershell
@@ -30,12 +29,12 @@ c:\az account list -o table
 c:\az account set --subscription "MySubscription"
 ```
 ## Export to Terraform
-So I start with a simple resource group
-And export it to Terraform current folder
+So I start with a simple resource group.
+And export it to Terraform's current folder.
 ```powershell
 c:\dashboard\aztfexport rg Dashboard
 ```
-There will be a menu list, we will use w to import to Terraform files.
+There will be a menu list, and we will use w to import Terraform files.
 
 ![Desktop View](/assets/img/blog/terra1.png){: .normal-image}
 
@@ -43,12 +42,12 @@ There will be a menu list, we will use w to import to Terraform files.
 So we can start from there and try out things.
 ![Desktop View](/assets/img/blog/terra2.png){: .normal-image}
 
-First is to test if terraform plan works
+The first is to test if the Terraform plan works.
 ```powershell
 c:\dashboard\terraform plan
 ```
 ![Desktop View](/assets/img/blog/terra3.png){: .normal-image}
-Bingo the plan works, so we can start to add more resources to the Terraform files.
+Bingo, the plan works, so we can start to add more resources to the Terraform files.
 
 
 
