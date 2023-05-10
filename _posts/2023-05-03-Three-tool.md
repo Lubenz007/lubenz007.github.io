@@ -1,8 +1,8 @@
 ---
 title: Three great tools for Azure
-date: 2023-05-10 20:00:00 -0000
-categories: [Azure]
-tags: [azure]     # TAG names should always be lowercase
+date: 2023-05-10 22:00:00 -0000
+categories: [Azure,Tools]
+tags: [azure,tools]     # TAG names should always be lowercase
 ---
 
 Always in need for some tools to help make great things. 
