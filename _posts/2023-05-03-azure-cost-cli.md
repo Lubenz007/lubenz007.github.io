@@ -5,20 +5,16 @@ categories: [Azure,Cost]
 tags: [azure,cost]     # TAG names should always be lowercase
 mermaid: true
 ---
-# Azure-Cost-CLI is a new tool to get cost information from Azure. link [here](https://github.com/mivano/azure-cost-cli)
+# Azure-Cost-CLI is a new tool to get cost information from Azure. [Link](https://github.com/mivano/azure-cost-cli){: .btn }
+
 
 ###  What are the benefits of this tool?, Simple, you can get cost information from Azure without having to log in to the portal. ? Send teams messages with cost information. ? Send emails with cost information. ?
 
 # Azure Cost Overview
 
-# Azure classic storage accounts are not supported after 2024-08-01
-
-## Helpdesk
-
-
-# Azure Cost Overview
-
-> Accumulated cost for subscription id `0692777c-ed93-4a6a-85c7-144c24xxxx` from **1.5.2023** to **9.5.2023**
+<blockquote class="white">
+Accumulated cost for subscription id `0692777c-ed93-4a6a-85c7-144c24xxxx` from **1.5.2023** to **9.5.2023**
+</blockquote>
 
 ## Totals
 
