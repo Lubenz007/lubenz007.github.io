@@ -1,6 +1,6 @@
 ---
 title: Monitor Azure usage with github actions
-date: 2023-05-13 13:00:00 -0000
+date: 2023-05-13 14:00:00 -0000
 categories: [Azure,Usage]
 tags: [azure,usage]     # TAG names should always be lowercase
 ---
