@@ -9,11 +9,12 @@ Need to keep track of your Azure usage? here is a way to use github actions to k
 
 You need to enable webhook in Teams and add the webhook to the script. And create a Service Principal with access to the subscription you want to monitor.
 
+Service Principal
 ```powershell
 az ad sp create-for-rbac --name "tmp" --role contributor --scopes /subscriptions/0692777c --sdk-auth
 ```
 
-main.yml for github actions, it runs every day at midnight.
+Github actions, it runs every day at midnight.
 
 ```yaml
 # File: .github/workflows/workflow.yml
