@@ -5,9 +5,10 @@ categories: [Azure,Usage]
 tags: [azure,usage]     # TAG names should always be lowercase
 ---
 
-Need to keep track of your Azure usage? here is a way to use github actions to keep track of your usage. And send you a Teams message if you are over a certain amount.
+### Need to keep track of your Azure usage? here is a way to use github actions to keep track of your usage. And send you a Teams message if you are over a certain amount.
 
-You need to enable webhook in Teams and add the webhook to the script. And create a Service Principal with access to the subscription you want to monitor.
+> You need to enable webhook in Teams and add the webhook to the script, and create a Service Principal with access to the subscription you want to monitor.
+{: .prompt-info }
 
 Service Principal
 ```powershell
@@ -62,7 +63,7 @@ jobs:
           "@context"   = "http://schema.org/extensions"
           "@type"      = "MessageCard"
           "themeColor" = "d70000"
-          "title"      = "Alarm!! Tom Much Azure Spending"
+          "title"      = "Alarm!! To Much Azure Spending"
           "text"       = "Some thing is wrong in Azure. Yesterday's Azure spending ($yesterday) is 40% more than 2 days ago ($twodaysago) or more than 100€"
           }
           Invoke-RestMethod -Uri $webhookUri -Method Post -Body (ConvertTo-Json -InputObject $body) 
