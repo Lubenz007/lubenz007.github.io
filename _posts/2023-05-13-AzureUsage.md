@@ -12,7 +12,7 @@ tags: [azure,usage]     # TAG names should always be lowercase
 
 Service Principal
 ```powershell
-az ad sp create-for-rbac --name "tmp" --role contributor --scopes /subscriptions/0692777c --sdk-auth
+az ad sp create-for-rbac --name "AzureUsage" --role contributor --scopes /subscriptions/0692777c --sdk-auth
 ```
 
 Github actions, it runs every day at midnight.
@@ -24,7 +24,7 @@ on:
   schedule:
    - cron: '0 0 * * *'  # every day at midnight
 
-name: AzureLoginSample
+name: AzureUsage
 
 jobs:
 
