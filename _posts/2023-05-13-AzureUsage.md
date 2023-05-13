@@ -1,5 +1,5 @@
 ---
-title: Three great tools for Azure
+title: Monitor Azure usage with github actions
 date: 2023-05-13 13:00:00 -0000
 categories: [Azure,Usage]
 tags: [azure,usage]     # TAG names should always be lowercase
@@ -7,8 +7,11 @@ tags: [azure,usage]     # TAG names should always be lowercase
 
 Need to keep track of your Azure usage? here is a way to use github actions to keep track of your usage. And send you a Teams message if you are over a certain amount.
 
-You need to enable webhook in Teams and add the webhook to the script.
+You need to enable webhook in Teams and add the webhook to the script. And create a Service Principal with access to the subscription you want to monitor.
 
+```powershell
+az ad sp create-for-rbac --name "tmp" --role contributor --scopes /subscriptions/0692777c --sdk-auth
+```
 
 main.yml for github actions, it runs every day at midnight.
 
