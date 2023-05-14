@@ -7,16 +7,19 @@ tags: [azure,usage]     # TAG names should always be lowercase
 
 ### Need to keep track of your Azure usage? here is a way to use github actions to keep track of your usage. And send you a Teams message if you are over a certain amount.
 
-> You need to enable webhook in Teams and add the webhook to the script, and create a Service Principal with access to the subscription you want to monitor.
-{: .prompt-info }
+> We will need to enable webhook in Teams and add the webhook to the script, and create a Service Principal with access to the subscription you want to monitor.
+{: .prompt-tip }
 
-Service Principal
+Create Service Principal
 ```powershell
 az ad sp create-for-rbac --name "AzureUsage" --role contributor --scopes /subscriptions/0692777c --sdk-auth
 ```
 
 Github actions, it runs every day at midnight.
+> We will need to add secret to the repository, AZURE_CREDENTIALS, and add the output from the command above.
+{: .prompt-tip }
 
+This is the workflow file
 ```yaml
 # File: .github/workflows/workflow.yml
 
@@ -70,3 +73,4 @@ jobs:
           }
         azPSVersion: "latest"
 ```
+![Desktop View](/assets/img/blog/spending.png){: .normal-image}
