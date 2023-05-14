@@ -56,7 +56,7 @@ jobs:
           $percentof = [math]::Floor($twodaysago * 1.4)
 
           if ($twodaysago -le $percentof -and $yesterday -lt 100) {
-              Write-Host "OK: Yesterday's Azure spending ($yesterday €) is not 40% more than 2 days ago ($twodaysago €) and not more than 100€ | yesterday=$yesterday, spending2daysago=$twodaysago"
+              Write-Host "OK: Yesterday's Azure spending ($yesterday Euro) is not 40% more than 2 days ago ($twodaysago Euro) and not more than 100 Euro | yesterday=$yesterday, spending2daysago=$twodaysago"
           }
           else
           {
@@ -64,10 +64,10 @@ jobs:
           $webhookUri = "webhook from teams"
           $body = @{
           "@context"   = "http://schema.org/extensions"
-          "@type"      = "MessageCard"
+          "@typecod"      = "MessageCard"
           "themeColor" = "d70000"
           "title"      = "Alarm!! To Much Azure Spending"
-          "text"       = "Some thing is wrong in Azure. Yesterday's Azure spending ($yesterday) is 40% more than 2 days ago ($twodaysago) or more than 100€"
+          "text"       = "Some thing is wrong in Azure. Yesterday's Azure spending ($yesterday Euro) is 40% more than 2 days ago ($twodaysago Euro) or more than 100 Euro"
           }
           Invoke-RestMethod -Uri $webhookUri -Method Post -Body (ConvertTo-Json -InputObject $body) 
           }
