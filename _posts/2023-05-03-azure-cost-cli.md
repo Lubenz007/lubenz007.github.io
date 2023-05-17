@@ -1,8 +1,8 @@
 ---
 title: Azure Cost CLI
 date: 2023-05-03 20:00:00 -0000
-categories: [Azure,Cost]
-tags: [azure,cost]     # TAG names should always be lowercase
+categories: [Azure,Usage]
+tags: [azure,usage]     # TAG names should always be lowercase
 mermaid: true
 ---
 # Azure-Cost-CLI is a new tool to get cost information from Azure. [Link](https://github.com/mivano/azure-cost-cli){: .btn }

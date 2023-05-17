@@ -5,6 +5,10 @@ categories: [Azure,Usage]
 tags: [azure,usage]     # TAG names should always be lowercase
 ---
 
+> This will not work for Azure Plan subscriptions.
+> ((400) Subscription scope usage is not supported for current api version. Please use api version after 2019-10-01)
+{: .prompt-note }
+
 ### Need to keep track of your Azure usage? here is a way to use github actions to keep track of your usage. And send you a Teams message if you are over a certain amount.
 
 > We will need to enable webhook in Teams and add the webhook to the script, and create a Service Principal with access to the subscription you want to monitor.
