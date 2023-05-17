@@ -7,7 +7,7 @@ tags: [azure,usage]     # TAG names should always be lowercase
 
 > This will not work for Azure Plan subscriptions.
 > ((400) Subscription scope usage is not supported for current api version. Please use api version after 2019-10-01)
-{: .prompt-note }
+{: .prompt-info }
 
 ### Need to keep track of your Azure usage? here is a way to use github actions to keep track of your usage. And send you a Teams message if you are over a certain amount.
 

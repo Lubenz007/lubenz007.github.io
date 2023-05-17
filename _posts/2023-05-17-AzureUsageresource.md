@@ -7,14 +7,14 @@ tags: [azure,usage]     # TAG names should always be lowercase
 
 Why do we need to monitor Azure usage? Well, if you have a subscription with a spending limit, you need to keep track of your usage. If you go over the spending limit, your resources will be disabled. And you will need to pay for the overage.
 
->My consurn is that some one gets a hold of my subscription, and start to use it. And I will get a big bill at the end of the month.
-{: .prompt-note }
+>My concern is that some one gets a hold of my subscription, and start to use it. And I will get a big bill at the end of the month.
+{: .prompt-info }
 
 Using Get-AzConsumptionUsageDetail to get the usage for a subscription. Works not for Azure Plan subscriptions.
 Bcause of this error: ((400) Subscription scope usage is not supported for current api version. Please use api version after 2019-10-01)
 
 >But we can use the Microsoft.Consumption/usageDetails API to get the usage for a subscription.
-{: .prompt-note }
+{: .prompt-tip }
 
 First we need to create a Service Principal, and we need to give service principal billing role on the subscription.
 
