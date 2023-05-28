@@ -140,6 +140,7 @@ $SPData2 | Export-Csv -Path "c:\temp\SPData2.csv" -NoTypeInformation -Encoding U
 $SPData3 | Export-Csv -Path "c:\temp\SPData3.csv" -NoTypeInformation -Encoding UTF8
 
 ```
+
 |MaxScore|Current|percentage|
 |:--|:--|:--|
 |31|24|77,42|
