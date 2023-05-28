@@ -18,6 +18,9 @@ $ClientID = ''
 $ClientSecret = ''
 $tenant_Id = ''
 
+# your subscription Ids
+$subscription_Ids = ''
+
 # Create the body of the request.
 $Body = @{    
     Grant_Type    = "client_credentials"
@@ -36,8 +39,32 @@ $Headers = @{
 # Force TLS 1.2.
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$subscription_Ids = '9015be5c-193f-4aea-8a9f-abee625826df'
+#function to get graph data with pagination
+function Get-GraphData {
+    param (
+        [parameter(Mandatory)]
+        [string]$AccessToken,
+      
+        [parameter(Mandatory)]
+        [string]$Uri
+    )
 
+    $Headers = @{
+        'Authorization' = "Bearer $AccessToken"
+    }
+
+    do {
+        $Results = Invoke-RestMethod -Uri $Uri -Headers $Headers -ErrorAction Stop
+
+        $QueryResults += $Results.value
+
+        $Uri = $Results.'@odata.nextLink'
+    } while ($Uri)
+
+    return $QueryResults
+}
+
+# Get the data
 foreach ($subscription_Id in $subscription_Ids) {
     $uri1 = "https://management.azure.com/subscriptions/$subscription_Id/providers/Microsoft.Security/secureScores?api-version=2020-01-01"    
     [array]$secureScores = Get-GraphData -AccessToken $ConnectGraph.access_token -Uri $uri1
@@ -51,6 +78,7 @@ foreach ($subscription_Id in $subscription_Ids) {
     [array]$securescorecontrols = Get-GraphData -AccessToken $ConnectGraph.access_token -Uri $uri5
 }
 
+# Create the report
 $ReportLineScore = [PSCustomObject][Ordered]@{  
     MaxScore   = $secureScores.Properties.score.max
     Current    = $secureScores.Properties.score.current
