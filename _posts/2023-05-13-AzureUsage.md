@@ -14,14 +14,20 @@ tags: [azure,usage]     # TAG names should always be lowercase
 > We will need to enable webhook in Teams and add the webhook to the script, and create a Service Principal with access to the subscription you want to monitor.
 {: .prompt-tip }
 
-Create Service Principal
+Create Service Principal and give it access to the subscription you want to monitor.
+Copy the output from the command below and add it to the github repository as a secret, AZURE_CREDENTIALS.
 ```powershell
 az ad sp create-for-rbac --name "AzureUsage" --role contributor --scopes /subscriptions/0692777c --sdk-auth
 ```
+![Desktop View](/assets/img/blog/azurelogin.png){: .normal-image}
 
-Github actions, it runs every day at midnight.
 > We will need to add secret to the repository, AZURE_CREDENTIALS, and add the output from the command above.
 {: .prompt-tip }
+![Desktop View](/assets/img/blog/gitsecret.png){: .normal-image}
+
+Github actions, it runs every day at midnight.
+   - cron: '0 0 * * *'  # every day at midnight
+
 
 This is the workflow file
 ```yaml
@@ -77,4 +83,5 @@ jobs:
           }
         azPSVersion: "latest"
 ```
+![Desktop View](/assets/img/blog/AzureCred.png){: .normal-image}
 ![Desktop View](/assets/img/blog/spending.png){: .normal-image}
