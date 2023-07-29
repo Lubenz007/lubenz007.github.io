@@ -1,7 +1,7 @@
 ---
 title: Getting Started with MSGraph API
 date: 2023-03-25 13:49:00 -0000
-categories: [Azure,MSGraph]
+categories: [MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
 ## Authentication and Authorization

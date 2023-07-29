@@ -1,7 +1,7 @@
 ---
 title: Get Azure Defender for Cloud score Via API
 date: 2023-05-28 14:00:00 -0000
-categories: [Azure,Security]
+categories: [Security]
 tags: [azure,security ]     # TAG names should always be lowercase
 ---
 

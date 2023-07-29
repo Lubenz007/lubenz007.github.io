@@ -1,7 +1,7 @@
 ---
 title: MS Graph API - Get Secure Score for tenant
 date: 2023-03-25 22:49:00 -0000
-categories: [Azure,MSGraph]
+categories: [MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
 ## Secure Score for O365 Tenant 

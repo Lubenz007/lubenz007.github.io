@@ -1,7 +1,7 @@
 ---
 title: Powershell Speedtest
 date: 2023-04-06 20:15:00 -0000
-categories: [Powershell,Automation]
+categories: [Automation]
 tags: [powershell,automation]     # TAG names should always be lowercase
 ---
 ## Was having problems with my internet connection and wanted to monitor it. So I rewrote this script to use powershell and store the results in a table storage.

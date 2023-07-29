@@ -1,7 +1,7 @@
 ---
 title: Getting old guest accounts in Azure AD
 date: 2023-04-26 23:00:49:00 -0000
-categories: [Azure,MsGraph]
+categories: [MsGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Getting started with Terraform and Azure
 date: 2023-04-22 18:46:49:00 -0000
-categories: [Azure,Terraform]
+categories: [Terraform]
 tags: [azure,terraform]     # TAG names should always be lowercase
 ---
 

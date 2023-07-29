@@ -1,7 +1,7 @@
 ---
 title: Monitor Azure Usage for a subscription 
 date: 2023-05-13 14:00:00 -0000
-categories: [Azure,Usage]
+categories: [Usage]
 tags: [azure,usage]     # TAG names should always be lowercase
 ---
 

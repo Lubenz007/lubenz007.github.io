@@ -1,7 +1,7 @@
 ---
 title: Getting licenses assigned to user accounts
 date: 2023-04-01 00:27:00 -0000
-categories: [Azure,MSGraph]
+categories: [MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
 ---
 ## Create a report of licenses assigned to Azure AD user accounts using the Microsoft Graph API
