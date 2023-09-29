@@ -65,3 +65,7 @@ This blog is where I store my knowledge to look back on and share with others. Y
 * Lotus Notes 4.0 -1998
 * Novell 4.11 4 – 1998
 * Microsoft system - 1997
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a126f9a895058d7ca0c43662541fba88d36dfd3
