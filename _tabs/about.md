@@ -42,6 +42,7 @@ This blog is where I store my knowledge to look back on and share with others. Y
 ## Certifications over the years:
 * Microsoft Certified: Azure Solutions Architect Expert - 2022
 * Microsoft Certified: Azure Administrator Associate - 2021
+* VMware Certified Professional 6 - 2016
 * Vmware Certified Professional 5.0 2012
 * Vmware Certified Professional 4.0 2009
 * Vmware Certified Professional 3.5 2009
