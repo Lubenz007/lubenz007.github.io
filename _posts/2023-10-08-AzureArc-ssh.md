@@ -20,9 +20,11 @@ Next, enable the OpenSSH extension on the VM where Azure Arc is deployed.
 ![Desktop View](/assets/img/blog/Settings-Extensions.png){: .normal-image}
 
 - Logon to Azure With Azure CLi
+
 ```powershell
 - PS C:\> az login
 ```
+
 > Note: Please use Multi-Factor Authentication for added security.
 {: .prompt-tip }
 
