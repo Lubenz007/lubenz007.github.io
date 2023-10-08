@@ -6,7 +6,7 @@ tags: [azure]     # TAG names should always be lowercase
 ---
 If you have installed Azure Arc.
 You can use Windows Admin Center for Windows Machines, but you can also enabled OpenSSH Extesion on Windows Server and allow SSH to tunnel to local host or other machines that allow RDP/SSH.
-![Desktop View](/assets/img/blog/SSH Tunnel.png){: .normal-image}
+![Desktop View](/assets/img/blog/SSH-Tunnel.png){: .normal-image}
 
 So how do we do this.
 First you need to install Azure CLi on your local computer if you dont have that installed.
