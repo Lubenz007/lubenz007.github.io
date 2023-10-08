@@ -1,6 +1,6 @@
 ---
 title: Azure Arc - (Azure Cli - ssh - rdp)
-date: 2023-04-01 00:27:00 -0000
+date: 2023-10-08 02:00:00 -0000
 categories: [Azure]
 tags: [azure]     # TAG names should always be lowercase
 ---
