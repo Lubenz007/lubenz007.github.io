@@ -6,6 +6,7 @@ tags: [azure]     # TAG names should always be lowercase
 ---
 If you have installed Azure Arc.
 You can use Windows Admin Center for Windows Machines, but you can also enabled OpenSSH Extesion on Windows Server and allow SSH to tunnel to local host or other machines that allow RDP/SSH.
+![Desktop View](/assets/img/blog/SSH Tunnel.png){: .normal-image}
 
 So how do we do this.
 First you need to install Azure CLi on your local computer if you dont have that installed.
@@ -15,15 +16,20 @@ Or if you have any other OS.
 
 Enable OpenSSH exstension on the VM that has Azure Arc installed.
 
+![Desktop View](/assets/img/blog/Enable-SSH.png){: .normal-image}
+![Desktop View](/assets/img/blog/Settings-Extensions.png){: .normal-image}
+
 Logon to Azure With Azure CLi
 PS C:\> az login
 Ps.
 Please use MFA.
 
 The we go to the Connect settings and select password authentication on the VM
+![Desktop View](/assets/img/blog/Connect_string.png){: .normal-image}
 
 Copy the connect string and paste to Powershell and add "-L 3333:192.168.x.x:3389" the ip of the host you want to connect to.
 az ssh arc --subscription "asdfasdfadf-adfadsfadsf-sdfc" --resource-group "Arc-Servers" --name "HYPER-01" --local-user "administrator" "-L 3333:192.168.81.25:3389"
-
+![Desktop View](/assets/img/blog/RDP_Session1.png){: .normal-image}
+![Desktop View](/assets/img/blog/RDP_Session2.png){: .normal-image}
 
 And you are connect over SSH tunnel with RDP.
