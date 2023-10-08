@@ -17,25 +17,29 @@ If you are using a different operating system, refer to the official guide on ho
 Next, enable the OpenSSH extension on the VM where Azure Arc is deployed.
 
 ![Desktop View](/assets/img/blog/Enable-SSH.png){: .normal-image}
+
 ![Desktop View](/assets/img/blog/Settings-Extensions.png){: .normal-image}
 
 - Logon to Azure With Azure CLi
 
 ```powershell
-- PS C:\> az login
+PS C:\> az login
 ```
 
-> Note: Please use Multi-Factor Authentication for added security.
+> Please use Multi-Factor Authentication for added security.
 {: .prompt-tip }
 
 The we go to the Connect settings and select password authentication on the VM
 ![Desktop View](/assets/img/blog/Connect_string.png){: .normal-image}
 
 Copy the connect string and paste to Powershell and add "-L 3333:192.168.x.x:3389" the ip of the host you want to connect to.
+
 ```powershell
 az ssh arc --subscription "asdfasdfadf-adfadsfadsf-sdfc" --resource-group "Arc-Servers" --name "HYPER-01" --local-user "administrator" "-L 3333:192.168.81.25:3389"
 ```
+
 ![Desktop View](/assets/img/blog/RDP_Session1.png){: .normal-image}
+
 ![Desktop View](/assets/img/blog/RDP_Session2.png){: .normal-image}
 
 And you are connect over SSH tunnel with RDP.
