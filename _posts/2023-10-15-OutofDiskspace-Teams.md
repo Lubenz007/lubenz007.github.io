@@ -11,7 +11,7 @@ tags: [azure,monitor]     # TAG names should always be lowercase
 
 - The query below is a simple example of how to monitor disk space usage on your server. It returns the percentage of free space on the C: drive, which is then used to trigger an alert when the threshold is exceeded. The query can be customized to monitor other drives on your server, and the threshold can be adjusted to suit your needs.
 
-'''powershell
+```powershell
 InsightsMetrics 
 | where Name == "FreeSpaceMB" 
 | summarize arg_max(TimeGenerated, *) by Tags, Computer 
@@ -27,7 +27,7 @@ InsightsMetrics
 | where FreePercent <= 90.0 //
 //| where FreeGB <= 10.0 
 | order by Computer asc
-'''
+```
 ![Desktop View](/assets/img/blog/AzureMonitor.png){: .normal-image}
 
 ![Desktop View](/assets/img/blog/Create_an_alert_rule.png){: .normal-image}
@@ -37,7 +37,7 @@ InsightsMetrics
 We also need to enable the Azure Automation account to access the Log Analytics workspace. To do this, we need to give automation account read access to the Log Analytics workspace and resource group where the arc servers are located.
 
 
-'''powershell
+```powershell
  # So we are going to use the same query as in Azure Monitor to get the results and send it to Teams
 
  # Connect to Azure for Log Analytics
@@ -82,6 +82,6 @@ $jsonMessage = $message | ConvertTo-Json
 
 # Send the message using Invoke-RestMethod
 Invoke-RestMethod -Method Post -ContentType 'application/json' -Body $jsonMessage -Uri $webhookUri
-'''
+```
 
 ![Desktop View](/assets/img/blog/diskalert_teams.png){: .normal-image}
