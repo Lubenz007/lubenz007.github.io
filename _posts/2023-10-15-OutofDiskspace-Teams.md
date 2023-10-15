@@ -28,9 +28,9 @@ InsightsMetrics
 //| where FreeGB <= 10.0 
 | order by Computer asc
 '''
-![Create Alert from Azure Monitor](AzureMonitor.png)
+![Desktop View](/assets/img/blog/AzureMonitor.png){: .normal-image}
 
-![Create an alert rule](Create_an_alert_rule.png)
+![Desktop View](/assets/img/blog/Create_an_alert_rule.png){: .normal-image}
 
 
 - We need to enable webhooks in Microsoft Teams and copy the webhook URL. Finally, we need to create Azure automation runbook and configure it to send notifications to the channel.
@@ -42,7 +42,7 @@ We also need to enable the Azure Automation account to access the Log Analytics 
 
  # Connect to Azure for Log Analytics
 Connect-AzAccount -Identity
-$context = Set-AzContext -Subscription "benedikt.egilsson – MPN"
+$context = Set-AzContext -Subscription "Your Subscription Name"
 $workspaceName = "arc-servers"
 $workspaceRG = "arc-servers"
 $WorkspaceID = (Get-AzOperationalInsightsWorkspace -Name $workspaceName -ResourceGroupName $workspaceRG).CustomerID
@@ -84,4 +84,4 @@ $jsonMessage = $message | ConvertTo-Json
 Invoke-RestMethod -Method Post -ContentType 'application/json' -Body $jsonMessage -Uri $webhookUri
 '''
 
-![Disk Alert Teams](diskalert_teams.png)
+![Desktop View](/assets/img/blog/diskalert_teams.png){: .normal-image}
