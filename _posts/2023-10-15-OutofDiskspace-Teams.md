@@ -28,15 +28,11 @@ InsightsMetrics
 //| where FreeGB <= 10.0 
 | order by Computer asc
 ```
-![Desktop View](/assets/img/blog/AzureMonitor.png){: .normal-image}
-
-![Desktop View](/assets/img/blog/Create_an_alert_rule.png){: .normal-image}
-
 
 - We need to enable webhooks in Microsoft Teams and copy the webhook URL. Finally, we need to create Azure automation runbook and configure it to send notifications to the channel.
 We also need to enable the Azure Automation account to access the Log Analytics workspace. To do this, we need to give automation account read access to the Log Analytics workspace and resource group where the arc servers are located.
 
-
+- the runbook code is the following:
 ```powershell
  # So we are going to use the same query as in Azure Monitor to get the results and send it to Teams
 
@@ -83,5 +79,16 @@ $jsonMessage = $message | ConvertTo-Json
 # Send the message using Invoke-RestMethod
 Invoke-RestMethod -Method Post -ContentType 'application/json' -Body $jsonMessage -Uri $webhookUri
 ```
+- Select create alert rule
+![Desktop View](/assets/img/blog/AzureMonitor.png){: .normal-image}
 
+- Create a new alert rule
+![Desktop View](/assets/img/blog/Create_an_alert_rule.png){: .normal-image}
+
+- Create a action group
+![Desktop View](/assets/img/blog/Action_Group.png.png){: .normal-image}
+
+- Select the runbook with teams notification that we create before
+
+- the result in teams
 ![Desktop View](/assets/img/blog/diskalert_teams.png){: .normal-image}
