@@ -87,7 +87,7 @@ Invoke-RestMethod -Method Post -ContentType 'application/json' -Body $jsonMessag
 ![Desktop View](/assets/img/blog/Create_an_alert_rule.png){: .normal-image}
 
 - Create action group
-![Desktop View](/assets/img/blog/Action_Group.png.png){: .normal-image}
+![Desktop View](/assets/img/blog/Action_Group.png){: .normal-image}
 
 - Select the runbook with teams notification that we create before
 
