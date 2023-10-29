@@ -47,7 +47,7 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/benedikt-gabríel-egilsson-b7295684
 
-google_site_verification: # fill in to your verification string
+google_site_verification: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4087078264330922
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
