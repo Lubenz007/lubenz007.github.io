@@ -1,6 +1,6 @@
 ---
 title: GSPRO Control box
-date: 2024-23-06 00:27:00 -0000
+date: 2024-06-23 00:27:00 -0000
 categories: [Automation]
 tags: [esp32,automation]     # TAG names should always be lowercase
 ---
