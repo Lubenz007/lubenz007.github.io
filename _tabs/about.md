@@ -8,9 +8,9 @@ order: 4
 
 My background is in virtualization and IT administration, with a strong focus on system administration. Over the years, I have developed a deep understanding of various technologies, including Windows, Hyper-v, Vmware, (Linux), datacenter, and Azure cloud. I have a strong focus on automation and scripting, and I am always looking for ways to improve my skills and knowledge.
 
-This blog is where I store my knowledge to look back on and share with others. You dont get to be 50+ without learning a thing or two.
+This blog is where I store my knowledge to look back on and share with others.
 
-* My certifications credly link [here](https://www.credly.com/users/benedikt-gabriel-egilsson/badges)
+* My Microsoft transcript link [here](https://learn.microsoft.com/en-us/users/lubenz007/transcript/v25q3ipzxz65rjr?tab=credentials-tab&source=docs)
 
 ## 1997-2002 MCSE
 * Microsoft solutions
