@@ -11,6 +11,8 @@ My background is in virtualization and IT administration, with a strong focus on
 This blog is where I store my knowledge to look back on and share with others.
 
 * My Microsoft transcript link [here](https://learn.microsoft.com/en-us/users/lubenz007/transcript/v25q3ipzxz65rjr?tab=credentials-tab&source=docs)
+![Azure Administrator Associate](https://github.com/Lubenz007/lubenz007.github.io/blob/main/assets/img/blog/azure-administrator-associate.png)
+
 
 ## 1997-2002 MCSE
 * Microsoft solutions
