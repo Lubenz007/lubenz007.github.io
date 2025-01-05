@@ -5,7 +5,8 @@ categories: [Automation]
 tags: [esp32,automation]     # TAG names should always be lowercase
 ---
 ## esp32 code to create GSPRO Control box
-###
+![Desktop View](/assets/img/blog/box.png){: .normal-image}
+
 ```yaml
 // Benedikt Gabriel Egilsson - bensiegils.com
 // 1= 5 - Camera to ball
