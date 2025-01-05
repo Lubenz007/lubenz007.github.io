@@ -7,8 +7,6 @@ image: "/assets/img/blog/gspro/box.png"
 ---
 ## esp32 code to create GSPRO Control box
 
-{% include image-gallery.html folder="/assets/img/blog/gspro" %}
-
 ```yaml
 // Benedikt Gabriel Egilsson - bensiegils.com
 // 1= 5 - Camera to ball
