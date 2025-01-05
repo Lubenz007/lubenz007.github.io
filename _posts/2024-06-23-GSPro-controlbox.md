@@ -3,9 +3,11 @@ title: GSPRO Control box
 date: 2024-06-23 00:27:00 -0000
 categories: [Automation]
 tags: [esp32,automation]     # TAG names should always be lowercase
+image: "/assets/img/blog/gspro/box.png"
 ---
 ## esp32 code to create GSPRO Control box
-![Desktop View](/assets/img/blog/box.png){: .normal-image}
+
+//{% include image-gallery.html folder="/assets/img/blog/gspro" %}
 
 ```yaml
 // Benedikt Gabriel Egilsson - bensiegils.com
