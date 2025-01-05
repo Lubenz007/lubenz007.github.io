@@ -3,13 +3,13 @@ title: GSPRO Control box
 date: 2024-06-23 00:27:00 -0000
 categories: [Automation]
 tags: [esp32,automation]     # TAG names should always be lowercase
-image: "/assets/img/blog/gspro/box.png"
+image: "/assets/img/blog/gspro/ras.png"
 ---
 ## esp32 code to create GSPRO Control box
 
-![Desktop View](/assets/img/blog/gspro/bord1.png){: width="700" height="400" }
-![Desktop View](/assets/img/blog/gspro/box.png){: width="700" height="400" }
-![Desktop View](/assets/img/blog/gspro/ras.png){: width="700" height="400" }
+![Desktop View](/assets/img/blog/gspro/bord1.png){: width="350" height="200" }
+![Desktop View](/assets/img/blog/gspro/box.png){: width="350" height="200" }
+
 
 
 ```yaml
