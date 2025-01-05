@@ -7,11 +7,15 @@ image: "/assets/img/blog/gspro/box.png"
 ---
 ## esp32 code to create GSPRO Control box
 
+{% raw %}
+```liquid
 {% for image in site.static_files %}
     {% if image.path contains 'img/blog/gspro/' %}
         <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
     {% endif %}
 {% endfor %}
+```
+{% endraw %}
 
 
 ```yaml
