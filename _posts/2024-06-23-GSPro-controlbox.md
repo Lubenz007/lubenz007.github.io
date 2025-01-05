@@ -7,15 +7,12 @@ image: "/assets/img/blog/gspro/box.png"
 ---
 ## esp32 code to create GSPRO Control box
 
-{% raw %}
-```liquid
-{% for image in site.static_files %}
-    {% if image.path contains 'img/blog/gspro/' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-    {% endif %}
-{% endfor %}
-```
-{% endraw %}
+![Desktop View](/assets/img/blog/gspro/bord1.png){: width="700" height="400" }
+![Desktop View](/assets/img/blog/gspro/box.png){: width="700" height="400" }
+![Desktop View](/assets/img/blog/gspro/mynd1.png){: width="700" height="400" }
+![Desktop View](/assets/img/blog/gspro/mynd2.png){: width="700" height="400" }
+![Desktop View](/assets/img/blog/gspro/mynd3.png){: width="700" height="400" }
+![Desktop View](/assets/img/blog/gspro/ras.png){: width="700" height="400" }
 
 
 ```yaml
