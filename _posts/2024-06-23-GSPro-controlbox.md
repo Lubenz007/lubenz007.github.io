@@ -8,13 +8,9 @@ image: "/assets/img/blog/gspro/box.png"
 ## esp32 code to create GSPRO Control box
 
 {% for image in site.static_files %}
-  {% if image.path contains 'assets/img/blog/gspro' %}
-    {% unless image.path contains '-th.' %}
-      <a href="{{ image.path }}">
-        <img src="{{ image.basename | append: '-th' | append: image.extname }}" alt="">
-      </a>
-    {% endunless %}
-  {% endif %}
+    {% if image.path contains 'img/blog/gspro/' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
 {% endfor %}
 
 
