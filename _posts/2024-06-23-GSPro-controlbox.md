@@ -9,9 +9,6 @@ image: "/assets/img/blog/gspro/box.png"
 
 ![Desktop View](/assets/img/blog/gspro/bord1.png){: width="700" height="400" }
 ![Desktop View](/assets/img/blog/gspro/box.png){: width="700" height="400" }
-![Desktop View](/assets/img/blog/gspro/mynd1.png){: width="700" height="400" }
-![Desktop View](/assets/img/blog/gspro/mynd2.png){: width="700" height="400" }
-![Desktop View](/assets/img/blog/gspro/mynd3.png){: width="700" height="400" }
 ![Desktop View](/assets/img/blog/gspro/ras.png){: width="700" height="400" }
 
 
