@@ -3,6 +3,7 @@ title: hyper-v-tool
 date: 2023-09-30 14:00:00 -0000
 categories: [Hyper-v]
 tags: [hyperv ]     # TAG names should always be lowercase
+image: "https://github.com/Lubenz007/hyper-v-tool/assets/116028026/1e961bfd-aa70-41c3-96dd-6740f175d03b"
 ---
 
 My tool to create vm's in my lab
