@@ -41,7 +41,7 @@ This blog is where I store my knowledge to look back on and share with others.
 * Xen
 - Working at Basis as a small share holder.
 - building upp Datacenter
-- Hosting enviroment for small customers
+- Hosting enviroment for small customers in Iceland
 - Building up hyper-v cluster with WAP
 
 ## 2017-2023 Azure
@@ -54,7 +54,7 @@ This blog is where I store my knowledge to look back on and share with others.
 * Hyper-V
 * PowerApps
 - Working at Sensa and then Sensa by Crayon.
-- After 2003 main focus on Azure.
+- After 2021 main focus on Azure.
 
 ## 2025 Softwareone --
 * Still focus on Azure.
