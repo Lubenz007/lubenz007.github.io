@@ -49,10 +49,11 @@ jobs:
       - name: Test site
         run: |
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
-      - name: List _site contents
+      - name: List all files in _site with details
         run: |
-          ls -l _site
-          cat _site/index.html
+          find _site -type f -exec ls -lh {} +
+          find _site -type f | wc -l
+          du -sh _site
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
