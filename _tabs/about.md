@@ -22,27 +22,27 @@ This blog is where I store my knowledge to look back on and share with others.
 * Microsoft solutions
 * Citrix Terminal Server
 * Lotus Notes Domino
-- Working at Alit/Sensa and supporting > ISAL - Mjólkursamsalan - Íslandsflug
+- Working at Alit/Sensa and supporting > ISAL - Mjólkursamsalan - Íslandsflug and other small companies
 
 ## 2003-2010 VSP
 * Datacenter
 * Microsoft solutions
-* Vmware
-- Working at Sensa and supporting > Siminn and other customer of Sensa.
+* VMware
+- Working at Sensa and supporting > Siminn and other customers of Sensa.
 - Hands on at the datacenter
-- WmWare Cluster
-- Hosting enviroment for small customers
+- VMware Cluster
+- Hosting environment for small customers
 
 ## 2011-2016 VSP
 * Datacenter
 * Hyper-V
 * Microsoft solutions
-* Vmware
+* VMware
 * Xen
-- Working at Basis as a small share holder.
-- building upp Datacenter
-- Hosting enviroment for small customers in Iceland
-- Building up hyper-v cluster with WAP
+- Working at Basis as a small shareholder.
+- Building up Datacenter with APC Inrow and UPS
+- Hosting environment for small customers in Iceland
+- Building up Hyper-V cluster with WAP
 
 ## 2017-2023 Azure
 * Azure
@@ -54,28 +54,28 @@ This blog is where I store my knowledge to look back on and share with others.
 * Hyper-V
 * PowerApps
 - Working at Sensa and then Sensa by Crayon.
-- After 2021 main focus on Azure.
+- After 2021, main focus on Azure.
 
 ## 2025 Softwareone --
-* Still focus on Azure.
+* Still focused on Azure.
 
 ## Certifications over the years:
 * Microsoft Certified: Azure Solutions Architect Expert - 2022
 * Microsoft Certified: Azure Administrator Associate - 2021
 * VMware Certified Professional 6 - 2016
-* Vmware Certified Professional 5.0 2012
-* Vmware Certified Professional 4.0 2009
-* Vmware Certified Professional 3.5 2009
-* Vmware Certified Professional 3.0 2007
-* Vmware Certified Professional 2.5.1 2005
+* VMware Certified Professional 5.0 2012
+* VMware Certified Professional 4.0 2009
+* VMware Certified Professional 3.5 2009
+* VMware Certified Professional 3.0 2007
+* VMware Certified Professional 2.5.1 2005
 * Microsoft MCSE Windows 2000 / 2001
 * Microsoft MCSA Windows 2000 / 2001 
-* Microsoft MCSE  NT4  1999
+* Microsoft MCSE NT4 1999
 * Certified Novell Admin 1998
 
-## Class taken:
-* Vmware 3.0.1 2007
-* VmWare 2.5.1 2005
+## Classes taken:
+* VMware 3.0.1 2007
+* VMware 2.5.1 2005
 * TrendMicro 2004
 * TrendMicro 2003
 * Microsoft Exchange 2000 - 2003
