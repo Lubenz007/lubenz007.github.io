@@ -3,6 +3,7 @@ title: Arc - Diskspace Monitoring - Teams)
 date: 2023-10-15 02:00:00 -0000
 categories: [Azure,Monitor]
 tags: [azure,monitor]     # TAG names should always be lowercase
+image: "/assets/img/blog/AzureMonitor.png"
 ---
 
 - Upon successfully installing Azure Arc on your Server and activating Insights, you open the door to a powerful monitoring capability. One essential aspect is overseeing disk space usage on your server, ensuring optimal performance and preventing potential issues. This example provides a step-by-step guide on how to set up disk space monitoring and receive instant notifications via Microsoft Teams when space is running low.

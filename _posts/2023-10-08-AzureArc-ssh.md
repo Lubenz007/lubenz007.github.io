@@ -3,9 +3,9 @@ title: Azure Arc - (Azure Cli - ssh - rdp)
 date: 2023-10-08 02:00:00 -0000
 categories: [Azure]
 tags: [azure]     # TAG names should always be lowercase
+image: "/assets/img/blog/SSH-Tunnel.png"
 ---
 If you have deployed Azure Arc, you have the option to utilize Windows Admin Center for Windows Machines. Additionally, you can enable the OpenSSH Extension on Windows Server, granting the capability to establish SSH tunnels to the localhost or other machines that support RDP/SSH connections.
-![Desktop View](/assets/img/blog/SSH-Tunnel.png){: .normal-image}
 
 To begin the process, please follow these steps:
 
