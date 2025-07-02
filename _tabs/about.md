@@ -19,6 +19,7 @@ This blog is where I store my knowledge to look back on and share with others.
 
 
 ## 1997-2002 MCSE
+* Löggilt iðngrein Rafeindavirkjun
 * Microsoft solutions
 * Citrix Terminal Server
 * Lotus Notes Domino
