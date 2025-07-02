@@ -22,11 +22,16 @@ This blog is where I store my knowledge to look back on and share with others.
 * Microsoft solutions
 * Citrix Terminal Server
 * Lotus Notes Domino
+- Working at Alit/Sensa and supporting > ISAL - Mjólkursamsalan - Íslandsflug
 
 ## 2003-2010 VSP
 * Datacenter
 * Microsoft solutions
 * Vmware
+- Working at Sensa and supporting > Siminn and other customer of Sensa.
+- Hands on at the datacenter
+- WmWare Cluster
+- Hosting enviroment for small customers
 
 ## 2011-2016 VSP
 * Datacenter
@@ -34,6 +39,10 @@ This blog is where I store my knowledge to look back on and share with others.
 * Microsoft solutions
 * Vmware
 * Xen
+- Working at Basis as a small share holder.
+- building upp Datacenter
+- Hosting enviroment for small customers
+- Building up hyper-v cluster with WAP
 
 ## 2017-2023 Azure
 * Azure
@@ -44,6 +53,11 @@ This blog is where I store my knowledge to look back on and share with others.
 * O365 Lighthouse
 * Hyper-V
 * PowerApps
+- Working at Sensa and then Sensa by Crayon.
+- After 2003 main focus on Azure.
+
+## 2025 Softwareone --
+* Still focus on Azure.
 
 ## Certifications over the years:
 * Microsoft Certified: Azure Solutions Architect Expert - 2022
