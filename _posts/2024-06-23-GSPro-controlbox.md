@@ -29,7 +29,7 @@ image: "/assets/img/blog/gspro/ras.png"
 
 #define USE_NIMBLE
 #include <BleKeyboard.h>
-
+#
 BleKeyboard bleKeyboard("GSPRO BOX");
 
 #define NUM_KEYS 12
