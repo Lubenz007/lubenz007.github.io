@@ -36,9 +36,6 @@ On the source VMware server and later on the Hyper-V server in Azure, mount the 
 Mount as Administrator because disk2vhd runs as Administrator.
 
 
-![Mount Azure File Share](assets/img/blog/vmwaremove/connectazureblob.png)
-
-
 **Step 2:** Export VMware VM with Disk2VHD
 
 Run Disk2VHD on the source server.
