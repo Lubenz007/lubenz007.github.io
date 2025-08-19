@@ -33,6 +33,8 @@ Tools You Will Need
 **Step 1:** Mount Azure File Share
 
 On the source VMware server and later on the Hyper-V server in Azure, mount the Azure File Share:
+Mount as Administrator because disk2vhd runs as Administrator.
+
 
 ![Mount Azure File Share](assets/img/blog/vmwaremove/connectazureblob.png)
 
