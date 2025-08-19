@@ -55,10 +55,9 @@ jobs:
           JEKYLL_ENV: "production"
 
       - name: HTML Validation
-        uses: gjtorikian/html-proofer-action@v4
-        with:
-          directory: "_site"
-          args: --ignore-urls="/^#/" --disable-external --ignore-empty-alt
+        run: |
+          gem install html-proofer
+          htmlproofer ./_site --ignore-urls="/^#/" --disable-external --ignore-empty-alt
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
