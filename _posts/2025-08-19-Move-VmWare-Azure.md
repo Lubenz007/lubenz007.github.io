@@ -2,7 +2,7 @@
 title: Migrating from VMware to Azure using Azure Files
 date: 2025-08-18 00:00:00 -0000
 categories: [Azure]
-tags: [azure]     # TAG names should always be lowercase
+tags: [azure]
 image: "/assets/img/blog/vmwaremove/disk2vhd1.png"
 ---
 When using a tool such as Disk2VHD, you need a storage location—and sometimes plenty of it—to export the virtual machine (VM).
