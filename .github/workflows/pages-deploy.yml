@@ -55,10 +55,10 @@ jobs:
           JEKYLL_ENV: "production"
 
       - name: HTML Validation
-        uses: chabad360/htmlproofer@v2.0.0
+        uses: gjtorikian/html-proofer-action@v4
         with:
           directory: "_site"
-          arguments: --ignore-urls="/^#/" --disable-external --ignore-empty-alt
+          args: --ignore-urls="/^#/" --disable-external --ignore-empty-alt
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
