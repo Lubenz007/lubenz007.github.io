@@ -55,16 +55,15 @@ jobs:
           JEKYLL_ENV: "production"
 
       - name: HTML Validation
-        uses: chabad360/htmlproofer@master
+        uses: chabad360/htmlproofer@v2.0.0
         with:
           directory: "_site"
           arguments: --ignore-urls="/^#/" --disable-external --ignore-empty-alt
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: "_site"
+          path: "./_site"
 
   deploy:
     environment:
