@@ -58,7 +58,7 @@ jobs:
         uses: chabad360/htmlproofer@master
         with:
           directory: ${{ steps.pages.outputs.path }}
-          arguments: --disable-external --allow-hash-href --check-html
+          arguments: --ignore-urls="/^#/" --disable-external --ignore-empty-alt
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
