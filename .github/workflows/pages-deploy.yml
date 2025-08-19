@@ -57,7 +57,7 @@ jobs:
       - name: HTML Validation
         run: |
           gem install html-proofer
-          htmlproofer ./_site --ignore-urls="/^#/" --disable-external --ignore-empty-alt
+          htmlproofer ./_site --ignore-urls="/^#/" --disable-external
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
