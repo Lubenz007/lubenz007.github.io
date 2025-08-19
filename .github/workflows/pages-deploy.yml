@@ -57,7 +57,7 @@ jobs:
       - name: HTML Validation
         uses: chabad360/htmlproofer@master
         with:
-          directory: ${{ steps.pages.outputs.path }}
+          directory: "_site"
           arguments: --ignore-urls="/^#/" --disable-external --ignore-empty-alt
 
       - name: Upload artifact
