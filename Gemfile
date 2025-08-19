@@ -8,7 +8,7 @@ gem "jekyll", ">= 4.3"
 gem "logger"
 
 group :test do
-  gem "html-proofer", "~> 3.19"
+  gem "html-proofer", "~> 3.19.4"
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
