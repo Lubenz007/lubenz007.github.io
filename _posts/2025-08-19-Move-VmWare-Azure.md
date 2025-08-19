@@ -23,11 +23,11 @@ In many cases, Azure will display an error during deployment stating that the VM
 Tools You Will Need
 
 - Disk2VHD – for exporting the VMware VM to a VHD file.
-    🔗 Download Disk2VHD
+   - 🔗 Download Disk2VHD
 - Azure Storage Explorer – for managing Azure File Shares and Blob Storage.
-    🔗 Download Azure Storage Explorer
+    - 🔗 Download Azure Storage Explorer
 - Hyper-V Manager – for converting VHDs from dynamic to fixed-size.
-    Installed on VM in Azure
+    - Installed on VM in Azure
 
 
 **Step 1:** Mount Azure File Share
@@ -63,7 +63,7 @@ Select Convert → Fixed size.
 
 Step 4: Copy VHD to Azure Blob Storage
 
-You can use either Azure Storage Explorer ( Use copy and paste in the menu :) )
+Use Azure Storage Explorer ( Use copy and paste in the menu :) )
 
 ![alt text](assets/img/blog/vmwaremove/storageexplorer.png)
 
