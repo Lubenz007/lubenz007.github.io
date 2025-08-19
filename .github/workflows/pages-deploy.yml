@@ -55,12 +55,10 @@ jobs:
           JEKYLL_ENV: "production"
 
       - name: HTML Validation
-        uses: anishathalye/proof-html@v2
+        uses: chabad360/htmlproofer@master
         with:
           directory: ${{ steps.pages.outputs.path }}
-          enforce_https: false
-          disable_external: true
-          ignore_missing_alt: true
+          arguments: --disable-external --allow-hash-href --check-html
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
