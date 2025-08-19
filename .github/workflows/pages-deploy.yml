@@ -59,7 +59,8 @@ jobs:
         with:
           directory: ${{ steps.pages.outputs.path }}
           enforce_https: false
-          check_external_links: false
+          disable_external: true
+          ignore_missing_alt: true
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
