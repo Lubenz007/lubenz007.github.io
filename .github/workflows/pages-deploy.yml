@@ -55,9 +55,11 @@ jobs:
           JEKYLL_ENV: "production"
 
       - name: HTML Validation
-        uses: Cyb3r-Jak3/html5validator-action@v1
+        uses: anishathalye/proof-html@v2
         with:
           directory: ${{ steps.pages.outputs.path }}
+          enforce_https: false
+          check_external_links: false
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
