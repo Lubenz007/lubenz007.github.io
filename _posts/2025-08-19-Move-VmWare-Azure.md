@@ -79,4 +79,7 @@ Deploy a VM from that image.
 
 ![alt text](assets/img/blog/vmwaremove/azimagecreate.png)
 
+Dont forget to go throug Prepare Manual also.
+https://learn.microsoft.com/pt-pt/azure/virtual-machines/windows/prepare-for-upload-vhd-image
+
 Now you can create vm from the image.
