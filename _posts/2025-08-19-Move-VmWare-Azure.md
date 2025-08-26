@@ -79,7 +79,16 @@ Deploy a VM from that image.
 
 ![alt text](assets/img/blog/vmwaremove/azimagecreate.png)
 
-Dont forget to go throug Prepare Manual also.
+Now you can create vm from the image.
+
+After deploy you must do at least two things.
+
+Prepare Manual.
 https://learn.microsoft.com/pt-pt/azure/virtual-machines/windows/prepare-for-upload-vhd-image
 
-Now you can create vm from the image.
+Install the Azure Windows VM Agent
+https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/agent-windows
+
+And open FW
+New-NetFirewallRule -DisplayName AzurePlatform -Direction Inbound -RemoteAddress 168.63.129.16 -Profile Any -Action Allow -EdgeTraversalPolicy Allow
+New-NetFirewallRule -DisplayName AzurePlatform -Direction Outbound -RemoteAddress 168.63.129.16 -Profile Any -Action Allow
