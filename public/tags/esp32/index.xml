@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Esp32 on BensiEgils</title>
-    <link>https://lubenz007.github.io/tags/esp32/</link>
+    <link>http://localhost:1313/tags/esp32/</link>
     <description>Recent content in Esp32 on BensiEgils</description>
     <image>
       <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Jun 2024 00:27:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/tags/esp32/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/esp32/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GSPRO Control box</title>
-      <link>https://lubenz007.github.io/posts/2024-06-23-gspro-controlbox/</link>
+      <link>http://localhost:1313/posts/2024-06-23-gspro-controlbox/</link>
       <pubDate>Sun, 23 Jun 2024 00:27:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2024-06-23-gspro-controlbox/</guid>
+      <guid>http://localhost:1313/posts/2024-06-23-gspro-controlbox/</guid>
       <description>&lt;h2 id=&#34;esp32-code-to-create-gspro-control-box&#34;&gt;esp32 code to create GSPRO Control box&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;https://lubenz007.github.io/assets/img/blog/gspro/bord1.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }
-&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;https://lubenz007.github.io/assets/img/blog/gspro/box.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/assets/img/blog/gspro/bord1.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }
+&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/assets/img/blog/gspro/box.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;// Benedikt Gabriel Egilsson - bensiegils.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;// 1= 5 - Camera to ball&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;// 2= KEY_M_CTRL - Muligan &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -124,9 +124,9 @@
     </item>
     <item>
       <title>Esp32 Hot tub controller</title>
-      <link>https://lubenz007.github.io/posts/2023-04-04-hottub/</link>
+      <link>http://localhost:1313/posts/2023-04-04-hottub/</link>
       <pubDate>Tue, 04 Apr 2023 22:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-04-hottub/</guid>
+      <guid>http://localhost:1313/posts/2023-04-04-hottub/</guid>
       <description>&lt;h2 id=&#34;this-is-my-hot-tub-controler-with-outdoor-shower-controler-it-is-based-on-a-esp32-and-a-4-channel-relay-module-it-has-a-ds18b20-temperature-sensor-for-the-hot-tub-and-a-ds18b20-for-the-water-in-the-hot-tub-it-also-has-a-ds18b20-for-the-outdoor-shower-and-a-ds18b20-for-the-water-in-system&#34;&gt;This is my hot tub controler with outdoor shower controler. It is based on a ESP32 and a 4 channel relay module. It has a DS18B20 temperature sensor for the hot tub and a DS18B20 for the water in the hot tub. It also has a DS18B20 for the outdoor shower and a DS18B20 for the water in system.&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;esphome&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;

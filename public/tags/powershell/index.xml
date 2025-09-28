@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Powershell on BensiEgils</title>
-    <link>https://lubenz007.github.io/tags/powershell/</link>
+    <link>http://localhost:1313/tags/powershell/</link>
     <description>Recent content in Powershell on BensiEgils</description>
     <image>
       <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Apr 2023 20:15:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Powershell Speedtest</title>
-      <link>https://lubenz007.github.io/posts/2023-04-06-speedtest/</link>
+      <link>http://localhost:1313/posts/2023-04-06-speedtest/</link>
       <pubDate>Thu, 06 Apr 2023 20:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-06-speedtest/</guid>
+      <guid>http://localhost:1313/posts/2023-04-06-speedtest/</guid>
       <description>&lt;h2 id=&#34;was-having-problems-with-my-internet-connection-and-wanted-to-monitor-it-so-i-rewrote-this-script-to-use-powershell-and-store-the-results-in-a-table-storage&#34;&gt;Was having problems with my internet connection and wanted to monitor it. So I rewrote this script to use powershell and store the results in a table storage.&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The script is using the speedtest cli from &lt;a href=&#34;https://www.speedtest.net/apps/cli&#34;&gt;https://www.speedtest.net/apps/cli&lt;/a&gt;

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MsGraph on BensiEgils</title>
-    <link>https://lubenz007.github.io/categories/msgraph/</link>
+    <link>http://localhost:1313/categories/msgraph/</link>
     <description>Recent content in MsGraph on BensiEgils</description>
     <image>
       <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Apr 2023 23:00:49 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/categories/msgraph/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/msgraph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting old guest accounts in Azure AD</title>
-      <link>https://lubenz007.github.io/posts/2023-04-26-old-guest-accounts/</link>
+      <link>http://localhost:1313/posts/2023-04-26-old-guest-accounts/</link>
       <pubDate>Wed, 26 Apr 2023 23:00:49 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-26-old-guest-accounts/</guid>
+      <guid>http://localhost:1313/posts/2023-04-26-old-guest-accounts/</guid>
       <description>&lt;p&gt;This is a rewrite from &lt;a href=&#34;https://office365itpros.com/2019/10/15/report-old-guest-accounts/&#34;&gt;here&lt;/a&gt; office365itpros.com
 I have added some more properties to the report.
 And use msgraph instead of mggraph.&lt;/p&gt;
@@ -130,9 +130,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>Apps Expiration Azure AD</title>
-      <link>https://lubenz007.github.io/posts/2023-04-07-apps-exp/</link>
+      <link>http://localhost:1313/posts/2023-04-07-apps-exp/</link>
       <pubDate>Fri, 07 Apr 2023 10:34:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-07-apps-exp/</guid>
+      <guid>http://localhost:1313/posts/2023-04-07-apps-exp/</guid>
       <description>&lt;h2 id=&#34;this-script-will-check-all-registered-apps-in-azure-ad-and-will-return-the-following-information-expiring-apps-expired-apps-and-apps-with-no-expiration-date&#34;&gt;This script will check all registered apps in Azure AD and will return the following information: expiring apps, expired apps, and apps with no expiration date.&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# needs permission Application.Read.All,Directory.Read.All&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$ClientID&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
@@ -241,9 +241,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>Getting licenses assigned to user accounts</title>
-      <link>https://lubenz007.github.io/posts/2023-01-04-license-report/</link>
+      <link>http://localhost:1313/posts/2023-01-04-license-report/</link>
       <pubDate>Sat, 01 Apr 2023 00:27:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-01-04-license-report/</guid>
+      <guid>http://localhost:1313/posts/2023-01-04-license-report/</guid>
       <description>&lt;h2 id=&#34;create-a-report-of-licenses-assigned-to-azure-ad-user-accounts-using-the-microsoft-graph-api&#34;&gt;Create a report of licenses assigned to Azure AD user accounts using the Microsoft Graph API&lt;/h2&gt;
 &lt;h3 id=&#34;this-is-a-rewrite-from-here-practical365com&#34;&gt;This is a rewrite from &lt;a href=&#34;https://practical365.com/create-licensing-report-microsoft365-tenant/&#34;&gt;here&lt;/a&gt; practical365.com&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -386,9 +386,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>MS Graph API - Get Secure Score for tenant</title>
-      <link>https://lubenz007.github.io/posts/2023-03-23-sgraph-securescore/</link>
+      <link>http://localhost:1313/posts/2023-03-23-sgraph-securescore/</link>
       <pubDate>Sat, 25 Mar 2023 22:49:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-03-23-sgraph-securescore/</guid>
+      <guid>http://localhost:1313/posts/2023-03-23-sgraph-securescore/</guid>
       <description>&lt;h2 id=&#34;secure-score-for-o365-tenant&#34;&gt;Secure Score for O365 Tenant&lt;/h2&gt;
 &lt;h3 id=&#34;getting-the-secure-score-for-a-tenant-is-a-bit-more-complicated-than-getting-the-last-logon-time-of-a-user&#34;&gt;Getting the secure score for a tenant is a bit more complicated than getting the last logon time of a user.&lt;/h3&gt;
 &lt;p&gt;You only need to call the following endpoint: &lt;a href=&#34;https://graph.microsoft.com/beta/security/secureScores&#34;&gt;https://graph.microsoft.com/beta/security/secureScores&lt;/a&gt;
@@ -479,9 +479,9 @@ and divide  the result by 100 to get the percentage.&lt;/p&gt;
     </item>
     <item>
       <title>Getting Started with MSGraph API</title>
-      <link>https://lubenz007.github.io/posts/2023-03-23-sgraph-api/</link>
+      <link>http://localhost:1313/posts/2023-03-23-sgraph-api/</link>
       <pubDate>Sat, 25 Mar 2023 13:49:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-03-23-sgraph-api/</guid>
+      <guid>http://localhost:1313/posts/2023-03-23-sgraph-api/</guid>
       <description>&lt;h2 id=&#34;authentication-and-authorization&#34;&gt;Authentication and Authorization&lt;/h2&gt;
 &lt;h3 id=&#34;msgraph-api-is-a-powerful-tool-for-authentication-and-authorization-that-allows-developers-to-access-microsoft-services-and-data-it-provides-a-secure-way-to-authenticate-users-authorize-applications-and-manage-user-data-with-msgraph-api-developers-can-easily-integrate-their-applications-with-microsoft-services-like-outlook-onedrive-office-365-azure-active-directory-and-more-in-this-article-well-explore-how-to-get-started-with-msgraph-api-concepts-and-use-cases-of-the-api&#34;&gt;MSGraph API is a powerful tool for authentication and authorization that allows developers to access Microsoft services and data. It provides a secure way to authenticate users, authorize applications, and manage user data. With MSGraph API, developers can easily integrate their applications with Microsoft services like Outlook, OneDrive, Office 365, Azure Active Directory, and more. In this article, we&amp;rsquo;ll explore how to get started with MSGraph API concepts and use cases of the API.&lt;/h3&gt;
 &lt;h2 id=&#34;authentication&#34;&gt;Authentication&lt;/h2&gt;
@@ -492,9 +492,9 @@ and divide  the result by 100 to get the percentage.&lt;/p&gt;
     </item>
     <item>
       <title>MS Graph API - Get User info</title>
-      <link>https://lubenz007.github.io/posts/2023-03-23-sgraph-users/</link>
+      <link>http://localhost:1313/posts/2023-03-23-sgraph-users/</link>
       <pubDate>Sat, 25 Mar 2023 13:49:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-03-23-sgraph-users/</guid>
+      <guid>http://localhost:1313/posts/2023-03-23-sgraph-users/</guid>
       <description>&lt;h2 id=&#34;microsoft-graph-api-can-be-used-to-get-the-last-logon-time-of-a-user-to-do-this-you-will-need-to-make-a-get-request-to-the-usersidlastlogontimestamp-endpoint-this-endpoint-will-return-the-last-logon-time-of-the-user-in-the-form-of-a-timestamp-you-can-then-use-this-timestamp-to-determine-the-exact-date-and-time-of-the-users-last-logon&#34;&gt;Microsoft Graph API can be used to get the last logon time of a user. To do this, you will need to make a GET request to the /users/{id}/lastLogonTimeStamp endpoint. This endpoint will return the last logon time of the user in the form of a timestamp. You can then use this timestamp to determine the exact date and time of the user&amp;rsquo;s last logon.&lt;/h2&gt;
 &lt;p&gt;This query get&amp;rsquo;s.&lt;/p&gt;
 &lt;blockquote&gt;

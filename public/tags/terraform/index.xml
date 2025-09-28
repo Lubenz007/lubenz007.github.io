@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Terraform on BensiEgils</title>
-    <link>https://lubenz007.github.io/tags/terraform/</link>
+    <link>http://localhost:1313/tags/terraform/</link>
     <description>Recent content in Terraform on BensiEgils</description>
     <image>
       <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Apr 2023 18:46:49 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting started with Terraform and Azure</title>
-      <link>https://lubenz007.github.io/posts/2023-04-22-aztfexport/</link>
+      <link>http://localhost:1313/posts/2023-04-22-aztfexport/</link>
       <pubDate>Sat, 22 Apr 2023 18:46:49 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-22-aztfexport/</guid>
+      <guid>http://localhost:1313/posts/2023-04-22-aztfexport/</guid>
       <description>&lt;p&gt;I like to watch videos on how to do things, but i don&amp;rsquo;t like to start from scratch. I like to have a template from which i can start and test things out. So start to look out for exporting Azure config to templates. Terraformer is a tool that can export existing cloud infrastructure to Terraform code. But I like aztfexport better because it is more Azure-specific.&lt;/p&gt;
 &lt;h2 id=&#34;install-aztfexport-is-easy-from-package-manager&#34;&gt;Install aztfexport is easy from package manager&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;winget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aztfexport&lt;/span&gt;

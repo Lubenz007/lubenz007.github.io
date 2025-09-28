@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Monitor on BensiEgils</title>
-    <link>https://lubenz007.github.io/tags/monitor/</link>
+    <link>http://localhost:1313/tags/monitor/</link>
     <description>Recent content in Monitor on BensiEgils</description>
     <image>
       <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Oct 2023 02:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/tags/monitor/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/monitor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arc - Diskspace Monitoring - Teams)</title>
-      <link>https://lubenz007.github.io/posts/2023-10-15-outofdiskspace-teams/</link>
+      <link>http://localhost:1313/posts/2023-10-15-outofdiskspace-teams/</link>
       <pubDate>Sun, 15 Oct 2023 02:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-10-15-outofdiskspace-teams/</guid>
+      <guid>http://localhost:1313/posts/2023-10-15-outofdiskspace-teams/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Upon successfully installing Azure Arc on your Server and activating Insights, you open the door to a powerful monitoring capability. One essential aspect is overseeing disk space usage on your server, ensuring optimal performance and preventing potential issues. This example provides a step-by-step guide on how to set up disk space monitoring and receive instant notifications via Microsoft Teams when space is running low.&lt;/p&gt;

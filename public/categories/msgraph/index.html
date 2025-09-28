@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="">
 <meta name="description" content="Documenting my journey">
 <meta name="author" content="Benedikt Gabriel Egilsson">
-<link rel="canonical" href="https://lubenz007.github.io/categories/msgraph/">
+<link rel="canonical" href="http://localhost:1313/categories/msgraph/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.2d0325420c619a782224fbdbc50e6417d66f71c30e5607ad7ddb5b0ecce5d6cc.css" integrity="sha256-LQMlQgxhmngiJPvbxQ5kF9ZvccMOVgetfdtbDszl1sw=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lubenz007.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lubenz007.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lubenz007.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lubenz007.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lubenz007.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://lubenz007.github.io/categories/msgraph/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="https://lubenz007.github.io/categories/msgraph/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/msgraph/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/categories/msgraph/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,15 +56,15 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://lubenz007.github.io/categories/msgraph/">
+</noscript><meta property="og:url" content="http://localhost:1313/categories/msgraph/">
   <meta property="og:site_name" content="BensiEgils">
   <meta property="og:title" content="MsGraph">
   <meta property="og:description" content="Documenting my journey">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
-      <meta property="og:image" content="https://lubenz007.github.io/">
+      <meta property="og:image" content="http://localhost:1313/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://lubenz007.github.io/">
+<meta name="twitter:image" content="http://localhost:1313/">
 <meta name="twitter:title" content="MsGraph">
 <meta name="twitter:description" content="Documenting my journey">
 
@@ -85,7 +85,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://lubenz007.github.io/" accesskey="h" title="BensiEgils (Alt + H)">BensiEgils</a>
+            <a href="http://localhost:1313/" accesskey="h" title="BensiEgils (Alt + H)">BensiEgils</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -111,17 +111,17 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://lubenz007.github.io/categories/" title="Categories">
+                <a href="http://localhost:1313/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://lubenz007.github.io/tags/" title="Tags">
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://lubenz007.github.io/archives/" title="Archives">
+                <a href="http://localhost:1313/archives/" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
@@ -129,7 +129,7 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://lubenz007.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://lubenz007.github.io/categories/">Categories</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/categories/">Categories</a></div>
   <h1>
     MsGraph
     <a href="/categories/msgraph/index.xml" title="RSS" aria-label="RSS">
@@ -153,7 +153,7 @@
 # Needs permission User.Read.All $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Connect to Graph # $Body = @{ Grant_Type = &#34;client_credentials&#34; resource = &#34;https://graph.microsoft.com&#34; client_id = $clientId client_secret = $clientSecret } $ConnectGraph = Invoke-RestMethod -Uri &#34;https://login.microsoft.com/$tenant_Id/oauth2/token?api-version=1.0&#34; -Method POST -Body $Body # Variable Collections # $Headers = @{ &#39;Content-Type&#39; = &#34;application/json&#34; &#39;Authorization&#39; = &#34;Bearer $($ConnectGraph.access_token)&#34; } $token = $ConnectGraph.access_token # Force TLS 1.2. [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 function Get-GraphData { param ( [parameter(Mandatory)] [string]$AccessToken, [parameter(Mandatory)] [string]$Uri ) $Headers = @{ &#39;Authorization&#39; = &#34;Bearer $AccessToken&#34; } do { $Results = Invoke-RestMethod -Uri $Uri -Headers $Headers -ErrorAction Stop $QueryResults &#43;= $Results.value $Uri = $Results.&#39;@odata.nextLink&#39; } while ($Uri) return $QueryResults } #This request get users list with signInActivity. $uri = &#34;https://graph.microsoft.com/beta/users&#34; $Result = @() [array]$Response = Get-GraphData -AccessToken $Token -Uri $uri if ($Response) { ForEach ($Respons in $Response) { $Result &#43;= New-Object PSObject -property $([ordered]@{ DisplayName = $Respons.displayName UserPrincipalName = $Respons.userPrincipalName UsageLocation = $Respons.usageLocation Contry = $Respons.country LastSignInDateTime = if($Respons.signInActivity.lastSignInDateTime) { [DateTime]$Respons.signInActivity.lastSignInDateTime } Else {$null} IsLicensed = if ($Respons.assignedLicenses.Count -ne 0) { $true } else { $false } IsGuestUser = if ($Respons.userType -eq &#39;Guest&#39;) { $true } else { $false } RefreshTokensValidFromDateTime = $Respons.RefreshTokensValidFromDateTime onPremisesDistinguishedName = $Respons.onPremisesDistinguishedName }) } } else { Write-Host &#34;No User data found&#34; } $GuestUsers = $Result | Where-Object{$_.IsGuestUser -eq &#34;TRUE&#34;} $GuestAccountAge = 365 # Value used for guest age comparison. If you want this to be a different value (like 30 days), change this here. #$GuestUsers = $users.value -All $true -Filter &#34;UserType eq &#39;Guest&#39;&#34; | Sort DisplayName $Today = (Get-Date); $StaleGuests = 0 $Report = [System.Collections.Generic.List[Object]]::new() # Check each account and find those over 365 days old ForEach ($Guest in $GuestUsers) { $AADAccountAge = ($Guest.RefreshTokensValidFromDateTime | New-TimeSpan).Days If ($AADAccountAge -gt $GuestAccountAge) { $StaleGuests&#43;&#43; #Write-Host &#34;Processing&#34; $Guest.DisplayName $i = 0; $GroupNames = $Null # Find what Microsoft 365 Groups the guest belongs to... if any $ReportLine = [PSCustomObject]@{ UPN = $Guest.UserPrincipalName Name = $Guest.DisplayName Age = $AADAccountAge Created = $Guest.RefreshTokensValidFromDateTime } $Report.Add($ReportLine) } } # Output the report $Report | Sort Age -Descending | Format-Table -AutoSize Write-Host &#34;Found&#34; $StaleGuests &#34;stale guest accounts.&#34; #reference: https://office365itpros.com/2019/10/15/report-old-guest-accounts/ </p>
   </div>
   <footer class="entry-footer"><span title='2023-04-26 23:00:49 +0000 GMT'>April 26, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>368 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Getting old guest accounts in Azure AD" href="https://lubenz007.github.io/posts/2023-04-26-old-guest-accounts/"></a>
+  <a class="entry-link" aria-label="post link to Getting old guest accounts in Azure AD" href="http://localhost:1313/posts/2023-04-26-old-guest-accounts/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -166,7 +166,7 @@
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-07 10:34:00 +0000 GMT'>April 7, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>298 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Apps Expiration Azure AD" href="https://lubenz007.github.io/posts/2023-04-07-apps-exp/"></a>
+  <a class="entry-link" aria-label="post link to Apps Expiration Azure AD" href="http://localhost:1313/posts/2023-04-07-apps-exp/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -179,7 +179,7 @@
 $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Connect to Graph # $Body = @{ Grant_Type = &#34;client_credentials&#34; resource = &#34;https://graph.microsoft.com&#34; client_id = $clientId client_secret = $clientSecret } $ConnectGraph = Invoke-RestMethod -Uri &#34;https://login.microsoft.com/$tenant_Id/oauth2/token?api-version=1.0&#34; -Method POST -Body $Body # Variable Collections # $CSVOutputFile = &#34;c:\temp\Microsoft365LicensesReport.CSV&#34; $today = Get-Date $Headers = @{ &#39;Content-Type&#39; = &#34;application/json&#34; &#39;Authorization&#39; = &#34;Bearer $($ConnectGraph.access_token)&#34; } $token = $ConnectGraph.access_token # Force TLS 1.2. [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 function Get-GraphData { param ( [parameter(Mandatory)] [string]$AccessToken, [parameter(Mandatory)] [string]$Uri ) $Headers = @{ &#39;Authorization&#39; = &#34;Bearer $AccessToken&#34; } do { $Results = Invoke-RestMethod -Uri $Uri -Headers $Headers -ErrorAction Stop $QueryResults &#43;= $Results.value $Uri = $Results.&#39;@odata.nextLink&#39; } while ($Uri) return $QueryResults } #This request get SecureScore [array]$Skus = Get-GraphData -AccessToken $Token -Uri &#34;https://graph.microsoft.com/beta/subscribedSkus&#34; #[Array]$Skus = Get-MgSubscribedSku # Generate CSV of all product SKUs used in tenant [array]$Sku = $Skus | Select-Object SkuId, SkuPartNumber # Generate list of all service plans used in SKUs in tenant $SPData = [System.Collections.Generic.List[Object]]::new() ForEach ($Sk in $Skus) { ForEach ($SP in $Sk.ServicePlans) { $SPLine = [PSCustomObject][Ordered]@{ ServicePlanId = $SP.ServicePlanId ServicePlanName = $SP.ServicePlanName ServicePlanDisplayName = $SP.ServicePlanName } $SPData.Add($SPLine) } } $SkuHashTable = @{} ForEach ($Line in $Sku) { $SkuHashTable.Add([string]$Line.SkuId, [string]$Line.skuPartNumber) } $ServicePlanHashTable = @{} ForEach ($Line2 in $SPData) { $ServicePlanHashTable.Add([string]$Line2.ServicePlanId, [string]$Line2.ServicePlanDisplayName) } [Array]$Users = Get-GraphData -AccessToken $Token -Uri &#34;https://graph.microsoft.com/beta/users&#34; $Report = [System.Collections.Generic.List[Object]]::new() ForEach ($User in $users) { If ([string]::IsNullOrWhiteSpace($User.AssignedLicenses) -eq $true) { # Only process account if it has some licenses Write-Host &#34;Processing&#34; $User.DisplayName [array]$LicenseInfo = $Null; [array]$DisabledPlans = $Null ForEach ($License in $User.AssignedLicenses) { If ($SkuHashTable.ContainsKey($License.SkuId) -eq $True) { # We found a match in the SKU hash table $LicenseInfo &#43;= $SkuHashTable.Item($License.SkuId) } Else { # Nothing doing, so output the SkuID $LicenseInfo &#43;= $License } # Report any disabled service plans in licenses If ([string]::IsNullOrWhiteSpace($License.DisabledPlans) -eq $False ) { # Check if disabled service plans in a license ForEach ($DisabledPlan in $License.DisabledPlans) { # Try and find what service plan is disabled If ($ServicePlanHashTable.ContainsKey($DisabledPlan) -eq $True) { # We found a match in the Service Plans hash table $DisabledPlans &#43;= $ServicePlanHashTable.Item($DisabledPlan) } Else { # Nothing doing, so output the Service Plan ID $DisabledPlans &#43;= $DisabledPlan } } # End ForEach disabled plans } # End if check for disabled plans } # End Foreach Licenses # Report information [string]$DisabledPlans = $DisabledPlans -join &#34;, &#34; [string]$LicenseInfo = $LicenseInfo -join (&#34;, &#34;) $ReportLine = [PSCustomObject][Ordered]@{ User = $User.DisplayName UPN = $User.UserPrincipalName Country = $User.Country Department = $User.Department Title = $User.JobTitle Licenses = $LicenseInfo &#34;Disabled Plans&#34; = $DisabledPlans } Write-Host $ReportLine $Report.Add($ReportLine) } #end If account is licensed Else { $UnlicensedAccounts&#43;&#43; } } # End ForEach Users $Report | Export-CSV -NoTypeInformation $CSVOutputFile </p>
   </div>
   <footer class="entry-footer"><span title='2023-04-01 00:27:00 +0000 GMT'>April 1, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>480 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Getting licenses assigned to user accounts" href="https://lubenz007.github.io/posts/2023-01-04-license-report/"></a>
+  <a class="entry-link" aria-label="post link to Getting licenses assigned to user accounts" href="http://localhost:1313/posts/2023-01-04-license-report/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -192,7 +192,7 @@ $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Conn
 # Needs permission SecurityEvents.Read.All $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Connect to Graph # $Body = @{ Grant_Type = &#34;client_credentials&#34; resource = &#34;https://graph.microsoft.com&#34; client_id = $clientId client_secret = $clientSecret } $ConnectGraph = Invoke-RestMethod -Uri &#34;https://login.microsoft.com/$tenant_Id/oauth2/token?api-version=1.0&#34; -Method POST -Body $Body # Variable Collections # $path = &#34;C:\temp\&#34; $Headers = @{ &#39;Content-Type&#39; = &#34;application/json&#34; &#39;Authorization&#39; = &#34;Bearer $($ConnectGraph.access_token)&#34; } $token = $ConnectGraph.access_token # Force TLS 1.2. [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 function Get-GraphData { param ( [parameter(Mandatory)] [string]$AccessToken, [parameter(Mandatory)] [string]$Uri ) $Headers = @{ &#39;Authorization&#39; = &#34;Bearer $AccessToken&#34; } do { $Results = Invoke-RestMethod -Uri $Uri -Headers $Headers -ErrorAction Stop $QueryResults &#43;= $Results.value $Uri = $Results.&#39;@odata.nextLink&#39; } while ($Uri) return $QueryResults } #This request get SecureScore $uri = &#34;https://graph.microsoft.com/beta/security/secureScores&#34; $Result = @() [array]$Response = Get-GraphData -AccessToken $Token -Uri $uri if ($Response) { ForEach ($Respons in $Response) { $SecureScore = $Respons.currentScore / $Respons.maxScore * 100 $Result &#43;= New-Object PSObject -property $([ordered]@{ CreatedDateTime = $Respons.createdDateTime CurrentScore = $Respons.currentScore MaxScore = $Respons.maxScore LicensedUserCount = $Respons.licensedUserCount ActiveUserCount = $Respons.activeUserCount SecureScore = [math]::Round($SecureScore, 2) }) } } else { Write-Host &#34;No SecureScore data found&#34; } # export to csv $Result | export-csv -path &#34;$path\SecureScore.csv&#34; -NoTypeInformation </p>
   </div>
   <footer class="entry-footer"><span title='2023-03-25 22:49:00 +0000 GMT'>March 25, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>235 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to MS Graph API - Get Secure Score for tenant" href="https://lubenz007.github.io/posts/2023-03-23-sgraph-securescore/"></a>
+  <a class="entry-link" aria-label="post link to MS Graph API - Get Secure Score for tenant" href="http://localhost:1313/posts/2023-03-23-sgraph-securescore/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -205,7 +205,7 @@ $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Conn
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-03-25 13:49:00 +0000 GMT'>March 25, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>352 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Getting Started with MSGraph API" href="https://lubenz007.github.io/posts/2023-03-23-sgraph-api/"></a>
+  <a class="entry-link" aria-label="post link to Getting Started with MSGraph API" href="http://localhost:1313/posts/2023-03-23-sgraph-api/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -219,12 +219,12 @@ DisplayName,UserPrincipalName,UsageLocation,Contry,LastSignInDateTime,IsLicensed
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-03-25 13:49:00 +0000 GMT'>March 25, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>316 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to MS Graph API - Get User info" href="https://lubenz007.github.io/posts/2023-03-23-sgraph-users/"></a>
+  <a class="entry-link" aria-label="post link to MS Graph API - Get User info" href="http://localhost:1313/posts/2023-03-23-sgraph-users/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://lubenz007.github.io/">BensiEgils</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">BensiEgils</a></span> · 
 
     <span>
         Powered by

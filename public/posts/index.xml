@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on BensiEgils</title>
-    <link>https://lubenz007.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on BensiEgils</description>
     <image>
       <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrating from VMware to Azure using Azure Files</title>
-      <link>https://lubenz007.github.io/posts/2025-08-19-move-vmware-azure/</link>
+      <link>http://localhost:1313/posts/2025-08-19-move-vmware-azure/</link>
       <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2025-08-19-move-vmware-azure/</guid>
+      <guid>http://localhost:1313/posts/2025-08-19-move-vmware-azure/</guid>
       <description>&lt;p&gt;When using a tool such as Disk2VHD, you need a storage location—and sometimes plenty of it—to export the virtual machine (VM).
 But what if no local storage is available, and no USB can be connected, such as with a VMware hosting provider?&lt;/p&gt;
 &lt;p&gt;In that case, you can export the VHD directly to an Azure File Share and then copy it to Azure Blob Storage.
@@ -25,12 +25,12 @@ Note: Dynamically expanding disks are not supported in this process—you must u
     </item>
     <item>
       <title>GSPRO Control box</title>
-      <link>https://lubenz007.github.io/posts/2024-06-23-gspro-controlbox/</link>
+      <link>http://localhost:1313/posts/2024-06-23-gspro-controlbox/</link>
       <pubDate>Sun, 23 Jun 2024 00:27:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2024-06-23-gspro-controlbox/</guid>
+      <guid>http://localhost:1313/posts/2024-06-23-gspro-controlbox/</guid>
       <description>&lt;h2 id=&#34;esp32-code-to-create-gspro-control-box&#34;&gt;esp32 code to create GSPRO Control box&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;https://lubenz007.github.io/assets/img/blog/gspro/bord1.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }
-&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;https://lubenz007.github.io/assets/img/blog/gspro/box.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/assets/img/blog/gspro/bord1.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }
+&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/assets/img/blog/gspro/box.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;// Benedikt Gabriel Egilsson - bensiegils.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;// 1= 5 - Camera to ball&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;// 2= KEY_M_CTRL - Muligan &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -134,9 +134,9 @@ Note: Dynamically expanding disks are not supported in this process—you must u
     </item>
     <item>
       <title>Arc - Diskspace Monitoring - Teams)</title>
-      <link>https://lubenz007.github.io/posts/2023-10-15-outofdiskspace-teams/</link>
+      <link>http://localhost:1313/posts/2023-10-15-outofdiskspace-teams/</link>
       <pubDate>Sun, 15 Oct 2023 02:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-10-15-outofdiskspace-teams/</guid>
+      <guid>http://localhost:1313/posts/2023-10-15-outofdiskspace-teams/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Upon successfully installing Azure Arc on your Server and activating Insights, you open the door to a powerful monitoring capability. One essential aspect is overseeing disk space usage on your server, ensuring optimal performance and preventing potential issues. This example provides a step-by-step guide on how to set up disk space monitoring and receive instant notifications via Microsoft Teams when space is running low.&lt;/p&gt;
@@ -146,28 +146,28 @@ Note: Dynamically expanding disks are not supported in this process—you must u
     </item>
     <item>
       <title>Azure Arc - (Azure Cli - ssh - rdp)</title>
-      <link>https://lubenz007.github.io/posts/2023-10-08-azurearc-ssh/</link>
+      <link>http://localhost:1313/posts/2023-10-08-azurearc-ssh/</link>
       <pubDate>Sun, 08 Oct 2023 02:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-10-08-azurearc-ssh/</guid>
+      <guid>http://localhost:1313/posts/2023-10-08-azurearc-ssh/</guid>
       <description>&lt;p&gt;If you have deployed Azure Arc, you have the option to utilize Windows Admin Center for Windows Machines. Additionally, you can enable the OpenSSH Extension on Windows Server, granting the capability to establish SSH tunnels to the localhost or other machines that support RDP/SSH connections.
-&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;https://lubenz007.github.io/assets/img/blog/SSH-Tunnel.png&#34;&gt;{: .normal-image}&lt;/p&gt;
+&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/assets/img/blog/SSH-Tunnel.png&#34;&gt;{: .normal-image}&lt;/p&gt;
 &lt;p&gt;To begin the process, please follow these steps:&lt;/p&gt;
 &lt;p&gt;Ensure that you have the Azure CLI installed on your local computer. If it is not already installed, open PowerShell and execute the command: winget install -e &amp;ndash;id Microsoft.AzureCLI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>hyper-v-tool</title>
-      <link>https://lubenz007.github.io/posts/2023-09-30-hyper-v-tool/</link>
+      <link>http://localhost:1313/posts/2023-09-30-hyper-v-tool/</link>
       <pubDate>Sat, 30 Sep 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-09-30-hyper-v-tool/</guid>
+      <guid>http://localhost:1313/posts/2023-09-30-hyper-v-tool/</guid>
       <description>&lt;p&gt;My tool to create vm&amp;rsquo;s in my lab&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/Lubenz007/hyper-v-tool&#34;&gt;https://github.com/Lubenz007/hyper-v-tool&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Utilizing a standalone Hyper-V server and generating VMs from a golden image might be considered an older approach, but it&amp;rsquo;s one I personally prefer. Over the years, I&amp;rsquo;ve diligently maintained a tool for crafting VMs on my Hyper-V host within the lab environment. I employ SSH to connect to the Hyper-V host and initiate the VM creation process. This tool provides a streamlined menu system that automatically configures the VM, allowing me to promptly begin using it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Get Azure Defender for Cloud score Via API</title>
-      <link>https://lubenz007.github.io/posts/2023-05-28-defendercloudesecurescore-/</link>
+      <link>http://localhost:1313/posts/2023-05-28-defendercloudesecurescore-/</link>
       <pubDate>Sun, 28 May 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-05-28-defendercloudesecurescore-/</guid>
+      <guid>http://localhost:1313/posts/2023-05-28-defendercloudesecurescore-/</guid>
       <description>&lt;p&gt;How to build a report of Azure Defender for Cloud score Via API, and export it to CSV.
 Why do we need this? share it with your ?, and show them the progress of your security posture.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -387,9 +387,9 @@ Why do we need this? share it with your ?, and show them the progress of your se
     </item>
     <item>
       <title>Monitor Azure Usage for a subscription</title>
-      <link>https://lubenz007.github.io/posts/2023-05-17-azureusageresource/</link>
+      <link>http://localhost:1313/posts/2023-05-17-azureusageresource/</link>
       <pubDate>Sat, 13 May 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-05-17-azureusageresource/</guid>
+      <guid>http://localhost:1313/posts/2023-05-17-azureusageresource/</guid>
       <description>&lt;p&gt;Why do we need to monitor Azure usage? Well, if you have a subscription with a spending limit, you need to keep track of your usage. If you go over the spending limit, your resources will be disabled. And you will need to pay for the overage.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;My concern is that some one gets a hold of my subscription, and start to use it. And I will get a big bill at the end of the month.
@@ -397,9 +397,9 @@ Why do we need this? share it with your ?, and show them the progress of your se
     </item>
     <item>
       <title>Monitor Azure usage with github actions</title>
-      <link>https://lubenz007.github.io/posts/2023-05-13-azureusage/</link>
+      <link>http://localhost:1313/posts/2023-05-13-azureusage/</link>
       <pubDate>Sat, 13 May 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-05-13-azureusage/</guid>
+      <guid>http://localhost:1313/posts/2023-05-13-azureusage/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;This will not work for Azure Plan subscriptions.
 ((400) Subscription scope usage is not supported for current api version. Please use api version after 2019-10-01)
@@ -411,9 +411,9 @@ Why do we need this? share it with your ?, and show them the progress of your se
     </item>
     <item>
       <title>Three great tools for Azure</title>
-      <link>https://lubenz007.github.io/posts/2023-05-10-three-tool/</link>
+      <link>http://localhost:1313/posts/2023-05-10-three-tool/</link>
       <pubDate>Wed, 10 May 2023 22:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-05-10-three-tool/</guid>
+      <guid>http://localhost:1313/posts/2023-05-10-three-tool/</guid>
       <description>&lt;p&gt;Always in need for some tools to help make great things.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -430,9 +430,9 @@ simple command line tool to get the cost of your Azure subscription.&lt;/p&gt;</
     </item>
     <item>
       <title>Azure Cost CLI</title>
-      <link>https://lubenz007.github.io/posts/2023-05-03-azure-cost-cli/</link>
+      <link>http://localhost:1313/posts/2023-05-03-azure-cost-cli/</link>
       <pubDate>Wed, 03 May 2023 20:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-05-03-azure-cost-cli/</guid>
+      <guid>http://localhost:1313/posts/2023-05-03-azure-cost-cli/</guid>
       <description>&lt;h1 id=&#34;azure-cost-cli-is-a-new-tool-to-get-cost-information-from-azure-link-btn-&#34;&gt;Azure-Cost-CLI is a new tool to get cost information from Azure. &lt;a href=&#34;https://github.com/mivano/azure-cost-cli&#34;&gt;Link&lt;/a&gt;{: .btn }&lt;/h1&gt;
 &lt;h3 id=&#34;what-are-the-benefits-of-this-tool-simple-you-can-get-cost-information-from-azure-without-having-to-log-in-to-the-portal--send-teams-messages-with-cost-information--send-emails-with-cost-information-&#34;&gt;What are the benefits of this tool?, Simple, you can get cost information from Azure without having to log in to the portal. ? Send teams messages with cost information. ? Send emails with cost information. ?&lt;/h3&gt;
 &lt;h1 id=&#34;azure-cost-overview&#34;&gt;Azure Cost Overview&lt;/h1&gt;
@@ -675,9 +675,9 @@ Accumulated cost for subscription id `0692777c-ed93-4a6a-85c7-144c24xxxx` from *
     </item>
     <item>
       <title>Getting old guest accounts in Azure AD</title>
-      <link>https://lubenz007.github.io/posts/2023-04-26-old-guest-accounts/</link>
+      <link>http://localhost:1313/posts/2023-04-26-old-guest-accounts/</link>
       <pubDate>Wed, 26 Apr 2023 23:00:49 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-26-old-guest-accounts/</guid>
+      <guid>http://localhost:1313/posts/2023-04-26-old-guest-accounts/</guid>
       <description>&lt;p&gt;This is a rewrite from &lt;a href=&#34;https://office365itpros.com/2019/10/15/report-old-guest-accounts/&#34;&gt;here&lt;/a&gt; office365itpros.com
 I have added some more properties to the report.
 And use msgraph instead of mggraph.&lt;/p&gt;
@@ -790,9 +790,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>Getting started with Terraform and Azure</title>
-      <link>https://lubenz007.github.io/posts/2023-04-22-aztfexport/</link>
+      <link>http://localhost:1313/posts/2023-04-22-aztfexport/</link>
       <pubDate>Sat, 22 Apr 2023 18:46:49 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-22-aztfexport/</guid>
+      <guid>http://localhost:1313/posts/2023-04-22-aztfexport/</guid>
       <description>&lt;p&gt;I like to watch videos on how to do things, but i don&amp;rsquo;t like to start from scratch. I like to have a template from which i can start and test things out. So start to look out for exporting Azure config to templates. Terraformer is a tool that can export existing cloud infrastructure to Terraform code. But I like aztfexport better because it is more Azure-specific.&lt;/p&gt;
 &lt;h2 id=&#34;install-aztfexport-is-easy-from-package-manager&#34;&gt;Install aztfexport is easy from package manager&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;winget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aztfexport&lt;/span&gt;
@@ -803,9 +803,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>Apps Expiration Azure AD</title>
-      <link>https://lubenz007.github.io/posts/2023-04-07-apps-exp/</link>
+      <link>http://localhost:1313/posts/2023-04-07-apps-exp/</link>
       <pubDate>Fri, 07 Apr 2023 10:34:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-07-apps-exp/</guid>
+      <guid>http://localhost:1313/posts/2023-04-07-apps-exp/</guid>
       <description>&lt;h2 id=&#34;this-script-will-check-all-registered-apps-in-azure-ad-and-will-return-the-following-information-expiring-apps-expired-apps-and-apps-with-no-expiration-date&#34;&gt;This script will check all registered apps in Azure AD and will return the following information: expiring apps, expired apps, and apps with no expiration date.&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# needs permission Application.Read.All,Directory.Read.All&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$ClientID&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
@@ -914,9 +914,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>Powershell Speedtest</title>
-      <link>https://lubenz007.github.io/posts/2023-04-06-speedtest/</link>
+      <link>http://localhost:1313/posts/2023-04-06-speedtest/</link>
       <pubDate>Thu, 06 Apr 2023 20:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-06-speedtest/</guid>
+      <guid>http://localhost:1313/posts/2023-04-06-speedtest/</guid>
       <description>&lt;h2 id=&#34;was-having-problems-with-my-internet-connection-and-wanted-to-monitor-it-so-i-rewrote-this-script-to-use-powershell-and-store-the-results-in-a-table-storage&#34;&gt;Was having problems with my internet connection and wanted to monitor it. So I rewrote this script to use powershell and store the results in a table storage.&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The script is using the speedtest cli from &lt;a href=&#34;https://www.speedtest.net/apps/cli&#34;&gt;https://www.speedtest.net/apps/cli&lt;/a&gt;
@@ -961,9 +961,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>Esp32 Hot tub controller</title>
-      <link>https://lubenz007.github.io/posts/2023-04-04-hottub/</link>
+      <link>http://localhost:1313/posts/2023-04-04-hottub/</link>
       <pubDate>Tue, 04 Apr 2023 22:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-04-hottub/</guid>
+      <guid>http://localhost:1313/posts/2023-04-04-hottub/</guid>
       <description>&lt;h2 id=&#34;this-is-my-hot-tub-controler-with-outdoor-shower-controler-it-is-based-on-a-esp32-and-a-4-channel-relay-module-it-has-a-ds18b20-temperature-sensor-for-the-hot-tub-and-a-ds18b20-for-the-water-in-the-hot-tub-it-also-has-a-ds18b20-for-the-outdoor-shower-and-a-ds18b20-for-the-water-in-system&#34;&gt;This is my hot tub controler with outdoor shower controler. It is based on a ESP32 and a 4 channel relay module. It has a DS18B20 temperature sensor for the hot tub and a DS18B20 for the water in the hot tub. It also has a DS18B20 for the outdoor shower and a DS18B20 for the water in system.&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;esphome&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -1170,9 +1170,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>Upgrade Hyper-V Hosts with Azure Arc</title>
-      <link>https://lubenz007.github.io/posts/2023-04-04-upgrade-hyper/</link>
+      <link>http://localhost:1313/posts/2023-04-04-upgrade-hyper/</link>
       <pubDate>Tue, 04 Apr 2023 22:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-04-upgrade-hyper/</guid>
+      <guid>http://localhost:1313/posts/2023-04-04-upgrade-hyper/</guid>
       <description>&lt;h2 id=&#34;azure-arc-is-a-powerful-tool-for-managing-and-updating-hybrid-infrastructure-including-standalone-hyper-v-hosts-demo-how-to-use-azure-arc-to-update-a-standalone-hyper-v-host-using-a-scheduled-update-task-in-automation-account-and-pre-and-post-scripts-that-shut-down-and-start-up-vms&#34;&gt;Azure Arc is a powerful tool for managing and updating hybrid infrastructure, including standalone Hyper-V hosts. Demo how to use Azure Arc to update a standalone Hyper-V host, using a scheduled update task in Automation Account and pre and post scripts that shut down and start up VMs.&lt;/h2&gt;
 &lt;p&gt;Pre-requisites&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Stop all running VMs on the Hyper-V host and wait for them to shut down&lt;/span&gt;
@@ -1205,9 +1205,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>Getting licenses assigned to user accounts</title>
-      <link>https://lubenz007.github.io/posts/2023-01-04-license-report/</link>
+      <link>http://localhost:1313/posts/2023-01-04-license-report/</link>
       <pubDate>Sat, 01 Apr 2023 00:27:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-01-04-license-report/</guid>
+      <guid>http://localhost:1313/posts/2023-01-04-license-report/</guid>
       <description>&lt;h2 id=&#34;create-a-report-of-licenses-assigned-to-azure-ad-user-accounts-using-the-microsoft-graph-api&#34;&gt;Create a report of licenses assigned to Azure AD user accounts using the Microsoft Graph API&lt;/h2&gt;
 &lt;h3 id=&#34;this-is-a-rewrite-from-here-practical365com&#34;&gt;This is a rewrite from &lt;a href=&#34;https://practical365.com/create-licensing-report-microsoft365-tenant/&#34;&gt;here&lt;/a&gt; practical365.com&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -1350,9 +1350,9 @@ And use msgraph instead of mggraph.&lt;/p&gt;
     </item>
     <item>
       <title>MS Graph API - Get Secure Score for tenant</title>
-      <link>https://lubenz007.github.io/posts/2023-03-23-sgraph-securescore/</link>
+      <link>http://localhost:1313/posts/2023-03-23-sgraph-securescore/</link>
       <pubDate>Sat, 25 Mar 2023 22:49:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-03-23-sgraph-securescore/</guid>
+      <guid>http://localhost:1313/posts/2023-03-23-sgraph-securescore/</guid>
       <description>&lt;h2 id=&#34;secure-score-for-o365-tenant&#34;&gt;Secure Score for O365 Tenant&lt;/h2&gt;
 &lt;h3 id=&#34;getting-the-secure-score-for-a-tenant-is-a-bit-more-complicated-than-getting-the-last-logon-time-of-a-user&#34;&gt;Getting the secure score for a tenant is a bit more complicated than getting the last logon time of a user.&lt;/h3&gt;
 &lt;p&gt;You only need to call the following endpoint: &lt;a href=&#34;https://graph.microsoft.com/beta/security/secureScores&#34;&gt;https://graph.microsoft.com/beta/security/secureScores&lt;/a&gt;
@@ -1443,9 +1443,9 @@ and divide  the result by 100 to get the percentage.&lt;/p&gt;
     </item>
     <item>
       <title>Getting Started with MSGraph API</title>
-      <link>https://lubenz007.github.io/posts/2023-03-23-sgraph-api/</link>
+      <link>http://localhost:1313/posts/2023-03-23-sgraph-api/</link>
       <pubDate>Sat, 25 Mar 2023 13:49:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-03-23-sgraph-api/</guid>
+      <guid>http://localhost:1313/posts/2023-03-23-sgraph-api/</guid>
       <description>&lt;h2 id=&#34;authentication-and-authorization&#34;&gt;Authentication and Authorization&lt;/h2&gt;
 &lt;h3 id=&#34;msgraph-api-is-a-powerful-tool-for-authentication-and-authorization-that-allows-developers-to-access-microsoft-services-and-data-it-provides-a-secure-way-to-authenticate-users-authorize-applications-and-manage-user-data-with-msgraph-api-developers-can-easily-integrate-their-applications-with-microsoft-services-like-outlook-onedrive-office-365-azure-active-directory-and-more-in-this-article-well-explore-how-to-get-started-with-msgraph-api-concepts-and-use-cases-of-the-api&#34;&gt;MSGraph API is a powerful tool for authentication and authorization that allows developers to access Microsoft services and data. It provides a secure way to authenticate users, authorize applications, and manage user data. With MSGraph API, developers can easily integrate their applications with Microsoft services like Outlook, OneDrive, Office 365, Azure Active Directory, and more. In this article, we&amp;rsquo;ll explore how to get started with MSGraph API concepts and use cases of the API.&lt;/h3&gt;
 &lt;h2 id=&#34;authentication&#34;&gt;Authentication&lt;/h2&gt;
@@ -1456,9 +1456,9 @@ and divide  the result by 100 to get the percentage.&lt;/p&gt;
     </item>
     <item>
       <title>MS Graph API - Get User info</title>
-      <link>https://lubenz007.github.io/posts/2023-03-23-sgraph-users/</link>
+      <link>http://localhost:1313/posts/2023-03-23-sgraph-users/</link>
       <pubDate>Sat, 25 Mar 2023 13:49:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-03-23-sgraph-users/</guid>
+      <guid>http://localhost:1313/posts/2023-03-23-sgraph-users/</guid>
       <description>&lt;h2 id=&#34;microsoft-graph-api-can-be-used-to-get-the-last-logon-time-of-a-user-to-do-this-you-will-need-to-make-a-get-request-to-the-usersidlastlogontimestamp-endpoint-this-endpoint-will-return-the-last-logon-time-of-the-user-in-the-form-of-a-timestamp-you-can-then-use-this-timestamp-to-determine-the-exact-date-and-time-of-the-users-last-logon&#34;&gt;Microsoft Graph API can be used to get the last logon time of a user. To do this, you will need to make a GET request to the /users/{id}/lastLogonTimeStamp endpoint. This endpoint will return the last logon time of the user in the form of a timestamp. You can then use this timestamp to determine the exact date and time of the user&amp;rsquo;s last logon.&lt;/h2&gt;
 &lt;p&gt;This query get&amp;rsquo;s.&lt;/p&gt;
 &lt;blockquote&gt;

@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Automation on BensiEgils</title>
-    <link>https://lubenz007.github.io/categories/automation/</link>
+    <link>http://localhost:1313/categories/automation/</link>
     <description>Recent content in Automation on BensiEgils</description>
     <image>
       <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Jun 2024 00:27:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/categories/automation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GSPRO Control box</title>
-      <link>https://lubenz007.github.io/posts/2024-06-23-gspro-controlbox/</link>
+      <link>http://localhost:1313/posts/2024-06-23-gspro-controlbox/</link>
       <pubDate>Sun, 23 Jun 2024 00:27:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2024-06-23-gspro-controlbox/</guid>
+      <guid>http://localhost:1313/posts/2024-06-23-gspro-controlbox/</guid>
       <description>&lt;h2 id=&#34;esp32-code-to-create-gspro-control-box&#34;&gt;esp32 code to create GSPRO Control box&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;https://lubenz007.github.io/assets/img/blog/gspro/bord1.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }
-&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;https://lubenz007.github.io/assets/img/blog/gspro/box.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/assets/img/blog/gspro/bord1.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }
+&lt;img alt=&#34;Desktop View&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/assets/img/blog/gspro/box.png&#34;&gt;{: width=&amp;ldquo;350&amp;rdquo; height=&amp;ldquo;200&amp;rdquo; }&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;// Benedikt Gabriel Egilsson - bensiegils.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;// 1= 5 - Camera to ball&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;// 2= KEY_M_CTRL - Muligan &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -124,9 +124,9 @@
     </item>
     <item>
       <title>Powershell Speedtest</title>
-      <link>https://lubenz007.github.io/posts/2023-04-06-speedtest/</link>
+      <link>http://localhost:1313/posts/2023-04-06-speedtest/</link>
       <pubDate>Thu, 06 Apr 2023 20:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-06-speedtest/</guid>
+      <guid>http://localhost:1313/posts/2023-04-06-speedtest/</guid>
       <description>&lt;h2 id=&#34;was-having-problems-with-my-internet-connection-and-wanted-to-monitor-it-so-i-rewrote-this-script-to-use-powershell-and-store-the-results-in-a-table-storage&#34;&gt;Was having problems with my internet connection and wanted to monitor it. So I rewrote this script to use powershell and store the results in a table storage.&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The script is using the speedtest cli from &lt;a href=&#34;https://www.speedtest.net/apps/cli&#34;&gt;https://www.speedtest.net/apps/cli&lt;/a&gt;
@@ -171,9 +171,9 @@
     </item>
     <item>
       <title>Esp32 Hot tub controller</title>
-      <link>https://lubenz007.github.io/posts/2023-04-04-hottub/</link>
+      <link>http://localhost:1313/posts/2023-04-04-hottub/</link>
       <pubDate>Tue, 04 Apr 2023 22:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-04-hottub/</guid>
+      <guid>http://localhost:1313/posts/2023-04-04-hottub/</guid>
       <description>&lt;h2 id=&#34;this-is-my-hot-tub-controler-with-outdoor-shower-controler-it-is-based-on-a-esp32-and-a-4-channel-relay-module-it-has-a-ds18b20-temperature-sensor-for-the-hot-tub-and-a-ds18b20-for-the-water-in-the-hot-tub-it-also-has-a-ds18b20-for-the-outdoor-shower-and-a-ds18b20-for-the-water-in-system&#34;&gt;This is my hot tub controler with outdoor shower controler. It is based on a ESP32 and a 4 channel relay module. It has a DS18B20 temperature sensor for the hot tub and a DS18B20 for the water in the hot tub. It also has a DS18B20 for the outdoor shower and a DS18B20 for the water in system.&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;esphome&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -380,9 +380,9 @@
     </item>
     <item>
       <title>Upgrade Hyper-V Hosts with Azure Arc</title>
-      <link>https://lubenz007.github.io/posts/2023-04-04-upgrade-hyper/</link>
+      <link>http://localhost:1313/posts/2023-04-04-upgrade-hyper/</link>
       <pubDate>Tue, 04 Apr 2023 22:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-04-upgrade-hyper/</guid>
+      <guid>http://localhost:1313/posts/2023-04-04-upgrade-hyper/</guid>
       <description>&lt;h2 id=&#34;azure-arc-is-a-powerful-tool-for-managing-and-updating-hybrid-infrastructure-including-standalone-hyper-v-hosts-demo-how-to-use-azure-arc-to-update-a-standalone-hyper-v-host-using-a-scheduled-update-task-in-automation-account-and-pre-and-post-scripts-that-shut-down-and-start-up-vms&#34;&gt;Azure Arc is a powerful tool for managing and updating hybrid infrastructure, including standalone Hyper-V hosts. Demo how to use Azure Arc to update a standalone Hyper-V host, using a scheduled update task in Automation Account and pre and post scripts that shut down and start up VMs.&lt;/h2&gt;
 &lt;p&gt;Pre-requisites&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# Stop all running VMs on the Hyper-V host and wait for them to shut down&lt;/span&gt;

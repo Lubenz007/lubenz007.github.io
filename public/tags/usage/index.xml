@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Usage on BensiEgils</title>
-    <link>https://lubenz007.github.io/tags/usage/</link>
+    <link>http://localhost:1313/tags/usage/</link>
     <description>Recent content in Usage on BensiEgils</description>
     <image>
       <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
+      <url>http://localhost:1313/</url>
+      <link>http://localhost:1313/</link>
     </image>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 May 2023 14:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/tags/usage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/usage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monitor Azure Usage for a subscription</title>
-      <link>https://lubenz007.github.io/posts/2023-05-17-azureusageresource/</link>
+      <link>http://localhost:1313/posts/2023-05-17-azureusageresource/</link>
       <pubDate>Sat, 13 May 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-05-17-azureusageresource/</guid>
+      <guid>http://localhost:1313/posts/2023-05-17-azureusageresource/</guid>
       <description>&lt;p&gt;Why do we need to monitor Azure usage? Well, if you have a subscription with a spending limit, you need to keep track of your usage. If you go over the spending limit, your resources will be disabled. And you will need to pay for the overage.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;My concern is that some one gets a hold of my subscription, and start to use it. And I will get a big bill at the end of the month.
@@ -25,9 +25,9 @@
     </item>
     <item>
       <title>Monitor Azure usage with github actions</title>
-      <link>https://lubenz007.github.io/posts/2023-05-13-azureusage/</link>
+      <link>http://localhost:1313/posts/2023-05-13-azureusage/</link>
       <pubDate>Sat, 13 May 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-05-13-azureusage/</guid>
+      <guid>http://localhost:1313/posts/2023-05-13-azureusage/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;This will not work for Azure Plan subscriptions.
 ((400) Subscription scope usage is not supported for current api version. Please use api version after 2019-10-01)
@@ -39,9 +39,9 @@
     </item>
     <item>
       <title>Azure Cost CLI</title>
-      <link>https://lubenz007.github.io/posts/2023-05-03-azure-cost-cli/</link>
+      <link>http://localhost:1313/posts/2023-05-03-azure-cost-cli/</link>
       <pubDate>Wed, 03 May 2023 20:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-05-03-azure-cost-cli/</guid>
+      <guid>http://localhost:1313/posts/2023-05-03-azure-cost-cli/</guid>
       <description>&lt;h1 id=&#34;azure-cost-cli-is-a-new-tool-to-get-cost-information-from-azure-link-btn-&#34;&gt;Azure-Cost-CLI is a new tool to get cost information from Azure. &lt;a href=&#34;https://github.com/mivano/azure-cost-cli&#34;&gt;Link&lt;/a&gt;{: .btn }&lt;/h1&gt;
 &lt;h3 id=&#34;what-are-the-benefits-of-this-tool-simple-you-can-get-cost-information-from-azure-without-having-to-log-in-to-the-portal--send-teams-messages-with-cost-information--send-emails-with-cost-information-&#34;&gt;What are the benefits of this tool?, Simple, you can get cost information from Azure without having to log in to the portal. ? Send teams messages with cost information. ? Send emails with cost information. ?&lt;/h3&gt;
 &lt;h1 id=&#34;azure-cost-overview&#34;&gt;Azure Cost Overview&lt;/h1&gt;
