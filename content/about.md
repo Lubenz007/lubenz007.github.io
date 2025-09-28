@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 date: 2023-01-01
 draft: false
 description: "About Benedikt Gabriel Egilsson - IT Professional with 25+ years experience"
