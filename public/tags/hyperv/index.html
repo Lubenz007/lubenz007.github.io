@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hyperv | BensiEgils</title>
+<meta name="keywords" content="">
+<meta name="description" content="Documenting my journey">
+<meta name="author" content="Benedikt Gabriel Egilsson">
+<link rel="canonical" href="https://lubenz007.github.io/tags/hyperv/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2d0325420c619a782224fbdbc50e6417d66f71c30e5607ad7ddb5b0ecce5d6cc.css" integrity="sha256-LQMlQgxhmngiJPvbxQ5kF9ZvccMOVgetfdtbDszl1sw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://lubenz007.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lubenz007.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lubenz007.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lubenz007.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lubenz007.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://lubenz007.github.io/tags/hyperv/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://lubenz007.github.io/tags/hyperv/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://lubenz007.github.io/tags/hyperv/">
+  <meta property="og:site_name" content="BensiEgils">
+  <meta property="og:title" content="Hyperv">
+  <meta property="og:description" content="Documenting my journey">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://lubenz007.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lubenz007.github.io/">
+<meta name="twitter:title" content="Hyperv">
+<meta name="twitter:description" content="Documenting my journey">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://lubenz007.github.io/" accesskey="h" title="BensiEgils (Alt + H)">BensiEgils</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://lubenz007.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lubenz007.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://lubenz007.github.io/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://lubenz007.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://lubenz007.github.io/tags/">Tags</a></div>
+  <h1>
+    Hyperv
+    <a href="/tags/hyperv/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">hyper-v-tool
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>My tool to create vm’s in my lab
+https://github.com/Lubenz007/hyper-v-tool
+Utilizing a standalone Hyper-V server and generating VMs from a golden image might be considered an older approach, but it’s one I personally prefer. Over the years, I’ve diligently maintained a tool for crafting VMs on my Hyper-V host within the lab environment. I employ SSH to connect to the Hyper-V host and initiate the VM creation process. This tool provides a streamlined menu system that automatically configures the VM, allowing me to promptly begin using it.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-30 14:00:00 +0000 GMT'>September 30, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>149 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
+  <a class="entry-link" aria-label="post link to hyper-v-tool" href="https://lubenz007.github.io/posts/2023-09-30-hyper-v-tool/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Upgrade Hyper-V Hosts with Azure Arc
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Azure Arc is a powerful tool for managing and updating hybrid infrastructure, including standalone Hyper-V hosts. Demo how to use Azure Arc to update a standalone Hyper-V host, using a scheduled update task in Automation Account and pre and post scripts that shut down and start up VMs. Pre-requisites
+# Stop all running VMs on the Hyper-V host and wait for them to shut down # save the names of the running VMs to a file $filePath = &#34;C:\temp\runningvm.txt&#34; (Get-vm | Where-Object { $_.State -eq &#34;Running&#34; }).name | Out-File $filePath $runningvm = Get-Content $filePath foreach ($Name in $runningvm) { Stop-VM $Name do { $VM1 = get-vm -Name $Name Write-Progress -Activity &#34;Waiting for the VM to shutdown&#34; } until ($Null -eq $VM1.Heartbeat) } # send a webhook to Teams to notify that the VMs have been shut down $webhookUri = &#34;&#34; $body = @{ &#34;@context&#34; = &#34;http://schema.org/extensions&#34; &#34;@type&#34; = &#34;MessageCard&#34; &#34;themeColor&#34; = &#34;d70000&#34; &#34;title&#34; = &#34;Send Webhook to Teams&#34; &#34;text&#34; = &#34;This is a message sent from Powershell&#34; } Invoke-RestMethod -Uri $webhookUri -Method Post -Body (ConvertTo-Json -InputObject $body) Post-requisites
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-04-04 22:15:00 +0000 GMT'>April 4, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>354 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
+  <a class="entry-link" aria-label="post link to Upgrade Hyper-V Hosts with Azure Arc" href="https://lubenz007.github.io/posts/2023-04-04-upgrade-hyper/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://lubenz007.github.io/">BensiEgils</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

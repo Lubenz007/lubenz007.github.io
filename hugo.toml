@@ -1,0 +1,102 @@
+baseURL = "https://lubenz007.github.io/"
+languageCode = "en-us"
+title = "BensiEgils"
+theme = "PaperMod"
+
+[params]
+  env = "production"
+  title = "BensiEgils"
+  description = "Documenting my journey"
+  keywords = ["blog", "azure", "powershell", "automation", "security"]
+  author = "Benedikt Gabriel Egilsson"
+  images = [""]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.assets]
+    favicon = ""
+    favicon16x16 = ""
+    favicon32x32 = ""
+    apple_touch_icon = ""
+    safari_pinned_tab = ""
+
+  [params.label]
+    text = "BensiEgils"
+    icon = ""
+    iconHeight = 35
+
+  # profile-mode
+  [params.profileMode]
+    enabled = false
+    title = "BensiEgils"
+    subtitle = "Documenting my journey"
+    imageUrl = ""
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = ""
+    buttons = []
+
+  # home-info mode
+  [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = "Welcome to my blog where I document my journey with Azure, PowerShell, automation, and security."
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/lubenz007"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/lubenz007"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/benedikt-gabríel-egilsson-b7295684"
+
+[menu]
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 30
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+

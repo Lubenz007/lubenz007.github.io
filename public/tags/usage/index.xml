@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Usage on BensiEgils</title>
+    <link>https://lubenz007.github.io/tags/usage/</link>
+    <description>Recent content in Usage on BensiEgils</description>
+    <image>
+      <title>BensiEgils</title>
+      <url>https://lubenz007.github.io/</url>
+      <link>https://lubenz007.github.io/</link>
+    </image>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 May 2023 14:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lubenz007.github.io/tags/usage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitor Azure Usage for a subscription</title>
+      <link>https://lubenz007.github.io/posts/2023-05-17-azureusageresource/</link>
+      <pubDate>Sat, 13 May 2023 14:00:00 +0000</pubDate>
+      <guid>https://lubenz007.github.io/posts/2023-05-17-azureusageresource/</guid>
+      <description>&lt;p&gt;Why do we need to monitor Azure usage? Well, if you have a subscription with a spending limit, you need to keep track of your usage. If you go over the spending limit, your resources will be disabled. And you will need to pay for the overage.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;My concern is that some one gets a hold of my subscription, and start to use it. And I will get a big bill at the end of the month.
+{: .prompt-info }&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Monitor Azure usage with github actions</title>
+      <link>https://lubenz007.github.io/posts/2023-05-13-azureusage/</link>
+      <pubDate>Sat, 13 May 2023 14:00:00 +0000</pubDate>
+      <guid>https://lubenz007.github.io/posts/2023-05-13-azureusage/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;This will not work for Azure Plan subscriptions.
+((400) Subscription scope usage is not supported for current api version. Please use api version after 2019-10-01)
+{: .prompt-info }&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;need-to-keep-track-of-your-azure-usage-here-is-a-way-to-use-github-actions-to-keep-track-of-your-usage-and-send-you-a-teams-message-if-you-are-over-a-certain-amount&#34;&gt;Need to keep track of your Azure usage? here is a way to use github actions to keep track of your usage. And send you a Teams message if you are over a certain amount.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We will need to enable webhook in Teams and add the webhook to the script, and create a Service Principal with access to the subscription you want to monitor.
+{: .prompt-tip }&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure Cost CLI</title>
+      <link>https://lubenz007.github.io/posts/2023-05-03-azure-cost-cli/</link>
+      <pubDate>Wed, 03 May 2023 20:00:00 +0000</pubDate>
+      <guid>https://lubenz007.github.io/posts/2023-05-03-azure-cost-cli/</guid>
+      <description>&lt;h1 id=&#34;azure-cost-cli-is-a-new-tool-to-get-cost-information-from-azure-link-btn-&#34;&gt;Azure-Cost-CLI is a new tool to get cost information from Azure. &lt;a href=&#34;https://github.com/mivano/azure-cost-cli&#34;&gt;Link&lt;/a&gt;{: .btn }&lt;/h1&gt;
+&lt;h3 id=&#34;what-are-the-benefits-of-this-tool-simple-you-can-get-cost-information-from-azure-without-having-to-log-in-to-the-portal--send-teams-messages-with-cost-information--send-emails-with-cost-information-&#34;&gt;What are the benefits of this tool?, Simple, you can get cost information from Azure without having to log in to the portal. ? Send teams messages with cost information. ? Send emails with cost information. ?&lt;/h3&gt;
+&lt;h1 id=&#34;azure-cost-overview&#34;&gt;Azure Cost Overview&lt;/h1&gt;
+&lt;blockquote class=&#34;white&#34;&gt;
+Accumulated cost for subscription id `0692777c-ed93-4a6a-85c7-144c24xxxx` from **1.5.2023** to **9.5.2023**
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;totals&#34;&gt;Totals&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Period&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Amount&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Today&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0,90 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Yesterday&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;2,21 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Last 7 days&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;17,26 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Last 30 days&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;19,40 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;gantt
+   title Accumulated cost
+   dateFormat  X
+   axisFormat %s
+   section 01 maí
+   EUR 2,14 :0, 214
+   section 02 maí
+   EUR 4,24 :0, 424
+   section 03 maí
+   EUR 6,37 :0, 637
+   section 04 maí
+   EUR 8,51 :0, 851
+   section 05 maí
+   EUR 11,00 :0, 1100
+   section 06 maí
+   EUR 13,61 :0, 1361
+   section 07 maí
+   EUR 16,29 :0, 1629
+   section 08 maí
+   EUR 18,50 :0, 1850
+   section 09 maí
+   EUR 19,40 :0, 1940
+   section 10 maí
+   EUR 21,36 : done, 0, 2136
+   section 11 maí
+   EUR 23,33 : done, 0, 2333
+   section 12 maí
+   EUR 25,52 : done, 0, 2552
+   section 13 maí
+   EUR 27,71 : done, 0, 2771
+   section 14 maí
+   EUR 30,04 : done, 0, 3004
+   section 15 maí
+   EUR 32,19 : done, 0, 3219
+   section 16 maí
+   EUR 34,08 : done, 0, 3408
+   section 17 maí
+   EUR 35,99 : done, 0, 3599
+   section 18 maí
+   EUR 37,91 : done, 0, 3791
+   section 19 maí
+   EUR 40,04 : done, 0, 4004
+   section 20 maí
+   EUR 42,18 : done, 0, 4218
+   section 21 maí
+   EUR 44,46 : done, 0, 4446
+   section 22 maí
+   EUR 46,54 : done, 0, 4654
+   section 23 maí
+   EUR 48,39 : done, 0, 4839
+   section 24 maí
+   EUR 50,24 : done, 0, 5024
+   section 25 maí
+   EUR 52,10 : done, 0, 5210
+   section 26 maí
+   EUR 54,18 : done, 0, 5418
+   section 27 maí
+   EUR 56,26 : done, 0, 5626
+   section 28 maí
+   EUR 58,48 : done, 0, 5848
+   section 29 maí
+   EUR 60,51 : done, 0, 6051
+   section 30 maí
+   EUR 62,30 : done, 0, 6230
+   section 31 maí
+   EUR 64,10 : done, 0, 6410
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;by-service-name&#34;&gt;By Service Name&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Service&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Amount&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Backup&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;21,92 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Security Center&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;9,88 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Azure App Service&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;2,52 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Virtual Network&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;1,40 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Log Analytics&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;1,21 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sentinel&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;1,00 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Azure DNS&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0,52 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Storage&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0,31 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Advanced Threat Protection&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0,04 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Others&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0,00 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;pie
+   title Cost by service
+   &amp;#34;Backup&amp;#34; : 21.92
+   &amp;#34;Security Center&amp;#34; : 9.88
+   &amp;#34;Azure App Service&amp;#34; : 2.52
+   &amp;#34;Virtual Network&amp;#34; : 1.40
+   &amp;#34;Log Analytics&amp;#34; : 1.21
+   &amp;#34;Sentinel&amp;#34; : 1.00
+   &amp;#34;Azure DNS&amp;#34; : 0.52
+   &amp;#34;Storage&amp;#34; : 0.31
+   &amp;#34;Advanced Threat Protection&amp;#34; : 0.04
+   &amp;#34;Others&amp;#34; : 0.00
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;by-location&#34;&gt;By Location&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Location&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Amount&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;EU West&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;8,23 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Unassigned&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;4,96 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;US West&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;4,07 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;EU North&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;1,88 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Unknown&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;0,26 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;pie
+   title Cost by location
+   &amp;#34;EU West&amp;#34; : 8.23
+   &amp;#34;Unassigned&amp;#34; : 4.96
+   &amp;#34;US West&amp;#34; : 4.07
+   &amp;#34;EU North&amp;#34; : 1.88
+   &amp;#34;Unknown&amp;#34; : 0.26
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;by-resource-group&#34;&gt;By Resource Group&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Resource Group&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;Amount&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;bensa&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;6,80 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;microsoft.security&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;4,96 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;backuptest&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;4,07 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;alitis&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;2,22 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;test2&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;1,35 EUR&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;pie
+   title Cost by resource group
+   &amp;#34;bensa&amp;#34; : 6.80
+   &amp;#34;microsoft.security&amp;#34; : 4.96
+   &amp;#34;backuptest&amp;#34; : 4.07
+   &amp;#34;alitis&amp;#34; : 2.22
+   &amp;#34;test2&amp;#34; : 1.35
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;sup&gt;Generated at 2023-05-09 23:33:20&lt;/sup&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
