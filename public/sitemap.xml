@@ -3,141 +3,141 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/azure/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/azure/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/migrating-from-vmware-to-azure-using-azure-files/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/automation/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/esp32/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/gspro-control-box/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/arc-diskspace-monitoring-teams/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/monitor/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/monitor/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/azure-arc-azure-cli-ssh-rdp/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/hyper-v/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/hyper-v-tool/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hyperv/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/get-azure-defender-for-cloud-score-via-api/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/security/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/security/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/monitor-azure-usage-for-a-subscription/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/monitor-azure-usage-with-github-actions/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/usage/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/usage/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/three-great-tools-for-azure/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/tools/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tools/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/azure-cost-cli/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/getting-old-guest-accounts-in-azure-ad/</loc>
     <lastmod>2025-09-28T15:11:19+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/msgraph/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/msgraph/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/getting-started-with-terraform-and-azure/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/terraform/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/terraform/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/apps-expiration-azure-ad/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/powershell/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/powershell-speedtest/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/esp32-hot-tub-controller/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/upgrade-hyper-v-hosts-with-azure-arc/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/getting-licenses-assigned-to-user-accounts/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/ms-graph-api-get-secure-score-for-tenant/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/getting-started-with-msgraph-api/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/ms-graph-api-get-user-info/</loc>
-    <lastmod>2025-09-28T15:11:19+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
-    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
-    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-09-28T17:21:02+00:00</lastmod>
   </url>
 </urlset>
