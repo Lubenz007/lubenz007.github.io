@@ -1,0 +1,116 @@
+{{- define "main" }}
+
+<div class="main-content">
+    {{- if .Content }}
+    <div class="page-content">
+        {{- .Content }}
+    </div>
+    {{- end }}
+
+    {{- $pages := union .RegularPages .Sections }}
+    {{- if .IsHome }}
+        {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{- end }}
+    {{- $paginator := .Paginate $pages }}
+
+    {{- if and .IsHome (isset site.Params "profilemode") }}
+        {{- partial "index_profile.html" . }}
+    {{- else }}
+        {{- if not .IsHome | and .Title }}
+        <header class="page-header">
+            <h1>{{- .Title }}</h1>
+            {{- if .Description }}
+            <div class="post-description">{{ .Description }}</div>
+            {{- end }}
+        </header>
+        {{- end }}
+        
+        {{- if .Content }}
+        <div class="post-content">{{ .Content }}</div>
+        {{- end }}
+    {{- end }}
+
+    {{- range $index, $page := $paginator.Pages }}
+        {{- $class := "post-entry" }}
+        {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+        {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
+            {{- $class = "first-entry" }}
+        {{- else if $page.Weight }}
+            {{- $class = "post-entry tag-entry" }}
+        {{- end }}
+
+    <article class="{{ $class }}">
+        {{- if $page.Params.cover.image }}
+        <div class="entry-cover">
+            <img src="{{ $page.Params.cover.image }}" alt="{{ $page.Params.cover.alt | default $page.Title }}">
+        </div>
+        {{- end }}
+        
+        <header class="entry-header">
+            <h2 class="entry-title">
+                <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+            </h2>
+        </header>
+        
+        {{- if (ne (.Param "hideMeta") true) }}
+        <div class="entry-meta">
+            <time datetime="{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ $page.Date.Format "January 2, 2006" }}
+            </time>
+            {{- with $page.Params.categories }}
+            <span class="categories">
+                {{- range . }}
+                <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                {{- end }}
+            </span>
+            {{- end }}
+        </div>
+        {{- end }}
+        
+        {{- $summary := $page.Summary }}
+        {{- if $summary }}
+        <div class="entry-content">
+            <p>{{ $summary | plainify | htmlUnescape }}{{ if $page.Truncated }}...{{ end }}</p>
+        </div>
+        {{- end }}
+        
+        <footer class="entry-footer">
+            {{- if (.Param "ShowReadingTime") }}
+            <span class="reading-time">
+                {{ $page.ReadingTime }} min read
+            </span>
+            {{- end }}
+        </footer>
+        
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    </article>
+    {{- end }}
+
+    {{- if gt $paginator.TotalPages 1 }}
+    <footer class="page-footer">
+        <nav class="pagination">
+            {{- if $paginator.HasPrev }}
+                <a class="prev" href="{{ $paginator.Prev.URL }}">
+                    «&nbsp;{{ (default (i18n "prev_page") (.Param "label.prev")) }}
+                </a>
+            {{- end }}
+            
+            {{- range $paginator.Pagers }}
+                {{- if eq . $paginator }}
+                    <a class="current" aria-current="page">{{ .PageNumber }}</a>
+                {{- else }}
+                    <a href="{{ .URL }}">{{ .PageNumber }}</a>
+                {{- end }}
+            {{- end }}
+            
+            {{- if $paginator.HasNext }}
+                <a class="next" href="{{ $paginator.Next.URL }}">
+                    {{ (default (i18n "next_page") (.Param "label.next")) }}&nbsp;»
+                </a>
+            {{- end }}
+        </nav>
+    </footer>
+    {{- end }}
+</div>
+
+{{- end }}{{/* end main */}}

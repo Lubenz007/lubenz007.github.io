@@ -4,11 +4,19 @@ date: 2023-05-03 20:00:00 -0000
 categories: [Usage]
 tags: [azure,usage]     # TAG names should always be lowercase
 mermaid: true
+summary: "Azure-Cost-CLI tool allows you to get Azure cost information from command line without portal access, perfect for automation and reporting."
 ---
-# Azure-Cost-CLI is a new tool to get cost information from Azure. [Link](https://github.com/mivano/azure-cost-cli){: .btn }
 
+Azure-Cost-CLI is a powerful tool to get cost information from Azure directly from the command line. [GitHub Repository](https://github.com/mivano/azure-cost-cli)
 
-###  What are the benefits of this tool?, Simple, you can get cost information from Azure without having to log in to the portal. ? Send teams messages with cost information. ? Send emails with cost information. ?
+<!--more-->
+
+## Benefits of This Tool
+
+- Get cost information without logging into the Azure portal
+- Send Teams messages with cost information
+- Send emails with cost reports
+- Perfect for automation and scheduled reporting
 
 # Azure Cost Overview
 

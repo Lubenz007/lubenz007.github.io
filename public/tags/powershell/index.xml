@@ -1,28 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Powershell on BensiEgils</title>
-    <link>https://lubenz007.github.io/tags/powershell/</link>
+    <title>BensiEgils – Powershell</title>
+    <link>http://localhost:1313/tags/powershell/</link>
     <description>Recent content in Powershell on BensiEgils</description>
-    <image>
-      <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
-    </image>
-    <generator>Hugo -- 0.147.9</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Apr 2023 20:15:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
+	  <atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
     <item>
       <title>Powershell Speedtest</title>
-      <link>https://lubenz007.github.io/posts/2023-04-06-speedtest/</link>
+      <link>http://localhost:1313/posts/powershell-speedtest/</link>
       <pubDate>Thu, 06 Apr 2023 20:15:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-06-speedtest/</guid>
-      <description>&lt;h2 id=&#34;was-having-problems-with-my-internet-connection-and-wanted-to-monitor-it-so-i-rewrote-this-script-to-use-powershell-and-store-the-results-in-a-table-storage&#34;&gt;Was having problems with my internet connection and wanted to monitor it. So I rewrote this script to use powershell and store the results in a table storage.&lt;/h2&gt;
+      
+      <guid>http://localhost:1313/posts/powershell-speedtest/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Monitor your internet connection performance with this PowerShell script that uses the Speedtest CLI and stores results in Azure Table Storage for historical analysis.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The script is using the speedtest cli from &lt;a href=&#34;https://www.speedtest.net/apps/cli&#34;&gt;https://www.speedtest.net/apps/cli&lt;/a&gt;
-{: .prompt-info }&lt;/p&gt;&lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#$StorageAccountName = &amp;#34;StorageAcount&amp;#34;&lt;/span&gt;
+  &lt;p&gt;&lt;strong&gt;Info:&lt;/strong&gt; The script uses the speedtest CLI from &lt;a href=&#34;https://www.speedtest.net/apps/cli&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.speedtest.net/apps/cli&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Problem and Solution&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;problem-and-solution&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#problem-and-solution&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Was having problems with my internet connection and wanted to monitor it continuously. So I rewrote this script to use PowerShell and store the results in Azure Table Storage for tracking and analysis.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#$StorageAccountName = &amp;#34;StorageAcount&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#$Key = &amp;#34;Storagekey&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#$StorageContext = New-AzStorageContext -StorageAccountName $StorageAccountName -StorageAccountKey $Key&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#$Table = (Get-AzStorageTable -Context $StorageContext | Where-Object {$_.name -eq &amp;#34;Speedtest&amp;#34;}).CloudTable&lt;/span&gt;
@@ -57,8 +107,20 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;Start-Sleep&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Seconds&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;15&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#$SpeedtestObj | Format-Table | Out-String|ForEach-Object {Write-Host $_}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$SpeedtestObj&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Export-Csv&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Path&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;speedtest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;csv&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-NoTypeInformation&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$SpeedtestObj&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Export-Csv&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Path&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;speedtest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;csv&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-NoTypeInformation&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+      </description>
     </item>
+    
   </channel>
 </rss>

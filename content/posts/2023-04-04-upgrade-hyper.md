@@ -3,8 +3,16 @@ title: Upgrade Hyper-V Hosts with Azure Arc
 date: 2023-04-04 22:15:00 -0000
 categories: [Automation]
 tags: [hyperv,automation]     # TAG names should always be lowercase
+summary: "Automate Hyper-V host updates using Azure Arc with scheduled tasks and pre/post scripts for VM management during maintenance windows."
 ---
-## Azure Arc is a powerful tool for managing and updating hybrid infrastructure, including standalone Hyper-V hosts. Demo how to use Azure Arc to update a standalone Hyper-V host, using a scheduled update task in Automation Account and pre and post scripts that shut down and start up VMs.
+
+Use Azure Arc to automate updates on standalone Hyper-V hosts with intelligent VM management during maintenance windows.
+
+<!--more-->
+
+## Azure Arc Hyper-V Host Management
+
+Azure Arc is a powerful tool for managing and updating hybrid infrastructure, including standalone Hyper-V hosts. This demo shows how to use Azure Arc to update a standalone Hyper-V host, using a scheduled update task in Automation Account and pre and post scripts that shut down and start up VMs.
 
 Pre-requisites
 
@@ -69,4 +77,4 @@ Invoke-RestMethod -Uri $webhookUri -Method Post -Body (ConvertTo-Json -InputObje
 > Updating a standalone Hyper-V host can be a complex and time-consuming process, but with Azure Arc and Automation Accounts, you can automate much of the work and ensure a smooth, reliable update process. Hyper-v cluster or HCI is a different story. 
 {: .prompt-info }
 
-![Desktop View](/assets/img/blog/before.png){: .normal-image}
+![Desktop View](/assets/img/blog/before.png)

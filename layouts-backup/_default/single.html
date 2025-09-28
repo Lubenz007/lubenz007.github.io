@@ -1,0 +1,95 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs">
+      <a href="{{ "" | absLangURL }}">Home</a>
+      {{- range .Params.categories }}
+      <span class="breadcrumb-separator">→</span>
+      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . | title }}</a>
+      {{- end }}
+    </div>
+    
+    <h1 class="post-title">{{ .Title | htmlUnescape }}</h1>
+    
+    {{- if (ne (.Param "hideMeta") true) }}
+    <div class="post-meta">
+      <div class="post-date">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+      </div>
+      
+      {{- if (.Param "ShowReadingTime") }}
+      <div class="post-reading-time">
+        <span>{{ .ReadingTime }} min read</span>
+      </div>
+      {{- end }}
+      
+      {{- if .Params.author }}
+      <div class="post-author">
+        <span>by {{ .Params.author }}</span>
+      </div>
+      {{- end }}
+    </div>
+    {{- end }}
+    
+    {{- if .Params.categories }}
+    <div class="post-categories">
+      {{- range .Params.categories }}
+      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="category-tag">{{ . | title }}</a>
+      {{- end }}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- if .Params.cover.image }}
+  <div class="post-cover">
+    <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}" loading="lazy">
+    {{- if .Params.cover.caption }}
+    <figcaption class="post-cover-caption">{{ .Params.cover.caption | markdownify }}</figcaption>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+
+  {{- if .Params.tags }}
+  <footer class="post-footer">
+    <div class="post-tags">
+      <span class="tags-label">Tagged:</span>
+      {{- range .Params.tags }}
+      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+      {{- end }}
+    </div>
+  </footer>
+  {{- end }}
+  
+  {{- if (.Param "ShowPostNavLinks") }}
+  <nav class="post-nav">
+    {{- with .PrevInSection }}
+    <div class="post-nav-item post-nav-prev">
+      <a href="{{ .Permalink }}" rel="prev">
+        <span class="post-nav-label">← Previous</span>
+        <span class="post-nav-title">{{ .Title }}</span>
+      </a>
+    </div>
+    {{- end }}
+    
+    {{- with .NextInSection }}
+    <div class="post-nav-item post-nav-next">
+      <a href="{{ .Permalink }}" rel="next">
+        <span class="post-nav-label">Next →</span>
+        <span class="post-nav-title">{{ .Title }}</span>
+      </a>
+    </div>
+    {{- end }}
+  </nav>
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}

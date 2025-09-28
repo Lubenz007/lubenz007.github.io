@@ -1,0 +1,67 @@
+# Hugo configuration for Hextra theme
+baseURL = "https://lubenz007.github.io/"
+languageCode = "en-us"
+title = "BensiEgils"
+theme = "hextra"
+
+# Enable emoji in markdown
+enableEmoji = true
+# Enable Git info
+enableGitInfo = true
+# Enable robots.txt generation
+enableRobotsTXT = true
+
+[params]
+  description = "Documenting my journey with Azure, PowerShell, and automation"
+  keywords = ["blog", "azure", "powershell", "automation", "security", "hextra"]
+  
+  # Footer
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = true
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    pageRef = "/posts"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    pageRef = "/categories"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    lineNos = true
+    noClasses = false
+    style = "github"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]

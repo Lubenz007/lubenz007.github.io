@@ -4,11 +4,22 @@ date: 2024-06-23 00:27:00 -0000
 categories: [Automation]
 tags: [esp32,automation]     # TAG names should always be lowercase
 image: "/assets/img/blog/gspro/ras.png"
+summary: "Custom ESP32-based Bluetooth control box for GSPRO golf simulator with 12 programmable keys for game controls and shortcuts."
 ---
-## esp32 code to create GSPRO Control box
 
-![Desktop View](/assets/img/blog/gspro/bord1.png){: width="350" height="200" }
-![Desktop View](/assets/img/blog/gspro/box.png){: width="350" height="200" }
+ESP32 code to create a GSPRO Control box with Bluetooth connectivity and 12 programmable keys for enhanced golf simulator control.
+
+![Desktop View](/assets/img/blog/gspro/bord1.png)
+![Desktop View](/assets/img/blog/gspro/box.png)
+
+<!--more-->
+
+## Features
+
+- 12 programmable keys with custom functions
+- Bluetooth Low Energy connectivity
+- Camera controls, scorecard display, pin viewing
+- Arrow key navigation and visual settings
 
 
 

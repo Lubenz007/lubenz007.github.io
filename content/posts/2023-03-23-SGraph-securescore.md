@@ -3,11 +3,16 @@ title: MS Graph API - Get Secure Score for tenant
 date: 2023-03-25 22:49:00 -0000
 categories: [MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
+summary: "Learn how to retrieve Microsoft 365 Secure Score for your tenant using Microsoft Graph API to monitor security posture and compliance."
 ---
+
+Get your Microsoft 365 Secure Score using the Microsoft Graph API to monitor your tenant's security posture and track improvements.
+
+<!--more-->
+
 ## Secure Score for O365 Tenant 
-### Getting the secure score for a tenant is a bit more complicated than getting the last logon time of a user.
-You only need to call the following endpoint: https://graph.microsoft.com/beta/security/secureScores
-and divide  the result by 100 to get the percentage.
+
+Getting the secure score for a tenant is a bit more complicated than getting the last logon time of a user. You only need to call the following endpoint: https://graph.microsoft.com/beta/security/secureScores and divide the result by 100 to get the percentage.
 
 ```powershell
 # Needs permission SecurityEvents.Read.All

@@ -1,80 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on BensiEgils</title>
-    <link>https://lubenz007.github.io/categories/</link>
+    <title>BensiEgils – Categories</title>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on BensiEgils</description>
-    <image>
-      <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
-    </image>
-    <generator>Hugo -- 0.147.9</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Azure</title>
-      <link>https://lubenz007.github.io/categories/azure/</link>
-      <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/azure/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Automation</title>
-      <link>https://lubenz007.github.io/categories/automation/</link>
-      <pubDate>Sun, 23 Jun 2024 00:27:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Monitor</title>
-      <link>https://lubenz007.github.io/categories/monitor/</link>
-      <pubDate>Sun, 15 Oct 2023 02:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/monitor/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hyper-V</title>
-      <link>https://lubenz007.github.io/categories/hyper-v/</link>
-      <pubDate>Sat, 30 Sep 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/hyper-v/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>https://lubenz007.github.io/categories/security/</link>
-      <pubDate>Sun, 28 May 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Usage</title>
-      <link>https://lubenz007.github.io/categories/usage/</link>
-      <pubDate>Sat, 13 May 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/usage/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tools</title>
-      <link>https://lubenz007.github.io/categories/tools/</link>
-      <pubDate>Wed, 10 May 2023 22:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/tools/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MsGraph</title>
-      <link>https://lubenz007.github.io/categories/msgraph/</link>
-      <pubDate>Wed, 26 Apr 2023 23:00:49 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/msgraph/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Terraform</title>
-      <link>https://lubenz007.github.io/categories/terraform/</link>
-      <pubDate>Sat, 22 Apr 2023 18:46:49 +0000</pubDate>
-      <guid>https://lubenz007.github.io/categories/terraform/</guid>
-      <description></description>
-    </item>
+    
+	  <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
   </channel>
 </rss>

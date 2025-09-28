@@ -3,15 +3,20 @@ title: Getting Started with MSGraph API
 date: 2023-03-25 13:49:00 -0000
 categories: [MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
+summary: "Complete guide to getting started with Microsoft Graph API, including authentication, authorization, and service principal creation using Azure CLI."
 ---
+
+Microsoft Graph API is a powerful tool for authentication and authorization that allows developers to access Microsoft services and data securely. Learn how to integrate with Outlook, OneDrive, Office 365, Azure Active Directory, and more.
+
+<!--more-->
+
 ## Authentication and Authorization
 
-### MSGraph API is a powerful tool for authentication and authorization that allows developers to access Microsoft services and data. It provides a secure way to authenticate users, authorize applications, and manage user data. With MSGraph API, developers can easily integrate their applications with Microsoft services like Outlook, OneDrive, Office 365, Azure Active Directory, and more. In this article, we'll explore how to get started with MSGraph API concepts and use cases of the API.
+MSGraph API provides a secure way to authenticate users, authorize applications, and manage user data. With MSGraph API, developers can easily integrate their applications with Microsoft services like Outlook, OneDrive, Office 365, Azure Active Directory, and more.
 ## Authentication
 ### We will use the Azure CLI to create a service principal and get the app id and secret. We will also use the Azure CLI to view all the API permissions available in Microsoft Graph.
 
-> Get the Azure CLI from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-{: .prompt-info }
+> **Info:** Get the Azure CLI from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
 ```powershell
 # login to Azure

@@ -1,0 +1,53 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>Tags</h1>
+  <div class="page-description">
+    {{- $termCount := 0 }}
+    {{- if .Data.Terms }}
+      {{- $termCount = len .Data.Terms }}
+    {{- end }}
+    Browse all {{ $termCount }} tags
+  </div>
+</header>
+
+{{- if .Data.Terms }}
+<div class="tags-cloud">
+  {{- $maxCount := 0 }}
+  {{- range .Data.Terms }}
+    {{- if gt .Count $maxCount }}
+      {{- $maxCount = .Count }}
+    {{- end }}
+  {{- end }}
+  
+  {{- range .Data.Terms.ByCount }}
+  {{- $weight := 0.8 }}
+  {{- if gt $maxCount 0 }}
+    {{- $weight = add 0.8 (mul (div .Count $maxCount) 1.2) }}
+  {{- end }}
+  <a href="{{ .Page.Permalink }}" class="tag-cloud-item" style="font-size: {{ $weight }}rem;">
+    {{ .Page.Title }} <span class="tag-count">({{ .Count }})</span>
+  </a>
+  {{- end }}
+</div>
+
+<div class="tags-list">
+  <h2>All Tags</h2>
+  <div class="taxonomy-grid">
+    {{- range .Data.Terms.ByCount }}
+    <div class="taxonomy-item">
+      <a href="{{ .Page.Permalink }}" class="taxonomy-link">
+        <h3 class="taxonomy-name">{{ .Page.Title }}</h3>
+        <div class="taxonomy-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</div>
+      </a>
+    </div>
+    {{- end }}
+  </div>
+</div>
+{{- else }}
+<div class="no-content">
+  <p>No tags found.</p>
+</div>
+{{- end }}
+
+{{- end }}{{/* end main */}}

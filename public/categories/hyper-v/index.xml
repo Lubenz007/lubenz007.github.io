@@ -1,26 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hyper-V on BensiEgils</title>
-    <link>https://lubenz007.github.io/categories/hyper-v/</link>
+    <title>BensiEgils – Hyper-V</title>
+    <link>http://localhost:1313/categories/hyper-v/</link>
     <description>Recent content in Hyper-V on BensiEgils</description>
-    <image>
-      <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
-    </image>
-    <generator>Hugo -- 0.147.9</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Sep 2023 14:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/categories/hyper-v/index.xml" rel="self" type="application/rss+xml" />
+    
+	  <atom:link href="http://localhost:1313/categories/hyper-v/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
     <item>
       <title>hyper-v-tool</title>
-      <link>https://lubenz007.github.io/posts/2023-09-30-hyper-v-tool/</link>
+      <link>http://localhost:1313/posts/hyper-v-tool/</link>
       <pubDate>Sat, 30 Sep 2023 14:00:00 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-09-30-hyper-v-tool/</guid>
-      <description>&lt;p&gt;My tool to create vm&amp;rsquo;s in my lab&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/Lubenz007/hyper-v-tool&#34;&gt;https://github.com/Lubenz007/hyper-v-tool&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Utilizing a standalone Hyper-V server and generating VMs from a golden image might be considered an older approach, but it&amp;rsquo;s one I personally prefer. Over the years, I&amp;rsquo;ve diligently maintained a tool for crafting VMs on my Hyper-V host within the lab environment. I employ SSH to connect to the Hyper-V host and initiate the VM creation process. This tool provides a streamlined menu system that automatically configures the VM, allowing me to promptly begin using it.&lt;/p&gt;</description>
+      
+      <guid>http://localhost:1313/posts/hyper-v-tool/</guid>
+      <description>
+        
+        
+        &lt;p&gt;My tool to create VMs in my lab environment with streamlined automation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Repository:&lt;/strong&gt; &lt;a href=&#34;https://github.com/Lubenz007/hyper-v-tool&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/Lubenz007/hyper-v-tool&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Utilizing a standalone Hyper-V server and generating VMs from a golden image might be considered an older approach, but it&amp;rsquo;s one I personally prefer. Over the years, I&amp;rsquo;ve diligently maintained a tool for crafting VMs on my Hyper-V host within the lab environment. I employ SSH to connect to the Hyper-V host and initiate the VM creation process. This tool provides a streamlined menu system that automatically configures the VM, allowing me to promptly begin using it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;All config is done in the vm_menu.ps1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can find the oscdimg.exe in the Windows 11 22h2 ADK:&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kit &amp;ldquo;C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\arm64\Oscdimg&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$global:oscdimgPath = &amp;ldquo;$global:StartupFolder\tools\oscdimg.exe&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;#Template location&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$global:template = &amp;ldquo;$global:StartupFolder\template&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;#template vhd name / windows is sysprep / Ubuntu cloud-init / modify for your template.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$global:2022core = &amp;ldquo;W2022C.vhdx&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$global:2022stand = &amp;ldquo;W2022S_OS.vhdx&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$global:2022data = &amp;ldquo;W2022D_OS.vhdx&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$global:Ubuntu = &amp;ldquo;Ubuntu_OS.vhd&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/Lubenz007/hyper-v-tool/assets/116028026/1e961bfd-aa70-41c3-96dd-6740f175d03b&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://github.com/Lubenz007/hyper-v-tool/assets/116028026/24f16f37-738a-4a17-a990-238896e9bcb3&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://github.com/Lubenz007/hyper-v-tool/assets/116028026/ac87298b-dd9d-4d1c-8d06-3db92c6105bf&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://github.com/Lubenz007/hyper-v-tool/assets/116028026/817222df-cee3-40ee-8a39-740abea0b3d5&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://github.com/Lubenz007/hyper-v-tool/assets/116028026/4e5d853f-7b6e-47ef-9827-2b0f67573578&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://github.com/Lubenz007/hyper-v-tool/assets/116028026/9ec272c6-86e3-4c96-8b13-41ae1f15b132&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;https://github.com/Lubenz007/hyper-v-tool/assets/116028026/b69fe441-64d9-4d7a-85b6-c7e80df0796a&#34; alt=&#34;image&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+      </description>
     </item>
+    
   </channel>
 </rss>

@@ -3,9 +3,12 @@ title: Three great tools for Azure
 date: 2023-05-10 22:00:00 -0000
 categories: [Tools]
 tags: [azure,tools]     # TAG names should always be lowercase
+summary: "Three essential Azure tools: Azure Quick Review for assessments, Azure Visualizer for topology diagrams, and Azure Cost CLI for cost management."
 ---
 
-Always in need for some tools to help make great things. 
+Always in need of great tools to enhance Azure management and visualization. Here are three powerful tools that can help streamline your Azure operations.
+
+<!--more--> 
 
 
 * [Azure Quick Review](https://github.com/Azure/azqr)

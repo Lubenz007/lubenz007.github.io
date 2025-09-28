@@ -1,0 +1,25 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>Categories</h1>
+  <div class="page-description">
+    Browse all {{ len .Data.Terms }} categories
+  </div>
+</header>
+
+<div class="taxonomy-grid">
+  {{- range .Data.Terms.ByCount }}
+  <div class="taxonomy-item">
+    <a href="{{ .Page.Permalink }}" class="taxonomy-link">
+      <h3 class="taxonomy-name">{{ .Page.Title | title }}</h3>
+      <div class="taxonomy-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</div>
+      <div class="taxonomy-description">
+        {{- $recent := first 3 .Pages }}
+        Recent: {{ range $i, $page := $recent }}{{ if $i }}, {{ end }}{{ $page.Title }}{{ end }}
+      </div>
+    </a>
+  </div>
+  {{- end }}
+</div>
+
+{{- end }}{{/* end main */}}

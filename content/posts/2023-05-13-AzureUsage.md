@@ -83,5 +83,5 @@ jobs:
           }
         azPSVersion: "latest"
 ```
-![Desktop View](/assets/img/blog/AzureCred.png){: .normal-image}
-![Desktop View](/assets/img/blog/spending.png){: .normal-image}
+![Desktop View](/assets/img/blog/AzureCred.png)
+![Desktop View](/assets/img/blog/spending.png)

@@ -1,150 +1,583 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Posts | BensiEgils</title>
-<meta name="keywords" content="">
-<meta name="description" content="Posts - BensiEgils">
+<html lang="en-us" dir="auto" data-theme="auto">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Documenting my journey">
+<meta name="keywords" content="blog,azure,powershell,automation,security">
 <meta name="author" content="Benedikt Gabriel Egilsson">
-<link rel="canonical" href="https://lubenz007.github.io/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2d0325420c619a782224fbdbc50e6417d66f71c30e5607ad7ddb5b0ecce5d6cc.css" integrity="sha256-LQMlQgxhmngiJPvbxQ5kF9ZvccMOVgetfdtbDszl1sw=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://lubenz007.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://lubenz007.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lubenz007.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://lubenz007.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://lubenz007.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://lubenz007.github.io/posts/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="https://lubenz007.github.io/posts/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
 
-            .list {
-                background: var(--theme);
-            }
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:1313/posts/">
+<meta property="og:title" content="Posts | BensiEgils">
+<meta property="og:description" content="Documenting my journey">
+<meta property="og:image" content="http://localhost:1313/assets/img/logo/BensiLogo.png">
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:1313/posts/">
+<meta property="twitter:title" content="Posts | BensiEgils">
+<meta property="twitter:description" content="Documenting my journey">
+<meta property="twitter:image" content="http://localhost:1313/assets/img/logo/BensiLogo.png">
 
-    </style>
-</noscript><meta property="og:url" content="https://lubenz007.github.io/posts/">
-  <meta property="og:site_name" content="BensiEgils">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Documenting my journey">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="website">
-      <meta property="og:image" content="https://lubenz007.github.io/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://lubenz007.github.io/">
-<meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="Documenting my journey">
+
+
 
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://lubenz007.github.io/posts/"
-    }
-  ]
+  
+  "@type": "WebPage",
+  "name": "Posts",
+  "url": "http:\/\/localhost:1313\/posts\/",
+  "description": "Documenting my journey"
+  
 }
 </script>
+
+
+<link rel="canonical" href="http://localhost:1313/posts/">
+
+
+<link rel="alternate" type="application/rss+xml" title="BensiEgils" href="http://localhost:1313/posts/index.xml">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+
+
+<title>Posts | BensiEgils</title>
 </head>
-
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://lubenz007.github.io/" accesskey="h" title="BensiEgils (Alt + H)">BensiEgils</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
+<body>
+  
+  
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-content">
+        
+        <div class="site-info">
+            <div class="profile">
+                <img src="/assets/img/logo/BensiLogo.png" alt="Profile" class="profile-img">
+                <h3 class="profile-title">BensiEgils</h3>
+                <p class="profile-subtitle">Documenting my journey</p>
             </div>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="https://lubenz007.github.io/categories/" title="Categories">
-                    <span>Categories</span>
+
+        
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" class="nav-link ">
+                        <i class="nav-icon fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link nav-toggle" data-toggle="categories">
+                        <i class="nav-icon fas fa-folder"></i>
+                        <span>Categories</span>
+                        <i class="nav-arrow fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="nav-submenu" id="categories-submenu">
+                        <li class="nav-subitem">
+                            <a href="/categories/automation" class="nav-sublink">
+                                <span>Automation</span>
+                                <span class="count">(4)</span>
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="/categories/azure" class="nav-sublink">
+                                <span>Azure</span>
+                                <span class="count">(3)</span>
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="/categories/hyper-v" class="nav-sublink">
+                                <span>Hyper-V</span>
+                                <span class="count">(1)</span>
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="/categories/monitor" class="nav-sublink">
+                                <span>Monitor</span>
+                                <span class="count">(1)</span>
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="/categories/msgraph" class="nav-sublink">
+                                <span>Msgraph</span>
+                                <span class="count">(6)</span>
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="/categories/security" class="nav-sublink">
+                                <span>Security</span>
+                                <span class="count">(1)</span>
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="/categories/terraform" class="nav-sublink">
+                                <span>Terraform</span>
+                                <span class="count">(1)</span>
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="/categories/tools" class="nav-sublink">
+                                <span>Tools</span>
+                                <span class="count">(1)</span>
+                            </a>
+                        </li>
+                        <li class="nav-subitem">
+                            <a href="/categories/usage" class="nav-sublink">
+                                <span>Usage</span>
+                                <span class="count">(3)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/tags/" class="nav-link">
+                        <i class="nav-icon fas fa-tags"></i>
+                        <span>Tags</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/archives/" class="nav-link">
+                        <i class="nav-icon fas fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/about/" class="nav-link">
+                        <i class="nav-icon fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/archives/" class="nav-link">
+                        <i class="nav-icon">📚</i>
+                        <span>Archives</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/about/" class="nav-link">
+                        <i class="nav-icon">👤</i>
+                        <span>About</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        
+        <div class="categories-tree">
+            <h4 class="tree-title">Categories</h4>
+            <ul class="category-list">
+                <li class="category-item">
+                    <a href="/categories/automation" class="category-link">
+                        <span class="category-name">Automation</span>
+                        <span class="category-count">(4)</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/azure" class="category-link">
+                        <span class="category-name">Azure</span>
+                        <span class="category-count">(3)</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/hyper-v" class="category-link">
+                        <span class="category-name">Hyper-V</span>
+                        <span class="category-count">(1)</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/monitor" class="category-link">
+                        <span class="category-name">Monitor</span>
+                        <span class="category-count">(1)</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/msgraph" class="category-link">
+                        <span class="category-name">Msgraph</span>
+                        <span class="category-count">(6)</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/security" class="category-link">
+                        <span class="category-name">Security</span>
+                        <span class="category-count">(1)</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/terraform" class="category-link">
+                        <span class="category-name">Terraform</span>
+                        <span class="category-count">(1)</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/tools" class="category-link">
+                        <span class="category-name">Tools</span>
+                        <span class="category-count">(1)</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/usage" class="category-link">
+                        <span class="category-name">Usage</span>
+                        <span class="category-count">(3)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="social-links">
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="https://twitter.com/lubenz007" target="_blank" rel="noopener noreferrer" class="social-link" title="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://github.com/lubenz007" target="_blank" rel="noopener noreferrer" class="social-link" title="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.linkedin.com/in/benedikt-gabr%c3%adel-egilsson-b7295684" target="_blank" rel="noopener noreferrer" class="social-link" title="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<style>
+ 
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    z-index: 1000;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    padding-top: 80px;  
+}
+
+.sidebar-content {
+    padding: 1.5rem 1rem;
+}
+
+.site-info {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.profile-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.sidebar-nav {
+    margin-bottom: 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.nav-icon {
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.categories-tree {
+    margin-bottom: 2rem;
+}
+
+.tree-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    padding: 0 1rem;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    margin-bottom: 0.25rem;
+}
+
+.category-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.category-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.category-count {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.category-link:hover .category-count {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social-links {
+    margin-top: auto;
+}
+
+.social-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    padding: 0 1rem;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-item {
+    margin-bottom: 0.25rem;
+}
+
+.social-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+ 
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        width: 280px;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        backdrop-filter: blur(2px);
+    }
+    
+    .sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+     
+    .header {
+        padding: 0.75rem 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: var(--header-bg);
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+ 
+@media (min-width: 769px) {
+    .main {
+        margin-left: 260px;
+    }
+    
+    .header {
+        margin-left: 260px;
+    }
+}
+
+ 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    const toggle = document.getElementById('menu-toggle');
+    
+    if (toggle && sidebar && overlay) {
+        toggle.addEventListener('click', function() {
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('active');
+        });
+        
+        overlay.addEventListener('click', function() {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('active');
+        });
+    }
+});
+</script>
+  
+  
+  <div class="sidebar-overlay"></div>
+  
+  
+  <div class="main-wrapper">
+    
+    <div id="topbar">
+      <div class="container-fluid">
+        <button type="button" id="sidebar-toggle" class="btn btn-link d-lg-none">
+          <i class="fas fa-bars fa-fw"></i>
+        </button>
+        <div id="breadcrumb">
+          <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/">Home</a>
+      </li><li class="breadcrumb-item active" aria-current="page">Posts</li></ol>
+  </nav>
+        </div>
+        
+        <div class="topbar-right">
+          <nav class="top-nav d-none d-lg-block">
+            <ul class="top-nav-list">
+              <li class="top-nav-item">
+                <a href="/search/" class="top-nav-link">
+                  <i class="fas fa-search"></i>
                 </a>
-            </li>
-            <li>
-                <a href="https://lubenz007.github.io/tags/" title="Tags">
-                    <span>Tags</span>
+              </li>
+              <li class="top-nav-item">
+                <a href="/feed.xml" class="top-nav-link" title="RSS Feed">
+                  <i class="fas fa-rss"></i>
                 </a>
-            </li>
-            <li>
-                <a href="https://lubenz007.github.io/archives/" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://lubenz007.github.io/">Home</a></div>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="btn btn-link theme-toggle" id="theme-toggle">
+            <i class="fas fa-adjust fa-fw"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="content-wrapper">
+      <main class="main">
+         
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
   <h1>
     Posts
     <a href="/posts/index.xml" title="RSS" aria-label="RSS">
@@ -168,7 +601,7 @@
 # Needs permission User.Read.All $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Connect to Graph # $Body = @{ Grant_Type = &#34;client_credentials&#34; resource = &#34;https://graph.microsoft.com&#34; client_id = $clientId client_secret = $clientSecret } $ConnectGraph = Invoke-RestMethod -Uri &#34;https://login.microsoft.com/$tenant_Id/oauth2/token?api-version=1.0&#34; -Method POST -Body $Body # Variable Collections # $Headers = @{ &#39;Content-Type&#39; = &#34;application/json&#34; &#39;Authorization&#39; = &#34;Bearer $($ConnectGraph.access_token)&#34; } $token = $ConnectGraph.access_token # Force TLS 1.2. [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 function Get-GraphData { param ( [parameter(Mandatory)] [string]$AccessToken, [parameter(Mandatory)] [string]$Uri ) $Headers = @{ &#39;Authorization&#39; = &#34;Bearer $AccessToken&#34; } do { $Results = Invoke-RestMethod -Uri $Uri -Headers $Headers -ErrorAction Stop $QueryResults &#43;= $Results.value $Uri = $Results.&#39;@odata.nextLink&#39; } while ($Uri) return $QueryResults } #This request get users list with signInActivity. $uri = &#34;https://graph.microsoft.com/beta/users&#34; $Result = @() [array]$Response = Get-GraphData -AccessToken $Token -Uri $uri if ($Response) { ForEach ($Respons in $Response) { $Result &#43;= New-Object PSObject -property $([ordered]@{ DisplayName = $Respons.displayName UserPrincipalName = $Respons.userPrincipalName UsageLocation = $Respons.usageLocation Contry = $Respons.country LastSignInDateTime = if($Respons.signInActivity.lastSignInDateTime) { [DateTime]$Respons.signInActivity.lastSignInDateTime } Else {$null} IsLicensed = if ($Respons.assignedLicenses.Count -ne 0) { $true } else { $false } IsGuestUser = if ($Respons.userType -eq &#39;Guest&#39;) { $true } else { $false } RefreshTokensValidFromDateTime = $Respons.RefreshTokensValidFromDateTime onPremisesDistinguishedName = $Respons.onPremisesDistinguishedName }) } } else { Write-Host &#34;No User data found&#34; } $GuestUsers = $Result | Where-Object{$_.IsGuestUser -eq &#34;TRUE&#34;} $GuestAccountAge = 365 # Value used for guest age comparison. If you want this to be a different value (like 30 days), change this here. #$GuestUsers = $users.value -All $true -Filter &#34;UserType eq &#39;Guest&#39;&#34; | Sort DisplayName $Today = (Get-Date); $StaleGuests = 0 $Report = [System.Collections.Generic.List[Object]]::new() # Check each account and find those over 365 days old ForEach ($Guest in $GuestUsers) { $AADAccountAge = ($Guest.RefreshTokensValidFromDateTime | New-TimeSpan).Days If ($AADAccountAge -gt $GuestAccountAge) { $StaleGuests&#43;&#43; #Write-Host &#34;Processing&#34; $Guest.DisplayName $i = 0; $GroupNames = $Null # Find what Microsoft 365 Groups the guest belongs to... if any $ReportLine = [PSCustomObject]@{ UPN = $Guest.UserPrincipalName Name = $Guest.DisplayName Age = $AADAccountAge Created = $Guest.RefreshTokensValidFromDateTime } $Report.Add($ReportLine) } } # Output the report $Report | Sort Age -Descending | Format-Table -AutoSize Write-Host &#34;Found&#34; $StaleGuests &#34;stale guest accounts.&#34; #reference: https://office365itpros.com/2019/10/15/report-old-guest-accounts/ </p>
   </div>
   <footer class="entry-footer"><span title='2023-04-26 23:00:49 +0000 GMT'>April 26, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>368 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Getting old guest accounts in Azure AD" href="https://lubenz007.github.io/posts/2023-04-26-old-guest-accounts/"></a>
+  <a class="entry-link" aria-label="post link to Getting old guest accounts in Azure AD" href="http://localhost:1313/posts/getting-old-guest-accounts-in-azure-ad/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -182,7 +615,7 @@ Install aztfexport is easy from package manager c:\winget install aztfexport And
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-22 18:46:49 +0000 GMT'>April 22, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>253 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Getting started with Terraform and Azure" href="https://lubenz007.github.io/posts/2023-04-22-aztfexport/"></a>
+  <a class="entry-link" aria-label="post link to Getting started with Terraform and Azure" href="http://localhost:1313/posts/getting-started-with-terraform-and-azure/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -195,7 +628,7 @@ Install aztfexport is easy from package manager c:\winget install aztfexport And
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-07 10:34:00 +0000 GMT'>April 7, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>298 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Apps Expiration Azure AD" href="https://lubenz007.github.io/posts/2023-04-07-apps-exp/"></a>
+  <a class="entry-link" aria-label="post link to Apps Expiration Azure AD" href="http://localhost:1313/posts/apps-expiration-azure-ad/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -208,7 +641,7 @@ Install aztfexport is easy from package manager c:\winget install aztfexport And
 #$StorageAccountName = &#34;StorageAcount&#34; #$Key = &#34;Storagekey&#34; #$StorageContext = New-AzStorageContext -StorageAccountName $StorageAccountName -StorageAccountKey $Key #$Table = (Get-AzStorageTable -Context $StorageContext | Where-Object {$_.name -eq &#34;Speedtest&#34;}).CloudTable $applocation = &#34;C:\apps\speedtest&#34; $path = &#34;C:\temp\&#34; $SpeedTestResults=@() $SpeedtestObj=@() $i = 0 while ($i -eq 0) { $PartitionKey = &#34;1&#34; $SpeedTestResults = &amp; &#34;$($applocation)\speedtest.exe&#34; --progress=no --format=json $SpeedtestResults = $SpeedTestResults | ConvertFrom-Json $SpeedtestObj &#43;= [PSCustomObject] @{ Time = Get-Date -Format &#34;dd/MM/yyyy HH:mm K&#34; downloadspeed = [math]::Round($SpeedtestResults.download.bandwidth / 1000000 * 8, 2) uploadspeed = [math]::Round($SpeedtestResults.upload.bandwidth / 1000000 * 8, 2) packetloss = ($($SpeedtestResults.packetLoss).ToString(&#34;P&#34;)) isp = $SpeedtestResults.isp ExternalIP = $SpeedtestResults.interface.externalIp InternalIP = $SpeedtestResults.interface.internalIp UsedServer = $SpeedtestResults.server.host location = $SpeedTestResults.server.location Jitter = [math]::Round($SpeedtestResults.ping.jitter) Latency = [math]::Round($SpeedtestResults.ping.latency) } # ---- Move to table storage ---- # Add-AzTableRow -table $Table -PartitionKey $PartitionKey -RowKey (Get-Date).Ticks -property $SpeedtestObj Start-Sleep -Seconds 15 } #$SpeedtestObj | Format-Table | Out-String|ForEach-Object {Write-Host $_} $SpeedtestObj | Export-Csv -Path $path\speedtest.csv -NoTypeInformation </p>
   </div>
   <footer class="entry-footer"><span title='2023-04-06 20:15:00 +0000 GMT'>April 6, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>179 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Powershell Speedtest" href="https://lubenz007.github.io/posts/2023-04-06-speedtest/"></a>
+  <a class="entry-link" aria-label="post link to Powershell Speedtest" href="http://localhost:1313/posts/powershell-speedtest/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -220,7 +653,7 @@ Install aztfexport is easy from package manager c:\winget install aztfexport And
     <p>This is my hot tub controler with outdoor shower controler. It is based on a ESP32 and a 4 channel relay module. It has a DS18B20 temperature sensor for the hot tub and a DS18B20 for the water in the hot tub. It also has a DS18B20 for the outdoor shower and a DS18B20 for the water in system. esphome: name: pottastyring platform: ESP32 board: nodemcu-32s wifi: ssid: &#34;&#34; password: &#34;&#34; domain: .lan manual_ip: static_ip: 192.168.x.x gateway: 192.168.x.x subnet: 255.255.255.0 dns1: 192.168.x.x # Enable fallback hotspot (captive portal) in case wifi connection fails ap: ssid: &#34;hottub&#34; password: &#34;&#34; captive_portal: web_server: port: 80 # Enable logging logger: # Enable Home Assistant API api: ota: time: - platform: sntp id: timer servers: - 0.pool.ntp.org - 1.pool.ntp.org - 2.pool.ntp.org dallas: - pin: GPIO13 sensor: - platform: dallas address: 0x67011464EA7EFF28 name: &#34;Pottur hiti&#34; id: pottur_hiti - platform: dallas address: 0x8B0314649975FF28 name: &#34;Vatn i pott&#34; id: vatn_i_hiti - platform: dallas address: 0x110000045976f328 name: &#34;Hiti Skapur&#34; id: Hiti_skapur - platform: dallas address: 0xe10314645814ff28 name: &#34;Hiti Uti&#34; id: hiti_uti binary_sensor: - platform: gpio filters: - delayed_on: 100ms id: fylla pin: number: GPIO17 mode: INPUT_PULLUP inverted: True name: &#34;Pottur fylla takki&#34; on_press: if: condition: lambda: &#39;return id(pottur_hiti).state &lt; 20;&#39; then: - logger.log: &#34;The sensor value is below 20!&#34; - switch.turn_on: relay_1 - delay: 1min - switch.turn_on: relay_4 - delay: 30min - switch.turn_off: relay_1 - delay: 3min - climate.control: id: pottur_climate mode: &#34;HEAT&#34; else: - logger.log: &#34;The sensor value is above 20!&#34; - platform: gpio filters: - delayed_on: 500ms id: sturta pin: number: GPIO21 mode: INPUT_PULLUP inverted: True name: &#34;Sturta takki&#34; on_press: if: condition: lambda: &#39;return id(pottur_hiti).state &gt; 38;&#39; then: - logger.log: &#34;The sensor value is above 38!&#34; - climate.control: id: pottur_climate mode: &#34;OFF&#34; - delay: 10sec - switch.turn_on: relay_3 - delay: 4min - switch.turn_off: relay_3 else: - logger.log: &#34;The sensor value is below 20!&#34; - switch.turn_on: relay_3 - delay: 4min - switch.turn_off: relay_3 - platform: gpio filters: - delayed_on: 500ms id: nidurfall pin: number: GPIO33 mode: INPUT_PULLUP inverted: True name: &#34;taema takki&#34; on_press: then: - switch.turn_off: relay_4 - climate.control: id: pottur_climate mode: &#34;off&#34; switch: - platform: gpio restore_mode: ALWAYS_OFF name: &#34;Pottur fylla relay&#34; pin: GPIO25 id: relay_1 - platform: gpio restore_mode: ALWAYS_OFF name: &#34;Pottur hita relay&#34; pin: GPIO26 id: relay_2 - platform: gpio restore_mode: ALWAYS_OFF name: &#34;Sturta relay&#34; pin: GPIO27 id: relay_3 - platform: gpio restore_mode: ALWAYS_ON name: &#34;Loka nidurfalli&#34; pin: GPIO18 id: relay_4 climate: - platform: bang_bang id: pottur_climate visual: min_temperature: 38 max_temperature: 42 temperature_step: 1.0 name: &#34;Pottur vatn&#34; sensor: pottur_hiti default_target_temperature_low: 38 °C default_target_temperature_high: 40 °C heat_action: if: condition: lambda: &#39;return id(pottur_hiti).state &gt; 32;&#39; then: - logger.log: &#34;The sensor is above 32! then full&#34; - switch.turn_on: relay_1 - switch.turn_on: relay_2 else: - logger.log: &#34;The sensor value is below 32!&#34; - switch.turn_on: relay_1 - delay: 1min - switch.turn_on: relay_4 - delay: 30min - switch.turn_on: relay_2 idle_action: - switch.turn_off: relay_2 - switch.turn_off: relay_1 mqtt: broker: 192.168.x.x username: xxx password: xxx </p>
   </div>
   <footer class="entry-footer"><span title='2023-04-04 22:15:00 +0000 GMT'>April 4, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>482 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Esp32 Hot tub controller" href="https://lubenz007.github.io/posts/2023-04-04-hottub/"></a>
+  <a class="entry-link" aria-label="post link to Esp32 Hot tub controller" href="http://localhost:1313/posts/esp32-hot-tub-controller/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -234,7 +667,7 @@ Install aztfexport is easy from package manager c:\winget install aztfexport And
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-04 22:15:00 +0000 GMT'>April 4, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>354 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Upgrade Hyper-V Hosts with Azure Arc" href="https://lubenz007.github.io/posts/2023-04-04-upgrade-hyper/"></a>
+  <a class="entry-link" aria-label="post link to Upgrade Hyper-V Hosts with Azure Arc" href="http://localhost:1313/posts/upgrade-hyper-v-hosts-with-azure-arc/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -247,7 +680,7 @@ Install aztfexport is easy from package manager c:\winget install aztfexport And
 $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Connect to Graph # $Body = @{ Grant_Type = &#34;client_credentials&#34; resource = &#34;https://graph.microsoft.com&#34; client_id = $clientId client_secret = $clientSecret } $ConnectGraph = Invoke-RestMethod -Uri &#34;https://login.microsoft.com/$tenant_Id/oauth2/token?api-version=1.0&#34; -Method POST -Body $Body # Variable Collections # $CSVOutputFile = &#34;c:\temp\Microsoft365LicensesReport.CSV&#34; $today = Get-Date $Headers = @{ &#39;Content-Type&#39; = &#34;application/json&#34; &#39;Authorization&#39; = &#34;Bearer $($ConnectGraph.access_token)&#34; } $token = $ConnectGraph.access_token # Force TLS 1.2. [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 function Get-GraphData { param ( [parameter(Mandatory)] [string]$AccessToken, [parameter(Mandatory)] [string]$Uri ) $Headers = @{ &#39;Authorization&#39; = &#34;Bearer $AccessToken&#34; } do { $Results = Invoke-RestMethod -Uri $Uri -Headers $Headers -ErrorAction Stop $QueryResults &#43;= $Results.value $Uri = $Results.&#39;@odata.nextLink&#39; } while ($Uri) return $QueryResults } #This request get SecureScore [array]$Skus = Get-GraphData -AccessToken $Token -Uri &#34;https://graph.microsoft.com/beta/subscribedSkus&#34; #[Array]$Skus = Get-MgSubscribedSku # Generate CSV of all product SKUs used in tenant [array]$Sku = $Skus | Select-Object SkuId, SkuPartNumber # Generate list of all service plans used in SKUs in tenant $SPData = [System.Collections.Generic.List[Object]]::new() ForEach ($Sk in $Skus) { ForEach ($SP in $Sk.ServicePlans) { $SPLine = [PSCustomObject][Ordered]@{ ServicePlanId = $SP.ServicePlanId ServicePlanName = $SP.ServicePlanName ServicePlanDisplayName = $SP.ServicePlanName } $SPData.Add($SPLine) } } $SkuHashTable = @{} ForEach ($Line in $Sku) { $SkuHashTable.Add([string]$Line.SkuId, [string]$Line.skuPartNumber) } $ServicePlanHashTable = @{} ForEach ($Line2 in $SPData) { $ServicePlanHashTable.Add([string]$Line2.ServicePlanId, [string]$Line2.ServicePlanDisplayName) } [Array]$Users = Get-GraphData -AccessToken $Token -Uri &#34;https://graph.microsoft.com/beta/users&#34; $Report = [System.Collections.Generic.List[Object]]::new() ForEach ($User in $users) { If ([string]::IsNullOrWhiteSpace($User.AssignedLicenses) -eq $true) { # Only process account if it has some licenses Write-Host &#34;Processing&#34; $User.DisplayName [array]$LicenseInfo = $Null; [array]$DisabledPlans = $Null ForEach ($License in $User.AssignedLicenses) { If ($SkuHashTable.ContainsKey($License.SkuId) -eq $True) { # We found a match in the SKU hash table $LicenseInfo &#43;= $SkuHashTable.Item($License.SkuId) } Else { # Nothing doing, so output the SkuID $LicenseInfo &#43;= $License } # Report any disabled service plans in licenses If ([string]::IsNullOrWhiteSpace($License.DisabledPlans) -eq $False ) { # Check if disabled service plans in a license ForEach ($DisabledPlan in $License.DisabledPlans) { # Try and find what service plan is disabled If ($ServicePlanHashTable.ContainsKey($DisabledPlan) -eq $True) { # We found a match in the Service Plans hash table $DisabledPlans &#43;= $ServicePlanHashTable.Item($DisabledPlan) } Else { # Nothing doing, so output the Service Plan ID $DisabledPlans &#43;= $DisabledPlan } } # End ForEach disabled plans } # End if check for disabled plans } # End Foreach Licenses # Report information [string]$DisabledPlans = $DisabledPlans -join &#34;, &#34; [string]$LicenseInfo = $LicenseInfo -join (&#34;, &#34;) $ReportLine = [PSCustomObject][Ordered]@{ User = $User.DisplayName UPN = $User.UserPrincipalName Country = $User.Country Department = $User.Department Title = $User.JobTitle Licenses = $LicenseInfo &#34;Disabled Plans&#34; = $DisabledPlans } Write-Host $ReportLine $Report.Add($ReportLine) } #end If account is licensed Else { $UnlicensedAccounts&#43;&#43; } } # End ForEach Users $Report | Export-CSV -NoTypeInformation $CSVOutputFile </p>
   </div>
   <footer class="entry-footer"><span title='2023-04-01 00:27:00 +0000 GMT'>April 1, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>480 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Getting licenses assigned to user accounts" href="https://lubenz007.github.io/posts/2023-01-04-license-report/"></a>
+  <a class="entry-link" aria-label="post link to Getting licenses assigned to user accounts" href="http://localhost:1313/posts/getting-licenses-assigned-to-user-accounts/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -260,7 +693,7 @@ $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Conn
 # Needs permission SecurityEvents.Read.All $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Connect to Graph # $Body = @{ Grant_Type = &#34;client_credentials&#34; resource = &#34;https://graph.microsoft.com&#34; client_id = $clientId client_secret = $clientSecret } $ConnectGraph = Invoke-RestMethod -Uri &#34;https://login.microsoft.com/$tenant_Id/oauth2/token?api-version=1.0&#34; -Method POST -Body $Body # Variable Collections # $path = &#34;C:\temp\&#34; $Headers = @{ &#39;Content-Type&#39; = &#34;application/json&#34; &#39;Authorization&#39; = &#34;Bearer $($ConnectGraph.access_token)&#34; } $token = $ConnectGraph.access_token # Force TLS 1.2. [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 function Get-GraphData { param ( [parameter(Mandatory)] [string]$AccessToken, [parameter(Mandatory)] [string]$Uri ) $Headers = @{ &#39;Authorization&#39; = &#34;Bearer $AccessToken&#34; } do { $Results = Invoke-RestMethod -Uri $Uri -Headers $Headers -ErrorAction Stop $QueryResults &#43;= $Results.value $Uri = $Results.&#39;@odata.nextLink&#39; } while ($Uri) return $QueryResults } #This request get SecureScore $uri = &#34;https://graph.microsoft.com/beta/security/secureScores&#34; $Result = @() [array]$Response = Get-GraphData -AccessToken $Token -Uri $uri if ($Response) { ForEach ($Respons in $Response) { $SecureScore = $Respons.currentScore / $Respons.maxScore * 100 $Result &#43;= New-Object PSObject -property $([ordered]@{ CreatedDateTime = $Respons.createdDateTime CurrentScore = $Respons.currentScore MaxScore = $Respons.maxScore LicensedUserCount = $Respons.licensedUserCount ActiveUserCount = $Respons.activeUserCount SecureScore = [math]::Round($SecureScore, 2) }) } } else { Write-Host &#34;No SecureScore data found&#34; } # export to csv $Result | export-csv -path &#34;$path\SecureScore.csv&#34; -NoTypeInformation </p>
   </div>
   <footer class="entry-footer"><span title='2023-03-25 22:49:00 +0000 GMT'>March 25, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>235 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to MS Graph API - Get Secure Score for tenant" href="https://lubenz007.github.io/posts/2023-03-23-sgraph-securescore/"></a>
+  <a class="entry-link" aria-label="post link to MS Graph API - Get Secure Score for tenant" href="http://localhost:1313/posts/ms-graph-api-get-secure-score-for-tenant/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -273,7 +706,7 @@ $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # Conn
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-03-25 13:49:00 +0000 GMT'>March 25, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>352 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Getting Started with MSGraph API" href="https://lubenz007.github.io/posts/2023-03-23-sgraph-api/"></a>
+  <a class="entry-link" aria-label="post link to Getting Started with MSGraph API" href="http://localhost:1313/posts/getting-started-with-msgraph-api/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -287,19 +720,159 @@ DisplayName,UserPrincipalName,UsageLocation,Contry,LastSignInDateTime,IsLicensed
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-03-25 13:49:00 +0000 GMT'>March 25, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>316 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to MS Graph API - Get User info" href="https://lubenz007.github.io/posts/2023-03-23-sgraph-users/"></a>
+  <a class="entry-link" aria-label="post link to MS Graph API - Get User info" href="http://localhost:1313/posts/ms-graph-api-get-user-info/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="https://lubenz007.github.io/posts/">
+    <a class="prev" href="http://localhost:1313/posts/">
       «&nbsp;Prev&nbsp;
     </a>
   </nav>
 </footer>
-    </main>
+      </main>
+      
+      
+      <div class="right-sidebar-wrapper d-none d-xl-block">
+        
+<aside class="right-sidebar" id="right-sidebar">
+    <div class="widget-area">
+        
+        
+        <div class="widget recent-posts-widget">
+            <h4 class="widget-title">Recent Posts</h4>
+            <ul class="recent-posts-list">
+                <li class="recent-post-item">
+                    <a href="/posts/migrating-from-vmware-to-azure-using-azure-files/" class="recent-post-link">
+                        <div class="recent-post-meta">
+                            <time class="recent-post-date">Aug 18</time>
+                        </div>
+                        <h5 class="recent-post-title">Migrating from VMware to Azure using Azure Files</h5>
+                    </a>
+                </li>
+                <li class="recent-post-item">
+                    <a href="/posts/gspro-control-box/" class="recent-post-link">
+                        <div class="recent-post-meta">
+                            <time class="recent-post-date">Jun 23</time>
+                        </div>
+                        <h5 class="recent-post-title">GSPRO Control box</h5>
+                    </a>
+                </li>
+                <li class="recent-post-item">
+                    <a href="/posts/arc-diskspace-monitoring-teams/" class="recent-post-link">
+                        <div class="recent-post-meta">
+                            <time class="recent-post-date">Oct 15</time>
+                        </div>
+                        <h5 class="recent-post-title">Arc - Diskspace Monitoring - Teams)</h5>
+                    </a>
+                </li>
+                <li class="recent-post-item">
+                    <a href="/posts/azure-arc-azure-cli-ssh-rdp/" class="recent-post-link">
+                        <div class="recent-post-meta">
+                            <time class="recent-post-date">Oct 8</time>
+                        </div>
+                        <h5 class="recent-post-title">Azure Arc - (Azure Cli - ssh - rdp)</h5>
+                    </a>
+                </li>
+                <li class="recent-post-item">
+                    <a href="/posts/hyper-v-tool/" class="recent-post-link">
+                        <div class="recent-post-meta">
+                            <time class="recent-post-date">Sep 30</time>
+                        </div>
+                        <h5 class="recent-post-title">hyper-v-tool</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="widget categories-widget">
+            <h4 class="widget-title">Top Categories</h4>
+            <ul class="categories-list">
+                <li class="category-item">
+                    <a href="/categories/msgraph" class="category-link">
+                        <span class="category-name">Msgraph</span>
+                        <span class="category-count">6</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/automation" class="category-link">
+                        <span class="category-name">Automation</span>
+                        <span class="category-count">4</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/azure" class="category-link">
+                        <span class="category-name">Azure</span>
+                        <span class="category-count">3</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/usage" class="category-link">
+                        <span class="category-name">Usage</span>
+                        <span class="category-count">3</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/hyper-v" class="category-link">
+                        <span class="category-name">Hyper-V</span>
+                        <span class="category-count">1</span>
+                    </a>
+                </li>
+                <li class="category-item">
+                    <a href="/categories/monitor" class="category-link">
+                        <span class="category-name">Monitor</span>
+                        <span class="category-count">1</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="widget tags-widget">
+            <h4 class="widget-title">Popular Tags</h4>
+            <div class="tag-cloud">
+                <a href="/tags/azure" class="tag-cloud-item">
+                    azure
+                </a>
+                <a href="/tags/msgraph" class="tag-cloud-item">
+                    msgraph
+                </a>
+                <a href="/tags/automation" class="tag-cloud-item">
+                    automation
+                </a>
+                <a href="/tags/usage" class="tag-cloud-item">
+                    usage
+                </a>
+                <a href="/tags/esp32" class="tag-cloud-item">
+                    esp32
+                </a>
+                <a href="/tags/hyperv" class="tag-cloud-item">
+                    hyperv
+                </a>
+                <a href="/tags/monitor" class="tag-cloud-item">
+                    monitor
+                </a>
+                <a href="/tags/powershell" class="tag-cloud-item">
+                    powershell
+                </a>
+                <a href="/tags/security" class="tag-cloud-item">
+                    security
+                </a>
+                <a href="/tags/terraform" class="tag-cloud-item">
+                    terraform
+                </a>
+            </div>
+        </div>
+
+    </div>
+</aside>
+      </div>
+    </div>
+    
+    
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://lubenz007.github.io/">BensiEgils</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">BensiEgils</a></span> · 
 
     <span>
         Powered by
@@ -367,6 +940,75 @@ DisplayName,UserPrincipalName,UsageLocation,Contry,LastSignInDateTime,IsLicensed
     })
 
 </script>
-</body>
 
+  </div>
+
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const sidebarToggle = document.getElementById('sidebar-toggle');
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.querySelector('.sidebar-overlay');
+      
+      
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+        });
+      }
+      
+      
+      if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', function() {
+          sidebar.classList.toggle('active');
+          overlay.classList.toggle('active');
+          document.body.classList.toggle('sidebar-open');
+        });
+      }
+      
+      
+      if (overlay) {
+        overlay.addEventListener('click', function() {
+          sidebar.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.classList.remove('sidebar-open');
+        });
+      }
+      
+      
+      const navToggles = document.querySelectorAll('.nav-toggle');
+      navToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          const parent = this.parentElement;
+          const submenu = parent.querySelector('.nav-submenu');
+          
+          
+          parent.classList.toggle('open');
+          
+          
+          navToggles.forEach(function(otherToggle) {
+            if (otherToggle !== toggle) {
+              otherToggle.parentElement.classList.remove('open');
+            }
+          });
+        });
+      });
+      
+      
+      const savedTheme = localStorage.getItem('theme') || 'auto';
+      if (savedTheme === 'auto') {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    });
+  </script>
+</body>
 </html>

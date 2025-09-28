@@ -3,11 +3,18 @@ title: Getting licenses assigned to user accounts
 date: 2023-04-01 00:27:00 -0000
 categories: [MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
+summary: "Create comprehensive license reports for Azure AD user accounts using Microsoft Graph API instead of MgGraph PowerShell module."
 ---
-## Create a report of licenses assigned to Azure AD user accounts using the Microsoft Graph API
-### This is a rewrite from [here](https://practical365.com/create-licensing-report-microsoft365-tenant/) practical365.com
-> My misson was to rewrite the script to use the Microsoft Graph API instead of the MgGraph PowerShell module.
-{: .prompt-info }
+
+Create a detailed report of licenses assigned to Azure AD user accounts using the Microsoft Graph API. This is a rewrite that uses direct API calls instead of the MgGraph PowerShell module.
+
+<!--more-->
+
+## License Reporting with Microsoft Graph API
+
+This is a rewrite from [practical365.com](https://practical365.com/create-licensing-report-microsoft365-tenant/) - my mission was to rewrite the script to use the Microsoft Graph API instead of the MgGraph PowerShell module.
+
+> **Info:** This post shows how to get license reports from Microsoft Graph directly
 
 ```powershell
 

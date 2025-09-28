@@ -3,14 +3,19 @@ title: Get Azure Defender for Cloud score Via API
 date: 2023-05-28 14:00:00 -0000
 categories: [Security]
 tags: [azure,security ]     # TAG names should always be lowercase
+summary: "Build comprehensive Azure Defender for Cloud security score reports via API and export to CSV for tracking security posture progress."
 ---
 
-How to build a report of Azure Defender for Cloud score Via API, and export it to CSV.
-Why do we need this? share it with your ?, and show them the progress of your security posture.
+Create detailed reports of Azure Defender for Cloud security scores using API calls and export them to CSV format for sharing and progress tracking.
+
+<!--more-->
+
+## Azure Defender Security Score Reporting
+
+How to build a report of Azure Defender for Cloud score via API, and export it to CSV. Why do we need this? Share it with your stakeholders and show them the progress of your security posture.
 
 
->Need to create service principal with the following permissions: Read RBAC on each subscription.
-{: .prompt-info }
+> **Info:** Need to create service principal with the following permissions: Read RBAC on each subscription.
 
 ```powershell
 #set the variables

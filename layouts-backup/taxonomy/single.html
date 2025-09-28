@@ -1,0 +1,66 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title | title }}</h1>
+  <div class="page-description">
+    {{- if eq .Kind "taxonomy" }}
+    All categories
+    {{- else }}
+    Posts in category "{{ .Title }}" ({{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }})
+    {{- end }}
+  </div>
+</header>
+
+{{- if eq .Kind "taxonomy" }}
+{{/* Categories overview page */}}
+<div class="taxonomy-grid">
+  {{- range .Data.Terms.Alphabetical }}
+  <div class="taxonomy-item">
+    <a href="{{ .Page.Permalink }}" class="taxonomy-link">
+      <h3 class="taxonomy-name">{{ .Page.Title | title }}</h3>
+      <div class="taxonomy-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</div>
+    </a>
+  </div>
+  {{- end }}
+</div>
+
+{{- else }}
+{{/* Single category page */}}
+<div class="posts-list">
+  {{- range .Pages }}
+  <article class="post-item">
+    <header class="post-item-header">
+      <h2 class="post-item-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      <div class="post-item-meta">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+        {{- if (.Param "ShowReadingTime") }}
+        <span class="reading-time">{{ .ReadingTime }} min read</span>
+        {{- end }}
+      </div>
+    </header>
+    
+    {{- if .Summary }}
+    <div class="post-item-summary">
+      {{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}
+    </div>
+    {{- end }}
+    
+    {{- if .Params.tags }}
+    <footer class="post-item-footer">
+      <div class="post-item-tags">
+        {{- range .Params.tags }}
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+        {{- end }}
+      </div>
+    </footer>
+    {{- end }}
+  </article>
+  {{- end }}
+</div>
+{{- end }}
+
+{{- end }}{{/* end main */}}

@@ -1,0 +1,31 @@
+{{- if .IsHome -}}
+  <span class="breadcrumb-item active">Home</span>
+{{- else -}}
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{{ "/" | relURL }}">Home</a>
+      </li>
+      
+      {{- if eq .Kind "page" -}}
+        {{- if .Section -}}
+          <li class="breadcrumb-item">
+            <a href="{{ (.GetPage .Section).RelPermalink }}">{{ .Section | title }}</a>
+          </li>
+        {{- end -}}
+        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+      {{- else if eq .Kind "section" -}}
+        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+      {{- else if eq .Kind "taxonomy" -}}
+        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+      {{- else if eq .Kind "term" -}}
+        <li class="breadcrumb-item">
+          <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+      {{- else -}}
+        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+      {{- end -}}
+    </ol>
+  </nav>  
+{{- end -}}

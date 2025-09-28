@@ -3,12 +3,18 @@ title: MS Graph API - Get User info
 date: 2023-03-25 13:49:00 -0000
 categories: [MSGraph]
 tags: [azure,msgraph]     # TAG names should always be lowercase
+summary: "Learn how to use Microsoft Graph API to retrieve user information including last sign-in times, licensing status, and user properties with PowerShell."
 ---
-## Microsoft Graph API can be used to get the last logon time of a user. To do this, you will need to make a GET request to the /users/{id}/lastLogonTimeStamp endpoint. This endpoint will return the last logon time of the user in the form of a timestamp. You can then use this timestamp to determine the exact date and time of the user's last logon.
 
-This query get's.
-> DisplayName,UserPrincipalName,UsageLocation,Contry,LastSignInDateTime,IsLicensed,IsGuestUser
-{: .prompt-info }
+Microsoft Graph API can be used to get comprehensive user information including the last logon time. This guide shows how to query user data including DisplayName, UserPrincipalName, UsageLocation, Country, LastSignInDateTime, IsLicensed, and IsGuestUser.
+
+<!--more-->
+
+## What This Query Retrieves
+
+- DisplayName, UserPrincipalName, UsageLocation, Country
+- LastSignInDateTime, IsLicensed, IsGuestUser
+- Complete user activity and licensing information
 
 ```powershell
 #client_id and client_secret are generated in Azure AD

@@ -3,11 +3,18 @@ title: Powershell Speedtest
 date: 2023-04-06 20:15:00 -0000
 categories: [Automation]
 tags: [powershell,automation]     # TAG names should always be lowercase
+summary: "PowerShell script for automated internet speed monitoring using Speedtest CLI with results stored in Azure Table Storage for analysis."
 ---
-## Was having problems with my internet connection and wanted to monitor it. So I rewrote this script to use powershell and store the results in a table storage.
 
-> The script is using the speedtest cli from https://www.speedtest.net/apps/cli
-{: .prompt-info }
+Monitor your internet connection performance with this PowerShell script that uses the Speedtest CLI and stores results in Azure Table Storage for historical analysis.
+
+<!--more-->
+
+> **Info:** The script uses the speedtest CLI from https://www.speedtest.net/apps/cli
+
+## Problem and Solution
+
+Was having problems with my internet connection and wanted to monitor it continuously. So I rewrote this script to use PowerShell and store the results in Azure Table Storage for tracking and analysis.
 
 ```powershell
 #$StorageAccountName = "StorageAcount"

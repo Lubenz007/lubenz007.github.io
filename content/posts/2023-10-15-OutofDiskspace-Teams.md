@@ -3,9 +3,16 @@ title: Arc - Diskspace Monitoring - Teams)
 date: 2023-10-15 02:00:00 -0000
 categories: [Azure,Monitor]
 tags: [azure,monitor]     # TAG names should always be lowercase
+summary: "Set up disk space monitoring for Azure Arc-enabled servers with Teams notifications when storage is running low using Azure Monitor Insights."
 ---
 
-- Upon successfully installing Azure Arc on your Server and activating Insights, you open the door to a powerful monitoring capability. One essential aspect is overseeing disk space usage on your server, ensuring optimal performance and preventing potential issues. This example provides a step-by-step guide on how to set up disk space monitoring and receive instant notifications via Microsoft Teams when space is running low.
+Monitor disk space usage on Azure Arc-enabled servers and receive instant Microsoft Teams notifications when space is running low.
+
+<!--more-->
+
+## Azure Arc Disk Space Monitoring
+
+Upon successfully installing Azure Arc on your Server and activating Insights, you open the door to a powerful monitoring capability. One essential aspect is overseeing disk space usage on your server, ensuring optimal performance and preventing potential issues. This example provides a step-by-step guide on how to set up disk space monitoring and receive instant notifications via Microsoft Teams when space is running low.
 
 - Furthermore, this versatile approach can be extended to send email alerts, providing an additional layer of flexibility in how you manage critical resource thresholds. This comprehensive monitoring strategy empowers you with the tools to proactively maintain your server's health and responsiveness, bolstering the reliability of your operations.
 
@@ -81,15 +88,15 @@ $jsonMessage = $message | ConvertTo-Json
 Invoke-RestMethod -Method Post -ContentType 'application/json' -Body $jsonMessage -Uri $webhookUri
 ```
 - Select create alert rule
-![Desktop View](/assets/img/blog/AzureMonitor.png){: .normal-image}
+![Desktop View](/assets/img/blog/AzureMonitor.png)
 
 - Create a new alert rule
-![Desktop View](/assets/img/blog/Create_an_alert_rule.png){: .normal-image}
+![Desktop View](/assets/img/blog/Create_an_alert_rule.png)
 
 - Create action group
-![Desktop View](/assets/img/blog/Action_Group.png){: .normal-image}
+![Desktop View](/assets/img/blog/Action_Group.png)
 
 - Select the runbook with teams notification that we create before
 
 - the result in teams
-![Desktop View](/assets/img/blog/diskalert_teams.png){: .normal-image}
+![Desktop View](/assets/img/blog/diskalert_teams.png)

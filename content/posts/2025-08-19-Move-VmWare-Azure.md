@@ -35,7 +35,7 @@ Tools You Will Need
 On the source VMware server and later on the Hyper-V server in Azure, mount the Azure File Share:
 Mount as Administrator because disk2vhd runs as Administrator.
 
-![Mount Azure File Share](assets/img/blog/vmwaremove/blob.png)
+![Mount Azure File Share](/assets/img/blog/vmwaremove/blob.png)
 
 **Step 2:** Export VMware VM with Disk2VHD
 
@@ -45,8 +45,8 @@ Select the volumes you want to export.
 
 Choose the Azure File Share as the destination path (after mounting it as a network drive).
 
-![Disk2VHD Export](assets/img/blog/vmwaremove/disk2vhd1.png)
-![Disk2VHD Uncheck](assets/img/blog/vmwaremove/uncheck.png)
+![Disk2VHD Export](/assets/img/blog/vmwaremove/disk2vhd1.png)
+![Disk2VHD Uncheck](/assets/img/blog/vmwaremove/uncheck.png)
 
 
 **Step 3:** Convert VHD from Dynamic to Fixed
@@ -59,13 +59,13 @@ Browse to the VHD file from the Azure File Share.
 
 Select Convert → Fixed size.
 
-![alt text](assets/img/blog/vmwaremove/fxiedsize.png)
+![Fixed Size VHD](/assets/img/blog/vmwaremove/fxiedsize.png)
 
 Step 4: Copy VHD to Azure Blob Storage
 
 Use Azure Storage Explorer ( Use copy and paste in the menu :) )
 
-![alt text](assets/img/blog/vmwaremove/storageexplorer.png)
+![Azure Storage Explorer](/assets/img/blog/vmwaremove/storageexplorer.png)
 
 Step 5: Create Azure Managed Image & VM
 
@@ -77,6 +77,6 @@ Create an image.
 
 Deploy a VM from that image.
 
-![alt text](assets/img/blog/vmwaremove/azimagecreate.png)
+![Azure Image Create](/assets/img/blog/vmwaremove/azimagecreate.png)
 
 Now you can create vm from the image.

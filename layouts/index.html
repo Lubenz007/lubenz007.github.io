@@ -1,0 +1,93 @@
+{{ define "main" }}
+  <div class='hx:mx-auto hx:flex hextra-max-page-width'>
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
+    {{ partial "toc.html" . }}
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
+        {{ if .Title }}<h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">{{ .Title }}</h1>{{ end }}
+        
+        <div class="content hx:mb-8">
+          {{ .Content }}
+        </div>
+
+        <!-- Recent Posts Section -->
+        <div class="hx:mt-8">
+          <h2 class="hx:text-2xl hx:font-bold hx:mb-6 hx:text-slate-900 hx:dark:text-slate-100">Latest Posts</h2>
+          <div class="hx:space-y-6">
+            {{ range first 3 (where site.RegularPages "Section" "posts") }}
+            <div class="hx:p-6 hx:border hx:border-gray-200 hx:rounded-lg hx:shadow-sm hx:dark:border-gray-700 hx:dark:bg-gray-800/50">
+              <h3 class="hx:text-xl hx:font-semibold hx:mb-3">
+                <a href="{{ .Permalink }}" class="hx:text-blue-600 hx:dark:text-blue-400 hx:hover:underline hx:decoration-2">{{ .Title }}</a>
+              </h3>
+              <div class="hx:flex hx:items-center hx:gap-4 hx:text-sm hx:text-gray-600 hx:dark:text-gray-400 hx:mb-3">
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                <div class="hx:flex hx:gap-2">
+                  {{ range .Params.categories }}
+                    <span class="hx:bg-blue-100 hx:text-blue-800 hx:px-2 hx:py-1 hx:rounded hx:text-xs hx:dark:bg-blue-900 hx:dark:text-blue-300">{{ . }}</span>
+                  {{ end }}
+                </div>
+              </div>
+              {{ if .Params.image }}
+              <div class="hx:mb-4">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" class="hx:w-full hx:h-48 hx:object-cover hx:rounded-lg">
+              </div>
+              {{ end }}
+              <p class="hx:text-gray-700 hx:dark:text-gray-300 hx:mb-4 hx:leading-relaxed">{{ .Summary }}</p>
+              <a href="{{ .Permalink }}" class="hx:inline-flex hx:items-center hx:text-blue-600 hx:dark:text-blue-400 hx:hover:underline hx:font-medium">
+                Read more 
+                <svg class="hx:w-4 hx:h-4 hx:ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            {{ end }}
+          </div>
+          
+          <div class="hx:mt-8 hx:text-center">
+            <a href="/posts/" class="hx:inline-flex hx:items-center hx:px-6 hx:py-3 hx:bg-blue-600 hx:text-white hx:rounded-lg hx:hover:bg-blue-700 hx:transition-colors hx:font-medium">
+              Explore All Posts
+              <svg class="hx:w-4 hx:h-4 hx:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="hx:mt-12">
+          <h2 class="hx:text-2xl hx:font-bold hx:mb-6 hx:text-slate-900 hx:dark:text-slate-100">Categories</h2>
+          <div class="hx:grid hx:grid-cols-1 hx:md:grid-cols-2 hx:gap-4">
+            <a href="/categories/azure/" class="hx:p-4 hx:border hx:border-gray-200 hx:rounded-lg hx:hover:border-blue-300 hx:transition-colors hx:dark:border-gray-700 hx:dark:hover:border-blue-600">
+              <h3 class="hx:font-semibold hx:text-blue-600 hx:dark:text-blue-400">Azure</h3>
+              <p class="hx:text-sm hx:text-gray-600 hx:dark:text-gray-400">Cloud computing and Azure services</p>
+            </a>
+            <a href="/categories/powershell/" class="hx:p-4 hx:border hx:border-gray-200 hx:rounded-lg hx:hover:border-blue-300 hx:transition-colors hx:dark:border-gray-700 hx:dark:hover:border-blue-600">
+              <h3 class="hx:font-semibold hx:text-blue-600 hx:dark:text-blue-400">PowerShell</h3>
+              <p class="hx:text-sm hx:text-gray-600 hx:dark:text-gray-400">Automation and scripting</p>
+            </a>
+            <a href="/categories/security/" class="hx:p-4 hx:border hx:border-gray-200 hx:rounded-lg hx:hover:border-blue-300 hx:transition-colors hx:dark:border-gray-700 hx:dark:hover:border-blue-600">
+              <h3 class="hx:font-semibold hx:text-blue-600 hx:dark:text-blue-400">Security</h3>
+              <p class="hx:text-sm hx:text-gray-600 hx:dark:text-gray-400">Security best practices and tools</p>
+            </a>
+            <a href="/categories/automation/" class="hx:p-4 hx:border hx:border-gray-200 hx:rounded-lg hx:hover:border-blue-300 hx:transition-colors hx:dark:border-gray-700 hx:dark:hover:border-blue-600">
+              <h3 class="hx:font-semibold hx:text-blue-600 hx:dark:text-blue-400">Automation</h3>
+              <p class="hx:text-sm hx:text-gray-600 hx:dark:text-gray-400">Process automation</p>
+            </a>
+            <a href="/categories/tools/" class="hx:p-4 hx:border hx:border-gray-200 hx:rounded-lg hx:hover:border-blue-300 hx:transition-colors hx:dark:border-gray-700 hx:dark:hover:border-blue-600">
+              <h3 class="hx:font-semibold hx:text-blue-600 hx:dark:text-blue-400">Tools</h3>
+              <p class="hx:text-sm hx:text-gray-600 hx:dark:text-gray-400">Useful tools and utilities</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="hx:mt-12 hx:p-6 hx:bg-gray-50 hx:rounded-lg hx:dark:bg-gray-800/50">
+          <h2 class="hx:text-2xl hx:font-bold hx:mb-4 hx:text-slate-900 hx:dark:text-slate-100">About</h2>
+          <p class="hx:text-gray-700 hx:dark:text-gray-300 hx:mb-4">I'm an IT professional with over 25 years of experience in virtualization, system administration, and cloud technologies.</p>
+          <a href="/about/" class="hx:text-blue-600 hx:dark:text-blue-400 hx:hover:underline hx:font-medium">Learn more about me →</a>
+        </div>
+
+      </main>
+    </article>
+  </div>
+{{ end }}

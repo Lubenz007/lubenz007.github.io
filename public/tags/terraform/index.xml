@@ -1,30 +1,169 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Terraform on BensiEgils</title>
-    <link>https://lubenz007.github.io/tags/terraform/</link>
+    <title>BensiEgils – Terraform</title>
+    <link>http://localhost:1313/tags/terraform/</link>
     <description>Recent content in Terraform on BensiEgils</description>
-    <image>
-      <title>BensiEgils</title>
-      <url>https://lubenz007.github.io/</url>
-      <link>https://lubenz007.github.io/</link>
-    </image>
-    <generator>Hugo -- 0.147.9</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Apr 2023 18:46:49 +0000</lastBuildDate>
-    <atom:link href="https://lubenz007.github.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    
+	  <atom:link href="http://localhost:1313/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
     <item>
       <title>Getting started with Terraform and Azure</title>
-      <link>https://lubenz007.github.io/posts/2023-04-22-aztfexport/</link>
+      <link>http://localhost:1313/posts/getting-started-with-terraform-and-azure/</link>
       <pubDate>Sat, 22 Apr 2023 18:46:49 +0000</pubDate>
-      <guid>https://lubenz007.github.io/posts/2023-04-22-aztfexport/</guid>
-      <description>&lt;p&gt;I like to watch videos on how to do things, but i don&amp;rsquo;t like to start from scratch. I like to have a template from which i can start and test things out. So start to look out for exporting Azure config to templates. Terraformer is a tool that can export existing cloud infrastructure to Terraform code. But I like aztfexport better because it is more Azure-specific.&lt;/p&gt;
-&lt;h2 id=&#34;install-aztfexport-is-easy-from-package-manager&#34;&gt;Install aztfexport is easy from package manager&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;winget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aztfexport&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;and-we-need-also-azure-cli&#34;&gt;And we need also Azure Cli&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;winget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;azure-cli&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;login-to-azure&#34;&gt;Login to Azure&lt;/h2&gt;
-&lt;p&gt;This was the part I struggled with: where is the config file? It was too simple: login to Azure with Azure Cli and then select the subscription I wanted to export from. Terraform, Terraformer, and aztfexport will use the same subscription as Azure Cli.&lt;/p&gt;</description>
+      
+      <guid>http://localhost:1313/posts/getting-started-with-terraform-and-azure/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Get started with Terraform and Azure by exporting existing infrastructure using aztfexport. This Azure-specific tool makes it easy to convert your current Azure resources into Terraform templates.&lt;/p&gt;
+&lt;p&gt;I like to watch videos on how to do things, but I don&amp;rsquo;t like to start from scratch. I prefer having a template to start and test things out. That&amp;rsquo;s why I looked into exporting Azure configurations to templates. While Terraformer can export existing cloud infrastructure to Terraform code, I prefer aztfexport because it&amp;rsquo;s more Azure-specific.&lt;/p&gt;
+&lt;h2&gt;Install aztfexport is easy from package manager&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;install-aztfexport-is-easy-from-package-manager&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#install-aztfexport-is-easy-from-package-manager&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;winget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aztfexport&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;And we need also Azure Cli&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;and-we-need-also-azure-cli&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#and-we-need-also-azure-cli&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;winget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;azure-cli&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Login to Azure&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;login-to-azure&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#login-to-azure&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This was the part I struggled with: where is the config file? It was too simple: login to Azure with Azure Cli and then select the subscription I wanted to export from. Terraform, Terraformer, and aztfexport will use the same subscription as Azure Cli.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;So if you try to export and it fails to run, you need to login to Azure Cli.
+{: .prompt-tip }&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;az&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;login&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Select subscription&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;select-subscription&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#select-subscription&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;az&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;account&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;list&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-o&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;table&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;az&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;account&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;set &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-subscription&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;MySubscription&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Export to Terraform&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;export-to-terraform&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#export-to-terraform&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;So I start with a simple resource group.
+And export it to Terraform&amp;rsquo;s current folder.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dashboard&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aztfexport&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rg&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dashboard&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;There will be a menu list, and we will use w to import Terraform files.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/img/blog/terra1.png&#34; alt=&#34;Desktop View&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Result is a Terraform files&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;result-is-a-terraform-files&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#result-is-a-terraform-files&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;So we can start from there and try out things.
+&lt;img src=&#34;http://localhost:1313/assets/img/blog/terra2.png&#34; alt=&#34;Desktop View&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The first is to test if the Terraform plan works.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dashboard&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;terraform&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;plan&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/img/blog/terra3.png&#34; alt=&#34;Desktop View&#34;  loading=&#34;lazy&#34; /&gt;{: .normal-image}
+Bingo, the plan works, so we can start to add more resources to the Terraform files.&lt;/p&gt;
+      </description>
     </item>
+    
   </channel>
 </rss>
