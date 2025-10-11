@@ -39,7 +39,7 @@ while ($i -eq 0)
         Jitter        = [math]::Round($SpeedtestResults.ping.jitter)
         Latency       = [math]::Round($SpeedtestResults.ping.latency)       
     }
-    # ---- Move to table storage ----
+    # ---- Move to table storage -----
     # Add-AzTableRow -table $Table -PartitionKey $PartitionKey -RowKey (Get-Date).Ticks -property $SpeedtestObj
    
     Start-Sleep -Seconds 15
