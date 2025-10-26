@@ -4,9 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# IT professional with over 25 years of experience in the industry. 
-
-My background is in virtualization and IT administration, with a strong focus on system administration. Over the years, I have developed a deep understanding of various technologies, including Windows, Hyper-v, Vmware, (Linux), datacenter, and Azure cloud. I have a strong focus on automation and scripting, and I am always looking for ways to improve my skills and knowledge.
+An IT professional with over 25 years of experience specializing in cloud technologies, virtualization, and datacenter automation. Proven expertise in architecting and managing complex systems across Azure, VMware, and Hyper-V environments. Passionate about leveraging automation and scripting to enhance efficiency and reliability.
 
 This blog is where I store my knowledge to look back on and share with others.
 
@@ -17,47 +15,49 @@ This blog is where I store my knowledge to look back on and share with others.
   <img src="/assets/img/blog/azure-solutions-architect-expert.png" alt="Azure Solutions Architect Expert" style="width: 45%;">
 </div>
 
+### Key Skills
 
-## 1997-2002 MCSE
-* Microsoft solutions
-* Citrix Terminal Server
-* Lotus Notes Domino
-- Working at Alit/Sensa and supporting > ISAL - Mjólkursamsalan - Íslandsflug and other small companies
+*   **Cloud:** Microsoft Azure (Architect, Administrator, Azure Stack HCI, AVD)
+*   **Virtualization:** VMware vSphere, Microsoft Hyper-V, Citrix
+*   **Datacenter:** Design, Implementation, Management
+*   **Automation:** PowerShell, PowerApps
+*   **Operating Systems:** Windows Server, Linux
+*   **IT Administration:** System Administration, O365, Microsoft Solutions
+
+## Professional Experience
+
+### 1997-2002 MCSE
+### IT Consultant | Alit/Sensa | 1997-2002
+* Provided comprehensive IT support for multiple clients, including ISAL, Mjólkursamsalan, and Íslandsflug.
+* Managed and administered Microsoft-based environments, Citrix Terminal Server, and Lotus Notes Domino.
+
 
 ## 2003-2010 VSP
-* Datacenter
-* Microsoft solutions
-* VMware
-- Working at Sensa and supporting > Siminn and other customers of Sensa.
-- Hands on at the datacenter
-- VMware Cluster
-- Hosting environment for small customers
+### Datacenter Specialist | Sensa | 2003-2010
+*   Managed day-to-day datacenter operations, providing hands-on support for key clients like Siminn.
+*   Engineered and maintained a multi-tenant hosting environment built on VMware vSphere.
+*   Administered Microsoft-based solutions and ensured high availability for customer infrastructure.
+
 
 ## 2011-2016 VSP
-* Datacenter
-* Hyper-V
-* Microsoft solutions
-* VMware
-* Xen
-- Working at Basis as a small shareholder.
-- Building up Datacenter with APC Inrow and UPS
-- Hosting environment for small customers in Iceland
-- Building up Hyper-V cluster with WAP
+### Senior Systems Engineer | Basis | 2011-2016
+*   **Architected and built** a new datacenter from the ground up, featuring APC InRow cooling and redundant UPS systems.
+*   **Engineered and deployed** a highly available Hyper-V cluster with Windows Application Proxy (WAP), hosting services for multiple clients.
+*   **Managed** a multi-tenant hosting environment, ensuring high uptime and performance for customers in Iceland.
+
 
 ## 2017-2023 Azure
-* Azure
-* Azure Stack HCI
-* Azure Virtual Desktop
-* Azure GDAP
-* Azure Lighthouse
-* O365 Lighthouse
-* Hyper-V
-* PowerApps
-- Working at Sensa and then Sensa by Crayon.
-- After 2021, main focus on Azure.
+### Cloud & Datacenter Specialist | Sensa by Crayon | 2017-2023
+*   Led cloud adoption initiatives with a primary focus on Microsoft Azure.
+*   Designed and implemented Azure solutions including Azure Virtual Desktop (AVD) for remote workforces.
+*   Managed multi-tenant client environments securely and efficiently using Azure Lighthouse and GDAP.
+*   Deployed and managed on-premises Azure Stack HCI clusters, bridging the gap between datacenter and cloud.
 
-## 2025 Softwareone --
-* Still focused on Azure.
+
+## 2025 Sensa by Crayon / Softwareone --
+### Azure Specialist | Softwareone | 2024-Present
+*   Continuing to specialize in Microsoft Azure, focusing on infrastructure.
+
 
 ## Certifications over the years:
 * Microsoft Certified: Azure Solutions Architect Expert - 2022
