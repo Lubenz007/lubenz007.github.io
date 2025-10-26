@@ -8,13 +8,6 @@ An IT professional with over 25 years of experience specializing in cloud techno
 
 This blog is where I store my knowledge to look back on and share with others.
 
-* My Microsoft transcript link [here](https://learn.microsoft.com/en-us/users/lubenz007/transcript/v25q3ipzxz65rjr?tab=credentials-tab&source=docs)
-
-<div style="display: flex; justify-content: space-between;">
-  <img src="/assets/img/blog/azure-administrator-associate.png" alt="Azure Administrator Associate" style="width: 45%;">
-  <img src="/assets/img/blog/azure-solutions-architect-expert.png" alt="Azure Solutions Architect Expert" style="width: 45%;">
-</div>
-
 ### Key Skills
 
 *   **Cloud:** Microsoft Azure (Architect, Administrator, Azure Stack HCI, AVD)
@@ -59,6 +52,16 @@ This blog is where I store my knowledge to look back on and share with others.
 *   Continuing to specialize in Microsoft Azure, focusing on infrastructure.
 
 
+### Certifications
+
+For a complete and up-to-date list of my active certifications, please see my official **[Microsoft Learn Transcript](https://learn.microsoft.com/en-us/users/lubenz007/transcript/v25q3ipzxz65rjr?tab=credentials-tab&source=docs)**.
+
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="/assets/img/blog/azure-administrator-associate.png" alt="Azure Administrator Associate" style="width: 45%;">
+  <img src="/assets/img/blog/azure-solutions-architect-expert.png" alt="Azure Solutions Architect Expert" style="width: 45%;">
+</div>
+
 ## Certifications over the years:
 * Microsoft Certified: Azure Solutions Architect Expert - 2022
 * Microsoft Certified: Azure Administrator Associate - 2021
@@ -72,6 +75,7 @@ This blog is where I store my knowledge to look back on and share with others.
 * Microsoft MCSA Windows 2000 / 2001 
 * Microsoft MCSE NT4 1999
 * Certified Novell Admin 1998
+
 
 ## Classes taken:
 * VMware 3.0.1 2007
