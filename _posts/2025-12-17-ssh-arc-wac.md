@@ -3,7 +3,7 @@ title: Secure Remote Management with Windows Admin Center via Azure Arc and SSH 
 date: 2025-12-17 00:00:00 -0000
 categories: [Azure]
 tags: [azure]
-image: "/assets/img/blog/login.png"
+image: "/assets/img/blog/login-1200w.png"
 ---
 
 ## Overview
@@ -129,7 +129,7 @@ az ssh arc \
    https://localhost:3333
    ```
 
-   ![alt text](assets/img/blog/dc.png)
+   ![alt text](assets/img/blog/dc-1200w.png)
 
 3. Accept the security certificate warning (if using self-signed certificate)
 4. Log in with your administrator credentials
