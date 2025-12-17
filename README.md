@@ -10,3 +10,11 @@ This work is published under [MIT][mit] License.
 [use-template]: https://github.com/cotes2020/chirpy-starter/generate
 [CD]: https://en.wikipedia.org/wiki/Continuous_deployment
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+
+## Deployment notes ⚠️
+
+Important: this repository is built by a GitHub Actions workflow which publishes a generated
+site artifact to GitHub Pages. **Do not commit generated site files** (for example, the
+built `index.html` or the contents of `_site/`) into the repository — they can be accidentally
+served as raw files and override the generated site. See `DEPLOYMENT.md` for recommended
+deployment and Pages configuration.
