@@ -1,6 +1,6 @@
 ---
 title: Secure Remote Management with Windows Admin Center via Azure Arc and SSH Tunneling
-date: 2025-17-12 00:00:00 -0000
+date: 2025-16-12 00:00:00 -0000
 categories: [Azure]
 tags: [azure]
 image: ""
