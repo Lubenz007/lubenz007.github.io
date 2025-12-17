@@ -3,7 +3,6 @@ title: Secure Remote Management with Windows Admin Center via Azure Arc and SSH 
 date: 2025-12-17 00:00:00 -0000
 categories: [Azure]
 tags: [azure]
-image: "assets/img/blog/update-1200x630.png"
 ---
 
 ## Overview
