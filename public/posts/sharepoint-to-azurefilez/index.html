@@ -208,9 +208,16 @@
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.18/dayjs.min.js,npm/dayjs@1.11.18/locale/en.js,npm/dayjs@1.11.18/plugin/relativeTime.js,npm/dayjs@1.11.18/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.18/dayjs.min.js,npm/dayjs@1.11.18/locale/en.js,npm/dayjs@1.11.18/plugin/relativeTime.js,npm/dayjs@1.11.18/plugin/localizedFormat.js,npm/tocbot@4.36.4/dist/tocbot.min.js"></script>
 
 
 
@@ -514,6 +521,38 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -544,7 +583,7 @@
 
 
 
-<article class="px-1" data-toc="false">
+<article class="px-1" data-toc="true">
   <header>
     <h1 data-toc-skip>Copy sharepoint data to Azure Filez</h1>
     
@@ -618,9 +657,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1584 words"
+  title="1733 words"
 >
-  <em>8 min</em> read</span>
+  <em>9 min</em> read</span>
 
         </div>
       </div>
@@ -628,9 +667,55 @@
   </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Copy sharepoint data to Azure Filez</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Copy sharepoint data to Azure Filez</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
     <p><strong>Summary:</strong> This PowerShell script copies files and folders from a SharePoint site into an Azure Files share. It supports a <code class="language-plaintext highlighter-rouge">-DryRun</code> mode to preview the operations without making changes. The script enumerates folders and files in SharePoint, creates matching directories in Azure Files, downloads files into a temporary location, uploads them into the Azure Files share, and keeps simple statistics about folders and files processed.</p>
+
+<h2 id="how-to-run-quick"><span class="me-2">How to run (quick)</span><a href="#how-to-run-quick" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ol>
+  <li>Save the full script below as <code class="language-plaintext highlighter-rouge">Copy-SharePoint-to-AzureFiles.ps1</code>.</li>
+  <li>Edit the Configuration variables near the top of the script (storage account, file share, client ID, etc.).</li>
+  <li>Test with a dry run:</li>
+</ol>
+
+<div class="language-powershell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Powershell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">powershell</span><span class="w"> </span><span class="nt">-ExecutionPolicy</span><span class="w"> </span><span class="nx">Bypass</span><span class="w"> </span><span class="nt">-File</span><span class="w"> </span><span class="o">.</span><span class="nx">\Copy-SharePoint-to-AzureFiles.ps1</span><span class="w"> </span><span class="nt">-DryRun</span><span class="w">
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<ol>
+  <li>When the dry run looks good, run the real copy:</li>
+</ol>
+
+<div class="language-powershell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Powershell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">powershell</span><span class="w"> </span><span class="nt">-ExecutionPolicy</span><span class="w"> </span><span class="nx">Bypass</span><span class="w"> </span><span class="nt">-File</span><span class="w"> </span><span class="o">.</span><span class="nx">\Copy-SharePoint-to-AzureFiles.ps1</span><span class="w">
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <p><strong>Flow diagram:</strong></p>
 
@@ -648,25 +733,23 @@
   I --&gt; J[Finish &amp; Report]
 </code></pre>
 
-<script>
-// Inline helper to convert code blocks with 'language-mermaid' into div.mermaid
-document.addEventListener('DOMContentLoaded', function(){
-  try{
-    document.querySelectorAll('pre > code.language-mermaid, pre > code[data-lang="mermaid"]').forEach(function(code){
-      var pre = code.parentElement;
-      var div = document.createElement('div');
-      div.className = 'mermaid';
-      div.textContent = code.textContent;
-      pre.parentNode.replaceChild(div, pre);
-    });
-    if(window.mermaid && typeof window.mermaid.init === 'function'){
-      try{ window.mermaid.init(); } catch(e){ console.warn('mermaid init failed', e); }
-    }
-  }catch(e){ console.warn('mermaid helper failed', e); }
-});
-</script>
+<blockquote>
+  <p><strong>Note about Mermaid rendering:</strong> I removed the automatic in-page conversion because it did not reliably render diagrams in some preview environments.</p>
 
-<p>&lt;#
+  <ul>
+    <li>To see rendered Mermaid diagrams open the built site in a browser (example: <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> then open http://127.0.0.1:4000).</li>
+    <li>If you need diagrams visible in editors or static previews that don’t run JavaScript (e.g., VS Code preview), I can add build-time rendering that generates SVGs during the site build.</li>
+  </ul>
+
+  <h2 id="full-script-copy--paste--powershell"><span class="me-2">Full script (copy &amp; paste) — PowerShell</span><a href="#full-script-copy--paste--powershell" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+</blockquote>
+
+<blockquote>
+  <p>Tip: update variables under “Configuration” (Storage account, file share, client id, subfolders) before running.</p>
+</blockquote>
+
+<p>```powershell
+&lt;#
 .SYNOPSIS
     Copy files from SharePoint site to Azure Files with automatic folder creation
 .PARAMETER DryRun
@@ -1764,6 +1847,12 @@ Disconnect-PnPOnline -ErrorAction SilentlyContinue }
 
 
 
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             

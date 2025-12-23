@@ -7,6 +7,22 @@ tags: [azure]
 
 **Summary:** This PowerShell script copies files and folders from a SharePoint site into an Azure Files share. It supports a `-DryRun` mode to preview the operations without making changes. The script enumerates folders and files in SharePoint, creates matching directories in Azure Files, downloads files into a temporary location, uploads them into the Azure Files share, and keeps simple statistics about folders and files processed.
 
+## How to run (quick)
+
+1. Save the full script below as `Copy-SharePoint-to-AzureFiles.ps1`.
+2. Edit the Configuration variables near the top of the script (storage account, file share, client ID, etc.).
+3. Test with a dry run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\Copy-SharePoint-to-AzureFiles.ps1 -DryRun
+```
+
+4. When the dry run looks good, run the real copy:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\Copy-SharePoint-to-AzureFiles.ps1
+```
+
 **Flow diagram:**
 
 ```mermaid
@@ -24,25 +40,12 @@ flowchart TD
   I --> J[Finish & Report]
 ```
 
-<script>
-// Inline helper to convert code blocks with 'language-mermaid' into div.mermaid
-document.addEventListener('DOMContentLoaded', function(){
-  try{
-    document.querySelectorAll('pre > code.language-mermaid, pre > code[data-lang="mermaid"]').forEach(function(code){
-      var pre = code.parentElement;
-      var div = document.createElement('div');
-      div.className = 'mermaid';
-      div.textContent = code.textContent;
-      pre.parentNode.replaceChild(div, pre);
-    });
-    if(window.mermaid && typeof window.mermaid.init === 'function'){
-      try{ window.mermaid.init(); } catch(e){ console.warn('mermaid init failed', e); }
-    }
-  }catch(e){ console.warn('mermaid helper failed', e); }
-});
-</script>
 
+## Full script (copy & paste) — PowerShell
 
+> Tip: update variables under "Configuration" (Storage account, file share, client id, subfolders) before running.
+
+```powershell
 <#
 .SYNOPSIS
     Copy files from SharePoint site to Azure Files with automatic folder creation
