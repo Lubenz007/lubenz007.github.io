@@ -23,27 +23,48 @@ powershell -ExecutionPolicy Bypass -File .\Copy-SharePoint-to-AzureFiles.ps1 -Dr
 powershell -ExecutionPolicy Bypass -File .\Copy-SharePoint-to-AzureFiles.ps1
 ```
 
-**Flow diagram:**
-
 ```mermaid
 flowchart TD
-  A[Start] --> B{DryRun?}
-  B -- Yes --> C[Scan SharePoint folders & list operations]
-  B -- No --> D[Connect to SharePoint]
-  D --> E[Enumerate files & folders]
-  E --> F{Item Type}
-  F -- File --> G[Download file -> Upload to Azure Files]
-  F -- Folder --> H[Ensure Azure Files dir exists -> Recurse]
-  G --> I[Update stats]
+  A([<i class="fa fa-play"></i> Start])
+  B{<i class="fa fa-flask"></i> DryRun?}
+  C[<i class="fa fa-list"></i> Scan SharePoint<br/>List operations]
+  D[<i class="fa fa-link"></i> Connect to SharePoint]
+  E[<i class="fa fa-folder-open"></i> Enumerate files & folders]
+  F{<i class="fa fa-file-circle-question"></i> Item Type}
+  G[<i class="fa fa-file-arrow-down"></i> Download file<br/><i class="fa fa-cloud-arrow-up"></i> Upload to Azure Files]
+  H[<i class="fa fa-folder-plus"></i> Ensure Azure dir<br/>Recurse]
+  I[<i class="fa fa-chart-line"></i> Update stats]
+  J([<i class="fa fa-flag-checkered"></i> Finish & Report])
+
+  A --> B
+  B -- Yes --> C
+  B -- No --> D
+  D --> E
+  E --> F
+  F -- File --> G
+  F -- Folder --> H
   H --> E
+  G --> I
   C --> I
-  I --> J[Finish & Report]
+  I --> J
+
+  %% Styles
+  classDef startEnd fill:#2ecc71,color:#fff,stroke:#1e8449,stroke-width:2px
+  classDef decision fill:#f1c40f,color:#000,stroke:#b7950b,stroke-width:2px
+  classDef process fill:#3498db,color:#fff,stroke:#21618c
+  classDef io fill:#9b59b6,color:#fff,stroke:#6c3483
+  classDef stats fill:#1abc9c,color:#fff,stroke:#117a65
+
+  class A,J startEnd
+  class B,F decision
+  class C,D,E,H process
+  class G io
+  class I stats
 ```
 
 
 ## Full script (copy & paste) — PowerShell
 
-> Tip: update variables under "Configuration" (Storage account, file share, client id, subfolders) before running.
 
 ```powershell
 <#
