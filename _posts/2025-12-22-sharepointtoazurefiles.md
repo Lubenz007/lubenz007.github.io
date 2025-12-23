@@ -3,6 +3,7 @@ title: Copy sharepoint data to Azure Filez
 date: 2025-12-23 00:00:00 +0000
 categories: [Azure]
 tags: [azure]
+mermaid: true
 ---
 
 **Summary:** This PowerShell script copies files and folders from a SharePoint site into an Azure Files share. It supports a `-DryRun` mode to preview the operations without making changes. The script enumerates folders and files in SharePoint, creates matching directories in Azure Files, downloads files into a temporary location, uploads them into the Azure Files share, and keeps simple statistics about folders and files processed.
