@@ -3,6 +3,7 @@ title: Copy sharepoint data to Azure Filez
 date: 2025-12-23 00:00:00 +0000
 categories: [Azure]
 tags: [azure]
+image: /assets/img/blog/sharepoint.png
 mermaid: true
 ---
 
