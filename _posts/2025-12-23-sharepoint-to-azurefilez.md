@@ -1,6 +1,6 @@
 ---
 title: Copy sharepoint data to Azure Filez
-date: 2025-23-17 00:00:00 +0000
+date: 2025-12-23 00:00:00 +0000
 categories: [Azure]
 tags: [azure]
 ---
@@ -23,6 +23,24 @@ flowchart TD
   C --> I
   I --> J[Finish & Report]
 ```
+
+<script>
+// Inline helper to convert code blocks with 'language-mermaid' into div.mermaid
+document.addEventListener('DOMContentLoaded', function(){
+  try{
+    document.querySelectorAll('pre > code.language-mermaid, pre > code[data-lang="mermaid"]').forEach(function(code){
+      var pre = code.parentElement;
+      var div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = code.textContent;
+      pre.parentNode.replaceChild(div, pre);
+    });
+    if(window.mermaid && typeof window.mermaid.init === 'function'){
+      try{ window.mermaid.init(); } catch(e){ console.warn('mermaid init failed', e); }
+    }
+  }catch(e){ console.warn('mermaid helper failed', e); }
+});
+</script>
 
 
 <#

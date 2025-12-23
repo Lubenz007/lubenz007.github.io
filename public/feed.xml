@@ -1,0 +1,145 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://lubenz007.github.io//</id>
+  <title>BensiEgils</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2025-12-23T14:36:58+00:00</updated>
+  <author>
+    <name>Benedikt Gabriel Egilsson</name>
+    <uri>https://lubenz007.github.io//</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://lubenz007.github.io//feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://lubenz007.github.io//"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Benedikt Gabriel Egilsson </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Copy sharepoint data to Azure Filez</title>
+    <link href="https://lubenz007.github.io//posts/sharepoint-to-azurefilez/" rel="alternate" type="text/html" title="Copy sharepoint data to Azure Filez" />
+    <published>2025-12-23T00:00:00+00:00</published>
+  
+    <updated>2025-12-23T00:00:00+00:00</updated>
+  
+    <id>https://lubenz007.github.io//posts/sharepoint-to-azurefilez/</id>
+    <content type="text/html" src="https://lubenz007.github.io//posts/sharepoint-to-azurefilez/" />
+    <author>
+      <name>Benedikt Gabriel Egilsson</name>
+    </author>
+
+  
+    
+    <category term="Azure" />
+    
+  
+
+  <summary>Summary: This PowerShell script copies files and folders from a SharePoint site into an Azure Files share. It supports a -DryRun mode to preview the operations without making changes. The script enumerates folders and files in SharePoint, creates matching directories in Azure Files, downloads files into a temporary location, uploads them into the Azure Files share, and keeps simple statistics a...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Secure Remote Management with Windows Admin Center via Azure Arc and SSH Tunneling.</title>
+    <link href="https://lubenz007.github.io//posts/ssh-arc-wac/" rel="alternate" type="text/html" title="Secure Remote Management with Windows Admin Center via Azure Arc and SSH Tunneling." />
+    <published>2025-12-17T00:00:00+00:00</published>
+  
+    <updated>2025-12-17T00:00:00+00:00</updated>
+  
+    <id>https://lubenz007.github.io//posts/ssh-arc-wac/</id>
+    <content type="text/html" src="https://lubenz007.github.io//posts/ssh-arc-wac/" />
+    <author>
+      <name>Benedikt Gabriel Egilsson</name>
+    </author>
+
+  
+    
+    <category term="Azure" />
+    
+  
+
+  <summary>Overview  This guide demonstrates how to securely access Windows Admin Center (WAC) on a remote server using Azure Arc and SSH tunneling. This approach provides a secure, cloud-based connection without exposing your management interface directly to the internet.  What You’ll Achieve     Secure remote access to Windows Admin Center through Azure Arc   SSH tunnel for encrypted port forwarding   C...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Migrating from VMware to Azure using Azure Files</title>
+    <link href="https://lubenz007.github.io//posts/Move-VmWare-Azure/" rel="alternate" type="text/html" title="Migrating from VMware to Azure using Azure Files" />
+    <published>2025-08-18T00:00:00+00:00</published>
+  
+    <updated>2025-08-18T00:00:00+00:00</updated>
+  
+    <id>https://lubenz007.github.io//posts/Move-VmWare-Azure/</id>
+    <content type="text/html" src="https://lubenz007.github.io//posts/Move-VmWare-Azure/" />
+    <author>
+      <name>Benedikt Gabriel Egilsson</name>
+    </author>
+
+  
+    
+    <category term="Azure" />
+    
+  
+
+  <summary>When using a tool such as Disk2VHD, you need a storage location—and sometimes plenty of it—to export the virtual machine (VM). But what if no local storage is available, and no USB can be connected, such as with a VMware hosting provider?  In that case, you can export the VHD directly to an Azure File Share and then copy it to Azure Blob Storage. Note: Dynamically expanding disks are not suppor...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Arc - Diskspace Monitoring - Teams)</title>
+    <link href="https://lubenz007.github.io//posts/OutofDiskspace-Teams/" rel="alternate" type="text/html" title="Arc - Diskspace Monitoring - Teams)" />
+    <published>2023-10-15T02:00:00+00:00</published>
+  
+    <updated>2023-10-15T02:00:00+00:00</updated>
+  
+    <id>https://lubenz007.github.io//posts/OutofDiskspace-Teams/</id>
+    <content type="text/html" src="https://lubenz007.github.io//posts/OutofDiskspace-Teams/" />
+    <author>
+      <name>Benedikt Gabriel Egilsson</name>
+    </author>
+
+  
+    
+    <category term="Azure" />
+    
+    <category term="Monitor" />
+    
+  
+
+  <summary>Upon successfully installing Azure Arc on your Server and activating Insights, you open the door to a powerful monitoring capability. One essential aspect is overseeing disk space usage on your server, ensuring optimal performance and preventing potential issues. This example provides a step-by-step guide on how to set up disk space monitoring and receive instant notifications via Microsoft Tea...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Azure Arc - (Azure Cli - ssh - rdp)</title>
+    <link href="https://lubenz007.github.io//posts/AzureArc-ssh/" rel="alternate" type="text/html" title="Azure Arc - (Azure Cli - ssh - rdp)" />
+    <published>2023-10-08T02:00:00+00:00</published>
+  
+    <updated>2023-10-08T02:00:00+00:00</updated>
+  
+    <id>https://lubenz007.github.io//posts/AzureArc-ssh/</id>
+    <content type="text/html" src="https://lubenz007.github.io//posts/AzureArc-ssh/" />
+    <author>
+      <name>Benedikt Gabriel Egilsson</name>
+    </author>
+
+  
+    
+    <category term="Azure" />
+    
+  
+
+  <summary>If you have deployed Azure Arc, you have the option to utilize Windows Admin Center for Windows Machines. Additionally, you can enable the OpenSSH Extension on Windows Server, granting the capability to establish SSH tunnels to the localhost or other machines that support RDP/SSH connections.   To begin the process, please follow these steps:  Ensure that you have the Azure CLI installed on you...</summary>
+
+  </entry>
+
+</feed>
+
+

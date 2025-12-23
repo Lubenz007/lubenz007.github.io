@@ -1,232 +1,1481 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
+<!doctype html>
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Security | BensiEgils</title>
-<meta name="keywords" content="">
-<meta name="description" content="Documenting my journey">
-<meta name="author" content="Benedikt Gabriel Egilsson">
-<link rel="canonical" href="http://localhost:1313/tags/security/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2d0325420c619a782224fbdbc50e6417d66f71c30e5607ad7ddb5b0ecce5d6cc.css" integrity="sha256-LQMlQgxhmngiJPvbxQ5kF9ZvccMOVgetfdtbDszl1sw=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/security/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/security/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
 
-            .list {
-                background: var(--theme);
-            }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
 
-    </style>
-</noscript><meta property="og:url" content="http://localhost:1313/tags/security/">
-  <meta property="og:site_name" content="BensiEgils">
-  <meta property="og:title" content="Security">
-  <meta property="og:description" content="Documenting my journey">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="website">
-      <meta property="og:image" content="http://localhost:1313/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/">
-<meta name="twitter:title" content="Security">
-<meta name="twitter:description" content="Documenting my journey">
+
+
+
+
+
+
+
+
+<!-- `site.alt_lang` can specify a language different from the UI -->
+<html lang="en" >
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+  ><!-- Setup Open Graph image -->
+
+  
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="security" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
+<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
+<link rel="canonical" href="https://lubenz007.github.io//tags/security/" />
+<meta property="og:url" content="https://lubenz007.github.io//tags/security/" />
+<meta property="og:site_name" content="BensiEgils" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="security" />
+<meta name="twitter:site" content="@lubenz007" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"security","url":"https://lubenz007.github.io//tags/security/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <title>security | BensiEgils
+  </title>
+
+  <!--
+  The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
+  Generated by: https://realfavicongenerator.net/
+-->
+
+
+
+<link rel="icon" type="image/png" href="/assets/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicons/favicon.svg">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+
+  <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+
+
+
+  <!-- Resource Hints -->
+  
+    
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+      
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+      
+    
+      
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" >
+      
+    
+      
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" >
+      
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+      
+    
+  
+
+  <!-- Bootstrap -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
+
+  <!-- Web Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css">
+
+  <!-- 3rd-party Dependencies -->
+
+  
+
+  
+
+  
+
+  <!-- Scripts -->
+
+  <script src="/assets/js/dist/theme.min.js"></script>
+
+  <!-- JS selector for site. -->
+
+<!-- commons -->
+
+
+
+<!-- layout specified -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.18/dayjs.min.js,npm/dayjs@1.11.18/locale/en.js,npm/dayjs@1.11.18/plugin/relativeTime.js,npm/dayjs@1.11.18/plugin/localizedFormat.js"></script>
+
+
+
+
+
+
+
+<script defer src="/assets/js/dist/misc.min.js"></script>
+
+
+
+<!-- Pageviews -->
+
+
+
+  
+
+  <!-- A placeholder to allow defining custom metadata -->
 
 </head>
 
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
 
-</script>
+  <body>
+    <!-- The Side Bar -->
 
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="BensiEgils (Alt + H)">BensiEgils</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="http://localhost:1313/categories/" title="Categories">
-                    <span>Categories</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
-                    <span>Tags</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/archives/" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
-  <h1>
-    Security
-    <a href="/tags/security/index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-  </h1>
-</header>
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper">
+    <a href="/" id="avatar" class="rounded-circle"><img src="https://bensiegils.com/assets/img/logo/BensiLogo.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Get Azure Defender for Cloud score Via API
-    </h2>
+    <a class="site-title d-block" href="/">BensiEgils</a>
+    <p class="site-subtitle fst-italic mb-0">Documenting my journey</p>
   </header>
-  <div class="entry-content">
-    <p>How to build a report of Azure Defender for Cloud score Via API, and export it to CSV. Why do we need this? share it with your ?, and show them the progress of your security posture.
-Need to create service principal with the following permissions: Read RBAC on each subscription. {: .prompt-info }
-#set the variables $ClientID = &#39;&#39; $ClientSecret = &#39;&#39; $tenant_Id = &#39;&#39; # your subscription Ids $subscription_Ids = &#39;&#39; # Create the body of the request. $Body = @{ Grant_Type = &#34;client_credentials&#34; Resource = &#34;https://management.azure.com/&#34; client_id = $clientId client_secret = $clientSecret } $ConnectGraph = Invoke-RestMethod -Uri &#34;https://login.microsoft.com/$tenant_Id/oauth2/token?api-version=1.0&#34; -Method POST -Body $Body $Headers = @{ &#39;Content-Type&#39; = &#34;application/json&#34; &#39;Authorization&#39; = &#34;Bearer $($ConnectGraph.access_token)&#34; } # Force TLS 1.2. [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 #function to get graph data with pagination function Get-GraphData { param ( [parameter(Mandatory)] [string]$AccessToken, [parameter(Mandatory)] [string]$Uri ) $Headers = @{ &#39;Authorization&#39; = &#34;Bearer $AccessToken&#34; } do { $Results = Invoke-RestMethod -Uri $Uri -Headers $Headers -ErrorAction Stop $QueryResults &#43;= $Results.value $Uri = $Results.&#39;@odata.nextLink&#39; } while ($Uri) return $QueryResults } # Get the data foreach ($subscription_Id in $subscription_Ids) { $uri1 = &#34;https://management.azure.com/subscriptions/$subscription_Id/providers/Microsoft.Security/secureScores?api-version=2020-01-01&#34; [array]$secureScores = Get-GraphData -AccessToken $ConnectGraph.access_token -Uri $uri1 $uri2 = &#34;https://management.azure.com/subscriptions/$subscription_Id/providers/Microsoft.Security/secureScores/ascScore/securescorecontrols?api-version=2020-01-01&#34; [array]$ascScores = Get-GraphData -AccessToken $ConnectGraph.access_token -Uri $uri2 $uri3 = &#34;https://management.azure.com/subscriptions/$subscription_Id/providers/Microsoft.Security/secureScoreControlDefinitions?api-version=2020-01-01&#34; [array]$secureScoreControlDefinitions = Get-GraphData -AccessToken $ConnectGraph.access_token -Uri $uri3 $uri4 = &#34;https://management.azure.com/subscriptions/$subscription_Id/providers/Microsoft.Security/assessments?api-version=2020-01-01&#34; [array]$assessments = Get-GraphData -AccessToken $ConnectGraph.access_token -Uri $uri4 $uri5 = &#34;https://management.azure.com/subscriptions/$subscription_Id/providers/Microsoft.Security/secureScores/ascScore/securescorecontrols?api-version=2020-01-01&amp;expand=definition&#34; [array]$securescorecontrols = Get-GraphData -AccessToken $ConnectGraph.access_token -Uri $uri5 } # Create the report $ReportLineScore = [PSCustomObject][Ordered]@{ MaxScore = $secureScores.Properties.score.max Current = $secureScores.Properties.score.current percentage = $secureScores.Properties.score.percentage * 100 } $SPData = [System.Collections.Generic.List[Object]]::new() ForEach ($ascScore in $ascScores) { $SPLine = [PSCustomObject][Ordered]@{ Name = $ascScore.properties.displayName Healthy = $ascScore.properties.healthyResourceCount UnHealthy = $ascScore.properties.unhealthyResourceCount NotApplicable = $ascScore.properties.notApplicableResourceCount weight = $ascScore.properties.weight maxScore = $ascScore.properties.score.max currentScore = $ascScore.properties.score.current percentage = $ascScore.properties.score.percentage * 100 } $SPData.Add($SPLine) } $SPData1 = [System.Collections.Generic.List[Object]]::new() foreach ($secureScoreControlDefinition in $secureScoreControlDefinitions) { $SPLine1 = [PSCustomObject][Ordered]@{ Name = $secureScoreControlDefinition.properties.displayName MaxScore = $secureScoreControlDefinition.properties.maxScore } $SPData1.Add($SPLine1) } $SPData2 = [System.Collections.Generic.List[Object]]::new() foreach ($assessment in $assessments) { $SPLine2 = [PSCustomObject][Ordered]@{ Name = $assessment.properties.displayName Status = $assessment.properties.status.description Code = $assessment.properties.status.code Cause = $assessment.properties.status.cause Details = $assessment.properties.resourceDetails.Id } $SPData2.Add($SPLine2) } $SPData3 = [System.Collections.Generic.List[Object]]::new() foreach ($securescorecontrol in $securescorecontrols) { $SPLine3 = [PSCustomObject][Ordered]@{ Name = $securescorecontrol.properties.displayName HealthyCount = $securescorecontrol.properties.healthyResourceCount UnHealthyCount = $securescorecontrol.properties.unhealthyResourceCount NotApplicableCount = $securescorecontrol.properties.notApplicableResourceCount } $SPData3.Add($SPLine3) } $ReportLineScore | Export-Csv -Path &#34;c:\temp\ReportLineScore.csv&#34; -NoTypeInformation -Encoding UTF8 $SPData | Export-Csv -Path &#34;c:\temp\SPData.csv&#34; -NoTypeInformation -Encoding UTF8 $SPData1 | Export-Csv -Path &#34;c:\temp\SPData1.csv&#34; -NoTypeInformation -Encoding UTF8 $SPData2 | Export-Csv -Path &#34;c:\temp\SPData2.csv&#34; -NoTypeInformation -Encoding UTF8 $SPData3 | Export-Csv -Path &#34;c:\temp\SPData3.csv&#34; -NoTypeInformation -Encoding UTF8 MaxScore Current percentage 31 24 77,42 Name MaxScore Protect applications against DDoS attacks 2 Enable MFA 10 Encrypt data in transit 4 Restrict unauthorized network access 4 Implement security best practices 0 Apply adaptive application control 3 Enable auditing and logging 1 Enable encryption at rest 4 Enable endpoint protection 2 Apply system updates 6 Manage access and permissions 4 Remediate security configurations 4 Secure management ports 8 Remediate vulnerabilities 6 Enable enhanced security features 0 </p>
-  </div>
-  <footer class="entry-footer"><span title='2023-05-28 14:00:00 +0000 GMT'>May 28, 2023</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>481 words</span>&nbsp;·&nbsp;<span>Benedikt Gabriel Egilsson</span></footer>
-  <a class="entry-link" aria-label="post link to Get Azure Defender for Cloud score Via API" href="http://localhost:1313/posts/2023-05-28-defendercloudesecurescore-/"></a>
-</article>
-    </main>
+  <!-- .profile-wrapper -->
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0">
+    <ul class="nav">
+      <!-- home -->
+      <li class="nav-item">
+        <a href="/" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>HOME</span>
+        </a>
+      </li>
+      <!-- the real tabs -->
+      
+        <li class="nav-item">
+          <a href="/categories/" class="nav-link">
+            <i class="fa-fw fas fa-stream"></i>
+            
+
+            <span>CATEGORIES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/tags/" class="nav-link">
+            <i class="fa-fw fas fa-tag"></i>
+            
+
+            <span>TAGS</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/archives/" class="nav-link">
+            <i class="fa-fw fas fa-archive"></i>
+            
+
+            <span>ARCHIVES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/about/" class="nav-link">
+            <i class="fa-fw fas fa-info-circle"></i>
+            
+
+            <span>ABOUT</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+    </ul>
+  </nav>
+
+  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">BensiEgils</a></span> · 
+      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
+        <i class="fas fa-adjust"></i>
+      </button>
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+      
+        <span class="icon-border"></span>
+      
+    
+
+    
+
+      
+        <a
+          href="https://github.com/lubenz007"
+          aria-label="github"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer"
+          
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+
+      
+        <a
+          href="https://twitter.com/lubenz007"
+          aria-label="twitter"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer"
+          
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+
+      
+        <a
+          href="javascript:location.href = 'mailto:' + ['bensi','alit.is'].join('@')"
+          aria-label="email"
+          
+
+          
+
+          
+
+          
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      
+    
+          
+      
+
+      
+        <a
+          href="https://www.linkedin.com/in/benedikt-gabríel-egilsson-b7295684"
+          aria-label="linkedin"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer"
+          
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      
+    
+  </div>
+  <!-- .sidebar-bottom -->
+</aside>
+<!-- #sidebar -->
+
+
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div class="container d-flex flex-column px-xxl-5">
+        <!-- The Top Bar -->
+
+<header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
+  <div
+    id="topbar"
+    class="d-flex align-items-center justify-content-between px-lg-3 h-100"
+  >
+    <nav id="breadcrumb" aria-label="Breadcrumb">
+      
+
+      
+        
+          
+            <span>
+              <a href="/">Home</a>
+            </span>
+
+          
+        
+          
+            <span>
+              <a href="/tags/">Tags</a>
+            </span>
+          
+        
+          
+            
+              <span>security</span>
+            
+
+          
+        
+      
+    </nav>
+    <!-- endof #breadcrumb -->
+
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    <div id="topbar-title">
+      Tag
+    </div>
+
+    <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
+      <i class="fas fa-search fa-fw"></i>
+    </button>
+
+    <search id="search" class="align-items-center ms-3 ms-lg-0">
+      <i class="fas fa-search fa-fw"></i>
+      <input
+        class="form-control"
+        id="search-input"
+        type="search"
+        aria-label="search"
+        autocomplete="off"
+        placeholder="Search..."
+      >
+    </search>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">Cancel</button>
+  </div>
+</header>
+
+
+        <div class="row flex-grow-1">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+
+
+
+<article class="px-1">
+  
+    
+
+
+
+<div id="page-tag">
+  <h1 class="ps-lg-2">
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    security
+    <span class="lead text-muted ps-2">1</span>
+  </h1>
+  <ul class="content ps-0">
+    
+      <li class="d-flex justify-content-between px-md-3">
+        <a href="/posts/DefenderCloudeSecureScore/">Get Azure Defender for Cloud score Via API</a>
+        <span class="dash flex-grow-1"></span>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="text-muted small text-nowrap"
+  
+  data-ts="1685282400"
+  data-df="ll"
+  
+>
+  May 28, 2023
+</time>
+
+      </li>
+    
+  </ul>
+</div>
+
+  
+</article>
+
+            
+          </main>
+
+          <!-- panel -->
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+            <div class="access">
+              <!-- Get 5 last posted/updated posts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="access-lastmod">
+    <h2 class="panel-heading">Recently Updated</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/sharepoint-to-azurefilez/">Copy sharepoint data to Azure Filez</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/ssh-arc-wac/">Secure Remote Management with Windows Admin Center via Azure Arc and SSH Tunneling.</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Move-VmWare-Azure/">Migrating from VMware to Azure using Azure Files</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/OutofDiskspace-Teams/">Arc - Diskspace Monitoring - Teams)</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/AzureArc-ssh/">Azure Arc - (Azure Cli - ssh - rdp)</a>
+        </li>
+      
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
+
+
+              <!-- The trending tags list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  <section>
+    <h2 class="panel-heading">Trending Tags</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/azure/">azure</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/msgraph/">msgraph</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/usage/">usage</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/automation/">automation</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/hyperv/">hyperv</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/monitor/">monitor</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/powershell/">powershell</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/security/">security</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/terraform/">terraform</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/tools/">tools</a>
+      
+    </div>
+  </section>
+
+
+            </div>
+
+            
+          </aside>
+        </div>
+
+        <div class="row">
+          <!-- tail -->
+          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+
+            <!-- The Footer -->
+
+<footer
+  aria-label="Site Info"
+  class="
+    d-flex flex-column justify-content-center text-muted
+    flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
+  "
+>
+  <p>©
+    <time>2025</time>
+
+    
+      <a href="https://twitter.com/lubenz007">Benedikt Gabriel Egilsson</a>.
+    
+
+    
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author."
+      >Some rights reserved.</span>
+    
+  </p>
+
+  <p>Using the <a
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="v7.4.1"
+        href="https://github.com/cotes2020/jekyll-theme-chirpy"
+        target="_blank"
+        rel="noopener"
+      >Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
+  </p>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
+
+          </div>
+        </div>
+
+        <!-- The Search results -->
+
+<div id="search-result-wrapper" class="d-flex justify-content-center d-none">
+  <div class="col-11 content">
+    <div id="search-hints">
+      <!-- The trending tags list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  <section>
+    <h2 class="panel-heading">Trending Tags</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/azure/">azure</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/msgraph/">msgraph</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/usage/">usage</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/automation/">automation</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/hyperv/">hyperv</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/monitor/">monitor</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/powershell/">powershell</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/security/">security</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/terraform/">terraform</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/tools/">tools</a>
+      
+    </div>
+  </section>
+
+
+    </div>
+    <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+  </div>
+</div>
+
+      </div>
+
+      <aside aria-label="Scroll to Top">
+        <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </aside>
+    </div>
+
+    <div id="mask" class="d-none position-fixed w-100 h-100 z-1"></div>
+
+    
+      <aside
+  id="notification"
+  class="toast"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+  data-bs-animation="true"
+  data-bs-autohide="false"
+>
+  <div class="toast-header">
+    <button
+      type="button"
+      class="btn-close ms-auto"
+      data-bs-dismiss="toast"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="toast-body text-center pt-0">
+    <p class="px-2 mb-3">A new version of content is available.</p>
+    <button type="button" class="btn btn-primary" aria-label="Update">
+      Update
+    </button>
+  </div>
+</aside>
+
+    
+
+    <!-- Embedded scripts -->
+
+    
+
+    <!--
+  Jekyll Simple Search loader
+  See: <https://github.com/christian-fei/Simple-Jekyll-Search>
+-->
+
+
+
+
 
 <script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('search-results'),
+      json: '/assets/js/data/search.json',
+      searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{content}</p>  </article>',
+      noResultsText: '<p class="mt-5">Oops! No results found.</p>',
+      templateMiddleware: function(prop, value, template) {
+        if (prop === 'categories') {
+          if (value === '') {
+            return `${value}`;
+          } else {
+            return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+          }
         }
-    }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
+        if (prop === 'tags') {
+          if (value === '') {
+            return `${value}`;
+          } else {
+            return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+          }
+        }
+      }
     });
-
+  });
 </script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
 
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
+  </body>
 </html>
+
