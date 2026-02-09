@@ -59,6 +59,7 @@ For a complete and up-to-date list of my active certifications, please see my of
 
 <div style="display: flex; justify-content: space-between;">
   <img src="/assets/img/blog/azure-administrator-associate.png" alt="Azure Administrator Associate" style="width: 45%;">
+  <img src="/assets/img/blog/azure-security-engineer.png" alt="Azure Security Engineer Associate" style="width: 45%;">
   <img src="/assets/img/blog/azure-solutions-architect-expert.png" alt="Azure Solutions Architect Expert" style="width: 45%;">
 </div>
 
