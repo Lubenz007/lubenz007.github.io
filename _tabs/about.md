@@ -64,6 +64,7 @@ For a complete and up-to-date list of my active certifications, please see my of
 </div>
 
 ## Certifications over the years:
+* Microsoft Certified: Azure Security Engineer Associate	2025
 * Microsoft Certified: Azure Solutions Architect Expert - 2022
 * Microsoft Certified: Azure Administrator Associate - 2021
 * VMware Certified Professional 6 - 2016
