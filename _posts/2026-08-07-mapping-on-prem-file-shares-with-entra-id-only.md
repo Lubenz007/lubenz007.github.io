@@ -13,7 +13,7 @@ tags:
   - Azure Files
   - Azure File Sync
   - Intune
-image: /assets/img/blog/azurefilezonpreme.png
+image: "/assets/img/blog/azurefilezonpreme.png"
 ---
 
 <style>
