@@ -1,18 +1,8 @@
 ---
 title: "Mapping On-Prem File Shares with Entra ID Only"
 date: 2026-08-07
-categories:
-  - Azure
-  - File Sharing
-  - Authentication
-tags:
-  - Azure Arc
-  - Microsoft Entra ID
-  - PKU2U
-  - Windows Server 2025
-  - Azure Files
-  - Azure File Sync
-  - Intune
+categories: [Azure]
+tags: [azure]
 image: /assets/img/blog/azurezon.png
 ---
 

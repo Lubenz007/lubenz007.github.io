@@ -1,16 +1,8 @@
 ---
 title: "How to Use Azure Files with Entra ID Kerberos Authentication (No Azure AD DS)"
 date: 2027-01-08
-categories:
-  - Azure
-  - File Sharing
-  - Authentication
-tags:
-  - Azure Files
-  - Kerberos
-  - Microsoft Entra ID
-  - Intune
-  - PowerShell
+categories: [Azure]
+tags: [azure]
 ---
 
 Azure Files now supports **Kerberos authentication using Microsoft Entra ID**, eliminating the need for Azure AD Domain Services or on-premises Active Directory. This allows Azure AD–joined devices to securely access SMB file shares using native Kerberos authentication.
