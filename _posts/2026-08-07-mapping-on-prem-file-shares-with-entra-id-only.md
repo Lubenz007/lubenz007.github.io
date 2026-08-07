@@ -3,7 +3,6 @@ title: "Mapping On-Prem File Shares with Entra ID Only"
 date: 2026-08-07
 categories: [Azure]
 tags: [azure]
-image: /assets/img/blog/azurezon.png
 ---
 
 <style>
