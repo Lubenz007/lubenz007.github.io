@@ -5,7 +5,6 @@ categories:
   - Azure
   - File Sharing
   - Authentication
-image: /assets/img/blog/azurefilezonpreme.png
 tags:
   - Azure Arc
   - Microsoft Entra ID
@@ -14,6 +13,7 @@ tags:
   - Azure Files
   - Azure File Sync
   - Intune
+image: /assets/img/blog/azurefilezonpreme.png
 ---
 
 <style>
